@@ -1,9 +1,10 @@
 [x] Custom CSS & Reset CSS ekle.
-[] Container yapısını oluştur.
-[] Design System Color Variables.
-[] Header
-[] Sidebar
-[] 
+[X] Container yapısını oluştur.
+[X] Design System Color Variables.
+[X] Header
+[X] Sidebar
+[] Story Section
+[] Section
 [] 
 [] 
 [] Responsive
