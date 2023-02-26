@@ -4,8 +4,9 @@
 [X] Header
 [X] Sidebar
 [X] Story Section hazırla
+[X] Story Section için scrollbar design.
+[x] Deffault scrollbar design hazırla.
 
-[X] Story scrollbar design.
 [] Post Card hazırla.
 [] Anasayfa Web Responsive
 [] Anasayfa Mobile Responsive
@@ -14,20 +15,13 @@
 [] Bootstrap ile responsive proje izle.
 [] Bootstrap bağla.
 
-
-[] Section
-[] 
-[] Responsive
+[] Responsive Check
 [] SEO Check
+[] Browser Support Check
+
 [] Son donukunuşlar
 
 EKSTRA:
-[] Deffault scrollbar design. --> tiktok tipi
-
-
-
-
-
 
 
 
