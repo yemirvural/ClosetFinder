@@ -22,7 +22,7 @@
 [] Son donukunuşlar
 
 EKSTRA:
-[] Deffault scrollbar design.
+[] Deffault scrollbar design. --> tiktok tipi
 
 
 
