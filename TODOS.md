@@ -3,9 +3,19 @@
 [X] Design System Color Variables.
 [X] Header
 [X] Sidebar
-[] Story Section
+[X] Story Section hazırla
+
+[] Story scrollbar design.
+[] Post Card hazırla.
+[] Anasayfa Web Responsive
+[] Anasayfa Mobile Responsive
+
+[] Bootstrap çalış.
+[] Bootstrap ile responsive proje izle.
+[] Bootstrap bağla.
+
+
 [] Section
-[] 
 [] 
 [] Responsive
 [] SEO Check
