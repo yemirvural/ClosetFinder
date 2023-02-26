@@ -5,7 +5,7 @@
 [X] Sidebar
 [X] Story Section hazırla
 
-[] Story scrollbar design.
+[X] Story scrollbar design.
 [] Post Card hazırla.
 [] Anasayfa Web Responsive
 [] Anasayfa Mobile Responsive
@@ -21,6 +21,8 @@
 [] SEO Check
 [] Son donukunuşlar
 
+EKSTRA:
+[] Deffault scrollbar design.
 
 
 
