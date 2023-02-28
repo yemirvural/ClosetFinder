@@ -7,10 +7,16 @@
 [X] Story Section için scrollbar design.
 [x] Deffault scrollbar design hazırla.
 
+[] Anasayfa Web Responsive.
 [] Post Card hazırla.
-[] Anasayfa Web Responsive
-[] Anasayfa Mobile Responsive
+[] reels-container hazırla.
+[] celebrities-container hazırla.
+[] Anasayfa Mobile Responsive.
 
+
+
+
+[] Bootstrap ????
 [] Bootstrap çalış.
 [] Bootstrap ile responsive proje izle.
 [] Bootstrap bağla.
@@ -22,7 +28,7 @@
 [] Son donukunuşlar
 
 EKSTRA:
-
+scrollbarlar hidden olsun mu hover?
 
 
 
