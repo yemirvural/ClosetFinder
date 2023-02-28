@@ -10,13 +10,13 @@
 [] Anasayfa Web Responsive:
 [X] Story-Cards.
 [X] Header.
+[X] Post-Cards.
 [] Sidebar.
-[] Post-Cards.
 
 Main:
-[] Post Card design hazırla.
-[] reels-container hazırla.
+[X] Post Card design hazırla.
 [] celebrities-container hazırla.
+[] reels-container hazırla.
 [] Anasayfa Mobile Responsive.
 
 

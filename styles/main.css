@@ -164,7 +164,7 @@ header {
     z-index: 0;
     flex-direction: column;
     background-color: red;
-    height: 180vh;
+    height: 350vh;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -196,9 +196,9 @@ header {
     z-index: 1;
     position: relative;
     max-width: 1800px;
+    width: 1550px;
     margin-top: 45px;
     margin-left: 350px;
-    width: 1550px;
     overflow: auto;
     scroll-snap-type: x mandatory;
     white-space: nowrap;
@@ -250,9 +250,9 @@ header {
     background-size: 100% 150%;
 }
 
-/* Postcard Responsive */
+/* Postcard Container */
 
-.postcard-container{
+.postcard-container {
     display: flex;
     position: relative;
     align-items: flex-start;
@@ -276,9 +276,9 @@ header {
     box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.1);
 }
 
-/* Card Container */
+/* Card */
 
-.postcard a{
+.postcard a {
     display: flex;
     align-items: center;
     position: relative;
@@ -362,4 +362,74 @@ header {
 
 .postcard-item>img {
     width: 30px;
+}
+
+/* Celebrities */
+
+.celebrities-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color: #811f5d;
+    justify-content: center;
+}
+
+.celebrities {
+    display: flex;
+    position: relative;
+    overflow: auto;
+    max-width: 1800px;
+    width: 1450px;
+    padding: 35px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 300px;
+    height: 500px;
+    background-color: palegreen;
+    gap: 12px;
+}
+
+
+.celebritie {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    
+
+
+    color: #FFFFFF;
+    width: 425px;
+    min-width: 375px;
+    height: 75px;
+    background-color: grey;
+}
+
+.celebritie button {
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    width: 110px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.celebritie img {
+    width: 42px;
+}
+
+.celebritie-info span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
 }
