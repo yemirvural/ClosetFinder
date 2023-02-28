@@ -7,8 +7,14 @@
 [X] Story Section için scrollbar design.
 [x] Deffault scrollbar design hazırla.
 
-[] Anasayfa Web Responsive.
-[] Post Card hazırla.
+[] Anasayfa Web Responsive:
+[X] Story-Cards.
+[X] Header.
+[] Sidebar.
+[] Post-Cards.
+
+Main:
+[] Post Card design hazırla.
 [] reels-container hazırla.
 [] celebrities-container hazırla.
 [] Anasayfa Mobile Responsive.
