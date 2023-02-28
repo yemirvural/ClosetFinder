@@ -376,15 +376,16 @@ header {
 }
 
 .celebrities {
-    display: flex;
+    display: grid;
     position: relative;
+    grid-auto-flow: column;
     overflow: auto;
     max-width: 1800px;
-    width: 1450px;
+    width: 1600px;
     padding: 35px;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 300px;
+    margin-left: 325px;
     height: 500px;
     background-color: palegreen;
     gap: 12px;

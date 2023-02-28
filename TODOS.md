@@ -34,7 +34,7 @@ Main:
 [] Son donukunuşlar
 
 EKSTRA:
-scrollbarlar hidden olsun mu hover?
+scrollbarlar sadece hover olduğunda gözüksün (?)
 
 
 
