@@ -164,7 +164,6 @@ header {
     top: 45px;
     z-index: 0;
     flex-direction: column;
-    /*background-color: grey;*/
     height: 1050vh;
     width: 100%;
     display: flex;

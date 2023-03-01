@@ -13,12 +13,10 @@
 [X] Post Card design hazırla.
 [X] celebrities-container hazırla.
 [X] reels-container hazırla.
-
-[] Celebrities Container bug fix.
+[X] Celebrities Container bug fix.
 
 [] Anasayfa Web Responsive.
 [] Anasayfa Mobile Responsive.
-
 
 [] Responsive Check
 [] SEO Check
