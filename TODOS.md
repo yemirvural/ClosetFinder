@@ -6,30 +6,19 @@
 [X] Story Section hazırla
 [X] Story Section için scrollbar design.
 [x] Deffault scrollbar design hazırla.
-
-[] Anasayfa Web Responsive:
 [X] Story-Cards.
 [X] Header.
 [X] Post-Cards.
-[] Sidebar ?
-
-
-Main:
+[X] Sidebar ?
 [X] Post Card design hazırla.
 [X] celebrities-container hazırla.
 [X] reels-container hazırla.
 
+[] Celebrities Container bug fix.
 
 [] Anasayfa Web Responsive.
 [] Anasayfa Mobile Responsive.
 
-
-
-
-[] Bootstrap ????
-[] Bootstrap çalış.
-[] Bootstrap ile responsive proje izle.
-[] Bootstrap bağla.
 
 [] Responsive Check
 [] SEO Check
