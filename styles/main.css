@@ -269,7 +269,7 @@ header {
 .postcard-container {
     display: flex;
     position: relative;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     background-color: #FFFFFF;
     height: 1500px;
@@ -416,7 +416,6 @@ header {
 
 .celebrities-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     position: relative;
     width: 100%;
@@ -439,9 +438,6 @@ header {
     overflow-y: hidden;
     max-width: 1800px;
     width: 1600px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 15px;
     justify-content: flex-start;
     align-items: center;
     margin-left: 350px;
