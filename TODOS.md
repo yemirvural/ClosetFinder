@@ -11,12 +11,16 @@
 [X] Story-Cards.
 [X] Header.
 [X] Post-Cards.
-[] Sidebar.
+[] Sidebar ?
+
 
 Main:
 [X] Post Card design hazırla.
-[] celebrities-container hazırla.
-[] reels-container hazırla.
+[X] celebrities-container hazırla.
+[X] reels-container hazırla.
+
+
+[] Anasayfa Web Responsive.
 [] Anasayfa Mobile Responsive.
 
 

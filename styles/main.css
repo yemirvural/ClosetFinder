@@ -164,7 +164,7 @@ header {
     z-index: 0;
     flex-direction: column;
     background-color: grey;
-    height: 350vh;
+    height: 450vh;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -405,14 +405,10 @@ header {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    
-
 
     color: #FFFFFF;
     width: 410px;
     min-width: 375px;
-
-
 }
 
 .celebritie button {
@@ -431,11 +427,12 @@ header {
     width: 42px;
 }
 
-.celebritie-info{
+.celebritie-info {
     display: flex;
     flex-direction: column;
     margin-right: 45px;
 }
+
 .celebritie-info span {
     font-family: 'Inter';
     font-style: normal;
@@ -443,5 +440,63 @@ header {
     font-size: 12px;
 }
 
-/* Reels Section */ 
+/* Reels Section */
 
+.reels-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+}
+
+.reels-cards {
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: auto;
+    max-width: 1800px;
+    width: 1600px;
+    height: 350px;
+    background-color: #3D3D3D;
+    justify-content: flex-start;
+    margin-left: 375px;
+    overflow-y: hidden;
+}
+
+.reels-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    padding-left: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.reels-card-header {
+    width: 165px;
+    height: 245px;
+}
+
+.reels-card-header img {
+    width: 100%;
+    height: 100%;
+}
+
+.reels-card-body span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
