@@ -41,37 +41,62 @@ body {
     color: var(--white);
     height: 175vh;
     overflow: overlay;
+    height: 33px;
 }
 
+/* Header */
+
 .header-box {
-    z-index: 2;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    height: 50px;
+    gap: 20px;
+}
+
+header {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
     background-color: var(--primary);
+    justify-content: center;
+    align-items: center;
     width: 100%;
     position: fixed;
+    padding: 20px;
+    height: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    gap: 20px;
 }
 
 .profile {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+    width: 200px;
+    max-width: 275px;
 }
 
-header label {
-    display: flex;
+.profile img{
     width: 100%;
 }
 
 .search-box {
     display: flex;
-    margin-left: 300px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #FFFFFF;
+    width: 75%;
+    margin-left: 325px;
     border-radius: 8px;
-    height: 33px;
-    width: 90%;
-    padding: 10px;
 }
 
 .search-box input {
@@ -82,24 +107,24 @@ header label {
     -moz-box-shadow: none;
     box-shadow: none;
     cursor: text;
-    margin-left: 22px;
-    margin-right: 22px;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 31px;
-    width: 90%;
+    width: 93%;
 }
 
-/* Header */
-
-header {
-    padding: 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 20px;
-    height: 48px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+.notification{
+    width: 100%;
+    margin-right: 10px;
+    max-width: 20px;
 }
+
+.search-box img {
+    cursor: pointer;
+    margin-right: 15px;
+    /* !-Input içine alınacak */
+}
+
 
 /* Sidebar */
 
@@ -161,7 +186,7 @@ header {
 
 .main-container {
     position: relative;
-    top: 45px;
+    top: 0;
     z-index: 0;
     flex-direction: column;
     height: 1050vh;
@@ -250,13 +275,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     background: url(/assets/svg\ \(1\).png);
     background-position: 0px;
     background-repeat: no-repeat;
     background-size: 100% 150%;
 }
-.wave img{
+
+.wave img {
     display: flex;
     position: absolute;
     right: 50%;
@@ -288,7 +314,7 @@ header {
 }
 
 /* Cards Section */
-.postcard-inclusive{
+.postcard-inclusive {
     display: flex;
     position: relative;
     width: 300px;
@@ -390,7 +416,7 @@ header {
 
 /* Celebrities Section */
 
-.container-wave:first-child{
+.container-wave:first-child {
     display: flex;
     position: absolute;
     top: 0;
@@ -408,7 +434,8 @@ header {
     justify-content: center;
 
 }
-.container-wave:last-child{
+
+.container-wave:last-child {
     display: flex;
     position: absolute;
     bottom: 0;
@@ -436,7 +463,7 @@ header {
 
     background-image: url(/assets/background.png);
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     background-size: 100% 100%;
 }
 
@@ -569,4 +596,22 @@ header {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width: 1349px) {
+    .sidebar {
+        visibility: hidden;
+    }
+
+    .search-box {
+        margin-left: 100px;
+    }
+
+    .main-container {
+        left: 0px;
+        width: 100%;
+    }
 }

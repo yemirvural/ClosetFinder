@@ -23,6 +23,7 @@
 [] Cody Fisher alanı text-overflow:ellipsis.  
 [] Header alanı name alanı düzeltilecek.  
 [] Tüm scrollbarlar aynı stile sahip olacak.
+[] px değerleri rem ile değişecek. 
 
 [] Responsive Check
 [] SEO Check
