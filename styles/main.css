@@ -104,7 +104,7 @@ header {
 /* Sidebar */
 
 .sidebar {
-    z-index: 3;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     background-color: var(--white);
@@ -159,7 +159,7 @@ header {
 
 /* Context */
 
-.container {
+.main-container {
     position: relative;
     top: 45px;
     z-index: 0;
