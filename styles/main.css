@@ -165,7 +165,8 @@ header {
     z-index: 0;
     flex-direction: column;
     height: 1050vh;
-    width: 100%;
+    width: calc(100% - 300px);
+    left: 300px;
     display: flex;
     justify-content: flex-start;
     color: var(--dark);
@@ -189,6 +190,7 @@ header {
     display: flex;
     justify-content: center;
     position: relative;
+    padding-left: 45px;
     width: 100%;
     z-index: 2;
     right: 0px;
@@ -199,9 +201,8 @@ header {
     z-index: 1;
     position: relative;
     max-width: 1800px;
-    width: 1550px;
+    width: 1600px;
     margin-top: 45px;
-    margin-left: 350px;
     overflow: auto;
     scroll-snap-type: x mandatory;
     white-space: nowrap;
@@ -251,16 +252,16 @@ header {
     justify-content: center;
     
     background: url(/assets/svg\ \(1\).png);
-    background-position: 150px;
+    background-position: 0px;
     background-repeat: no-repeat;
     background-size: 100% 150%;
 }
 .wave img{
     display: flex;
-    position: relative;
+    position: absolute;
+    right: 50%;
     cursor: pointer;
     width: 25px;
-    margin-left: 300px;
     margin-top: 10px;
 }
 
@@ -271,30 +272,39 @@ header {
     position: relative;
     justify-content: center;
     background-color: #FFFFFF;
-    height: 1800px;
-    width: 100%;
-    margin-top: 75px;
+    margin-top: 45px;
     align-items: flex-start;
+    height: auto;
+    min-height: 3500px;
 }
 
 .postcards {
-    display: grid;
+    display: flex;
     position: relative;
-    grid-auto-rows: 420px;
-    grid-template-columns: repeat(3, minmax(300px, 300px));
     overflow: hidden;
-    width: 1200px;
-    max-width: 1000px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 350px;
-    gap: 50px;
+    justify-content: space-evenly;
+    row-gap: 50px;
+    padding-bottom: 50px;
 }
 
 /* Cards Section */
+.postcard-inclusive{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 415px;
+}
+
+.postcard {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    min-width: 350px;
+}
 
 .postcard a {
     display: flex;
+    position: relative;
     align-items: center;
 }
 
@@ -388,7 +398,7 @@ header {
     transform: rotate(180deg);
     background-image: url(/assets/svg\ \(1\).png);
     background-repeat: no-repeat;
-    background-position: calc(-175px);
+    background-position: calc(0px);
     background-size: 100% 100%;
 
     z-index: 0;
@@ -404,7 +414,7 @@ header {
     bottom: 0;
     background-image: url(/assets/svg\ \(1\).png);
     background-repeat: no-repeat;
-    background-position: calc(175px);
+    background-position: calc(0px);
     background-size: 100% 100%;
 
     z-index: 0;
@@ -417,8 +427,8 @@ header {
 
 .celebrities-container {
     display: flex;
-    align-items: center;
     position: relative;
+    align-items: center;
     width: 100%;
     height: 800px;
     overflow-x: hidden;
@@ -426,7 +436,7 @@ header {
 
     background-image: url(/assets/background.png);
     background-repeat: no-repeat;
-    background-position: 300px 50px; 
+    background-position: center; 
     background-size: 100% 100%;
 }
 
@@ -441,9 +451,9 @@ header {
     width: 1600px;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 350px;
     height: 400px;
     gap: 8px;
+    margin-left: 45px;
 }
 
 
@@ -517,11 +527,11 @@ header {
     position: relative;
     align-items: center;
     overflow: auto;
+    margin-left: 45px;
     max-width: 1800px;
     width: 1600px;
     height: 350px;
     justify-content: flex-start;
-    margin-left: 350px;
     overflow-y: hidden;
 }
 
