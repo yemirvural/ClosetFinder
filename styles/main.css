@@ -398,9 +398,13 @@ header {
 
 .postcard-header>span {
     position: absolute;
-    text-overflow: clip;
+    text-overflow: ellipsis;
+    white-space: wrap;
     overflow: hidden;
-    max-width: 150px;
+    max-height: 75px;
+    max-width: 200px;
+    line-height: 1.8rem;
+    max-height: 3.6rem;
     bottom: 45px;
     left: 25px;
     color: #FFFFFF;
