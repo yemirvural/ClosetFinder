@@ -21,8 +21,8 @@
 [X] Postcard boyutlandırmalarını UX uygun hale getir.  
 [X] Cody Fisher alanı text-overflow:ellipsis.  
 
-[] Responsive >>>> Story container, Celebrities container, Reels container.
 [] Search-bar kayan container[~visibility] eklenecek. 
+[] Responsive >>>> Story container, Celebrities container, Reels container.
 [] Dark/Light Mod Variables hazırla (1 element giydir). 
 
 [] Responsive Check
