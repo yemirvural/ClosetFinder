@@ -15,14 +15,15 @@
 [X] reels-container hazırla.
 [X] Celebrities Container bug fix.
 [X] Anasayfa Web Responsive.
+[X] Anasayfa Mobile Responsive.
+[X] Header alanı name alanı düzeltilecek.  
+[X] Tüm scrollbarlar aynı stile sahip olacak.
+[X] Postcard boyutlandırmalarını UX uygun hale getir.  
 
-[] Anasayfa Mobile Responsive.
+[] Responsive >>>> Story container, Celebrities container, Reels container.
 
 [] Dark/Light Mod Variables hazırla (1 element giydir).  
-[] Postcard boyutlandırmalarını UX uygun hale getir.  
 [] Cody Fisher alanı text-overflow:ellipsis.  
-[] Header alanı name alanı düzeltilecek.  
-[] Tüm scrollbarlar aynı stile sahip olacak.
 [] px değerleri rem ile değişecek. 
 
 [] Responsive Check
