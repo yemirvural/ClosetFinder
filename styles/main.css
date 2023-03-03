@@ -365,6 +365,9 @@ header {
     justify-content: flex-start;
     color: var(--dark);
 }
+.main-container img{
+    pointer-events: none;
+}
 
 /* Story Container */
 
