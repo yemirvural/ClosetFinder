@@ -19,9 +19,9 @@
 [X] Header alanı name alanı düzeltilecek.  
 [X] Tüm scrollbarlar aynı stile sahip olacak.
 [X] Postcard boyutlandırmalarını UX uygun hale getir.  
+[X] Cody Fisher alanı text-overflow:ellipsis.  
 
 [] Responsive >>>> Story container, Celebrities container, Reels container.
-[] Cody Fisher alanı text-overflow:ellipsis.  
 [] Search-bar kayan container[~visibility] eklenecek. 
 [] Dark/Light Mod Variables hazırla (1 element giydir). 
 

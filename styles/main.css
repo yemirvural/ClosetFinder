@@ -227,6 +227,7 @@ header {
     background-position: center;
     background-size: 100% 200%;
     height: 475px;
+    min-height: 450px;
 }
 
 .story-cards {
@@ -401,13 +402,22 @@ header {
     text-overflow: ellipsis;
     white-space: wrap;
     overflow: hidden;
-    max-height: 75px;
     max-width: 200px;
-    line-height: 1.8rem;
-    max-height: 3.6rem;
-    bottom: 45px;
+    line-height: 1.2rem;
+    max-height: 2.4rem;
+    bottom: 55px;
     left: 25px;
     color: #FFFFFF;
+}
+.postcard-header > span:last-child{
+    all: unset;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 0;
+    position: absolute;
 }
 
 .postcard-item>img {
@@ -459,6 +469,7 @@ header {
     align-items: center;
     width: 100%;
     height: 800px;
+    min-height: 800px;
     overflow-x: hidden;
     justify-content: center;
 
@@ -541,6 +552,7 @@ header {
     align-items: center;
     width: 100%;
     height: 800px;
+    min-height: 800px;
     justify-content: center;
 
     background-image: url(/assets/background.png);
