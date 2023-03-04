@@ -24,18 +24,19 @@
 [X] Detailed-search alanında >> spacing 
 [X] Bootstrap >> Modals & Navigations
 [X] Post-card title >> margin-left.
+[X] Options section tüm ekran boyutlarına duyarlı şekilde kurulacak.
 
 [] Mobil için post-card boyutlandırmaları 2'li grid:
 + [x] grid sistemi 
 + [] font sizing
 + [] img sizing
-[] Options section tüm ekran boyutlarına duyarlı şekilde kurulacak.
 
-[] Dark/Light Mod Variables hazırla (1 element giydir). 
+[] Dark/Light Mod Variables hazırlanacak. 
 [] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü (hamburger).
+
 [] Profil detay sayfaları: 
 + Her sayfaya [~Breadcrumb] eklenecek.
-+ Filter Modals.
++ Filter & Sorting Modals.
 
 [] tüm px değerleri rem ile değişecek. 
 [] Responsive >>>> Story container, Celebrities container, Reels container. (?)

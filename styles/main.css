@@ -932,7 +932,61 @@ header {
     font-size: 16px;
 }
 
-/* >> All-Settings Menu << */
+/* >> Reels Sidebar  << */
+
+/*
+.sidebar-reels .settings-menu{
+    display: flex;
+    justify-content: center;
+    color: var(--black);
+    font-size: 1rem;
+}
+*/
+
+.sidebar-reels .modal-content{
+    min-width: unset;
+    max-width: unset;
+    min-height: unset;
+    max-height: unset;
+    display: flex;
+    width: 400px;
+    height: 800px;
+    background-color: var(--dark-gray);
+    border-radius: 15px;
+}
+.sidebar-reels .modal-header{
+    display: flex;
+    position: relative;
+    background-color: red;
+    width: 400px;
+    height: 120px;
+}
+.sidebar-reels .reels-video{
+    z-index: 11;
+    display: flex;
+    position: fixed ;
+    width: 400px;
+    height: 800px;
+}
+.sidebar-reels .modal-content::before{
+    z-index: 13;
+    content: "";
+    position: fixed;
+    width: 400px;
+    height: 800px;
+    top: calc(50% - 400px);
+    left: calc(50% - 200px);
+    background: rgba(0, 0, 0, 0.1);
+}
+.sidebar-reels .modal-header{
+    border-bottom: 0;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* >> Settings Sidebar << */
 
 .settings-menu{
     display: flex;
@@ -1017,7 +1071,7 @@ header {
 }
 
 /* >> Profile Settings Menu << */
-                                                                /* Overridde ifadeler yalnızca olacak */
+
 .profile-settings .modal-content{
     max-height: unset;
     min-height: unset;
@@ -1060,7 +1114,7 @@ header {
 }
 .profile-inputs input{
     border: 0;
-    outline: 0;                                                                                                  /* asdasssssssssss*/
+    outline: 0;
 }
 .profile-inputs input::placeholder{
     text-align: end;
