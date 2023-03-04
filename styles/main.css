@@ -1043,6 +1043,8 @@ header {
 .profile-settings .profile-inputs div{ 
     display: flex;
     width: 100%;
+    gap: 7px;
+    align-items: center;
     justify-content: space-between;
 }
 .profile-inputs .radio-button {
@@ -1057,6 +1059,7 @@ header {
 }
 .profile-inputs input{
     border: 0;
+    outline: 0;                                                                                                  /* asdasssssssssss*/
 }
 .profile-inputs input::placeholder{
     text-align: end;
@@ -1127,6 +1130,7 @@ header {
     justify-content: space-between;
     gap: 15px;
     height: 200px;
+    padding: 20px;
 }
 .notification-settings .notification-inputs{
     gap: 20px;
@@ -1142,6 +1146,45 @@ header {
     justify-content: space-between;
 }
 
+/* >> Password Settings Menu << */
+
+.password-settings .modal-content{
+    max-height: unset;
+    min-height: unset;
+    width: 400px;
+    min-width:max-content;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.password-settings .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    height: 200px;
+}
+.password-settings .password-inputs{
+    gap: 20px;
+    padding-left: unset;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.password-settings .password-inputs div{ 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+.password-settings .password-inputs input{ 
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #D9D9D9;
+}
 
 /* Mobile Responsive */
 

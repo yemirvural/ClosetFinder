@@ -1609,7 +1609,7 @@
                         </li>
                         <li>
                             <span><img src="/assets/Subtract.svg" alt=""></span>
-                            <span><a href="">Password</a></span>
+                            <span><a href="" data-bs-toggle="modal" data-bs-target="#password-settings">Password</a></span>
                         </li>
                         <li>
                             <span><img src="/assets/Subtract.svg" alt=""></span>
@@ -1759,6 +1759,36 @@
                         <div>
                             <span>SMS</span>
                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        </div>
+                    </div>
+                    <div class="">
+                        <button class="wide-button" data-bs-toggle="modal" data-bs-target="#all-settings">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade password-settings" id="password-settings" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered settings-menu">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><span class="bold-title"><img src="/assets/Subtract.svg" alt="">Password Settings</span></h5>
+                    <button class="modal-exit" type="button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+                <div class="modal-body">
+                    <div class="password-inputs">
+                        <div>
+                            <span>Old Password</span>
+                            <input class="" type="password" id="flexSwitchCheckDefault">
+                        </div>
+                        <div>
+                            <span>New Password</span>
+                            <input class="" type="password" id="flexSwitchCheckDefault">
+                        </div>
+                        <div>
+                            <span>New Again</span>
+                            <input class="" type="password" id="flexSwitchCheckDefault">
                         </div>
                     </div>
                     <div class="">
