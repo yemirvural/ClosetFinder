@@ -22,23 +22,23 @@
 [X] Cody Fisher alanı text-overflow:ellipsis.  
 [X] Search-bar kayan container[~visibility] eklenecek. 
 [X] Detailed-search alanında >> spacing 
+[X] Bootstrap >> Modals & Navigations
 [X] Post-card title >> margin-left.
 
 [] Mobil için post-card boyutlandırmaları 2'li grid:
 + [x] grid sistemi 
 + [] font sizing
 + [] img sizing
+[] Options section tüm ekran boyutlarına duyarlı şekilde kurulacak.
 
-[] Tüm ekran boyutlarında >> yana kayan menü.
-[] Bootstrap >> Modals & Navigations
+[] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü (hamburger).
+[] Dark/Light Mod Variables hazırla (1 element giydir). 
 [] Profil detay sayfaları.
 
-
-[] Dark/Light Mod Variables hazırla (1 element giydir). 
-[] Large ekranlar için kayan menü.
-[] Tüm ekran boyutlarında postcard boyutlandırmaları.
 [] tüm px değerleri rem ile değişecek. 
 [] Responsive >>>> Story container, Celebrities container, Reels container. (?)
+
+
 
 [] Responsive Check
 [] SEO Check
