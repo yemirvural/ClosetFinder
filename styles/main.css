@@ -889,6 +889,46 @@ header {
     line-height: 15px;
 }
 
+/* >> Special Classes << */
+
+.radio-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    color: var(--primary);
+    padding: 10px 25px;
+    margin: 0;
+    border: 1px solid #801E5C;
+    border-radius: 4px;
+    font-weight: 400;
+
+    min-width: 75px;
+    width: 8vw;
+
+    height: 30px;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+.radio-button-group input:checked + label{
+    background-color: var(--primary);
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.wide-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    min-width: 250px;
+    max-width: 350px;
+    background: rgba(128, 30, 92, 0.2);
+    border: 1px solid #801E5C;
+    color: #801E5C;
+    font-weight: 700;
+    font-size: 16px;
+}
+
 /* >> All-Settings Menu << */
 
 .settings-menu{
@@ -899,7 +939,7 @@ header {
 }
 
 .modal-content{
-    width: 20vw;
+    width: 28vw;
     min-width: 275px;
     max-height: 28vw;
     min-height: 375px;
@@ -935,7 +975,7 @@ header {
     column-gap: 15px;
     font-weight: 700;
 }
-.modal-body li:nth-child(-n+6)::after{
+.modal-body > ul > li:nth-child(-n+6)::after{
     content: "";
     display: flex;
     vertical-align:middle;
@@ -946,8 +986,27 @@ header {
     border-bottom: 0.5px solid rgba(129, 31, 93, 0.3);
 }
 /* >> Dark Mode Menu << */
-.dark-mode{
-    z-index: 99999;
+.darkmode-setting .modal-content{
+    max-height: unset;
+    min-height: unset;
+    height: 160px;
+    border-radius: 20px;
+}
+.darkmode-setting .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.darkmode-setting .modal-body div:first-child{
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    gap: 5px;
+}
+.darkmode-setting .modal-body div:last-child{
+    display: flex;
 }
 
 
