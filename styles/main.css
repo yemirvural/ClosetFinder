@@ -1015,8 +1015,8 @@ header {
     display: flex;
 }
 
-/* >> Dark Mode Menu << */
-
+/* >> Profile Settings Menu << */
+                                                                /* Overridde ifadeler yalnızca olacak */
 .profile-settings .modal-content{
     max-height: unset;
     min-height: unset;
@@ -1065,6 +1065,51 @@ header {
 .profile-settings .modal-body div:last-child{
     display: flex;
 }
+
+/* >> Language Settings Menu << */
+
+.language-settings .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    height: 150px;
+}
+.language-settings .wide-button{
+    width: 250px;
+}
+
+.language-settings .modal-body div:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.language-settings label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    width: 250px;
+    gap: 7px;
+    border-bottom: 0.5px solid rgba(129, 31, 93, 0.3);
+}
+.language-settings label:last-child{
+    border: 0;
+}
+.language-settings input:checked + label{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.language-settings label > span{
+    visibility: hidden;
+}
+.language-settings input:checked + label > span{
+    visibility: visible;
+}
+
+
 
 /* Mobile Responsive */
 

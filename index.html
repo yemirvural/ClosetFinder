@@ -1601,7 +1601,7 @@
                         </li>
                         <li>
                             <span><img src="/assets/Subtract.svg" alt=""></span>
-                            <span><a href="">Language</a></span>
+                            <span><a href="" data-bs-toggle="modal" data-bs-target="#language-settings">Language</a></span>
                         </li>
                         <li>
                             <span><img src="/assets/Subtract.svg" alt=""></span>
@@ -1704,6 +1704,42 @@
         </div>
     </div>
 
+    <div class="modal fade language-settings" id="language-settings" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered settings-menu">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><span class="bold-title"><img src="/assets/Subtract.svg"alt="">Language</span></h5>
+                    <button class="modal-exit" type="button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+                <div class="modal-body">
+                    <div class="" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="theme-radio" id="en" autocomplete="off" checked>
+                        <label class="" for="en"><span><img src="/assets/tick.svg" alt=""></span> English</label>
+
+                        <input type="radio" class="btn-check" name="theme-radio" id="tr" autocomplete="off">
+                        <label class="" for="tr"><span><img src="/assets/tick.svg" alt=""></span>Türkçe</label>
+
+                        <input type="radio" class="btn-check" name="theme-radio" id="de" autocomplete="off">
+                        <label class="" for="de"><span><img src="/assets/tick.svg" alt=""></span>Deutch</label>
+
+                        <input type="radio" class="btn-check" name="theme-radio" id="es" autocomplete="off">
+                        <label class="" for="es"><span><img src="/assets/tick.svg" alt=""></span>Español</label>
+
+                        <input type="radio" class="btn-check" name="theme-radio" id="fr" autocomplete="off">
+                        <label class="" for="fr"><span><img src="/assets/tick.svg" alt=""></span>Français</label>
+
+                        <input type="radio" class="btn-check" name="theme-radio" id="ru" autocomplete="off">
+                        <label class="" for="ru"><span><img src="/assets/tick.svg" alt=""></span>Русский</label>
+                    </div>
+                    <div class="">
+                        <button class="wide-button" data-bs-toggle="modal" data-bs-target="#all-settings">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
