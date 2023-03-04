@@ -889,35 +889,27 @@ header {
     line-height: 15px;
 }
 
-.options-all{
+/* >> All-Settings Menu << */
+
+.settings-menu{
     display: flex;
-    position: fixed;
-    z-index: 9;
-    bottom: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, .45);
-    width: 100%;
-    height: 100%;
-}
-.options-menu{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 99;
     color: var(--black);
     font-size: 1rem;
 }
 
 .modal-content{
     width: 20vw;
-    min-width: 225px;
+    min-width: 275px;
     max-height: 28vw;
     min-height: 375px;
     border-radius: 20px;
 }
+.modal-header{
+    border-bottom: 0;
+    padding-bottom: 10px;
+}
+
 .modal-header span.bold-title{
     display: flex;
     gap: 3px;
@@ -926,6 +918,7 @@ header {
 
 .modal-body{
     height: 300px;
+    padding-top: 8px;
 }
 .modal-body ul{
     display: flex;
@@ -952,6 +945,14 @@ header {
     margin-left: 40px;
     border-bottom: 0.5px solid rgba(129, 31, 93, 0.3);
 }
+/* >> Dark Mode Menu << */
+.dark-mode{
+    z-index: 99999;
+}
+
+
+
+
 /* Mobile Responsive */
 
 @media(max-width: 1349px) {

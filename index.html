@@ -367,7 +367,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#all-settings">
                         <i><img src="/assets/Vector (6).svg" alt=""></i>
                         <span class="">Settings</span>
                     </a>
@@ -1577,18 +1577,67 @@
         </div>
     </section>
     <div class="options-all">
-        <div class="modal options-menu" tabindex="-1">
+        <div class="modal settings-menusssd" tabindex="-1">
             <div class="modal-dialog">
-              <div class="modal-content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><span class="bold-title"><img src="/assets/Subtract.svg"
+                                    alt="">Settings</span></h5>
+                        <button class="modal-exit" type="button" data-bs-dismiss="modal"
+                            aria-label="Close">Close</button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>
+                                <span><img src="/assets/Subtract.svg" alt=""></span>
+                                <span><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Dark
+                                        Mode</a></span>
+                            </li>
+                            <li>
+                                <span><img src="/assets/Subtract.svg" alt=""></span>
+                                <span><a href="">Profile Settings</a></span>
+                            </li>
+                            <li>
+                                <span><img src="/assets/Subtract.svg" alt=""></span>
+                                <span><a href="">Language</a></span>
+                            </li>
+                            <li>
+                                <span><img src="/assets/Subtract.svg" alt=""></span>
+                                <span><a href="">Notifications</a></span>
+                            </li>
+                            <li>
+                                <span><img src="/assets/Subtract.svg" alt=""></span>
+                                <span><a href="">Password</a></span>
+                            </li>
+                            <li>
+                                <span><img src="/assets/Subtract.svg" alt=""></span>
+                                <span><a href="">Legal Informations</a></span>
+                            </li>
+                            <li>
+                                <span><img src="/assets/Subtract.svg" alt=""></span>
+                                <span><a href="">About the Site</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="all-settings" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered settings-menu">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title"><span class="bold-title"><img src="/assets/Subtract.svg" alt="">Settings</span></h5>
-                  <button type="button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    <h5 class="modal-title"><span class="bold-title"><img src="/assets/Subtract.svg"
+                                alt="">Settings</span></h5>
+                    <button class="modal-exit" type="button" data-bs-dismiss="modal" aria-label="Close">Close</button>
                 </div>
                 <div class="modal-body">
                     <ul>
                         <li>
                             <span><img src="/assets/Subtract.svg" alt=""></span>
-                            <span><a href="">Dark Mode</a></span>
+                            <span><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Dark
+                                    Mode</a></span>
                         </li>
                         <li>
                             <span><img src="/assets/Subtract.svg" alt=""></span>
@@ -1616,11 +1665,11 @@
                         </li>
                     </ul>
                 </div>
-              </div>
             </div>
-          </div>
-
+        </div>
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>

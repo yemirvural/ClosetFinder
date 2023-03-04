@@ -33,7 +33,7 @@
 
 [] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü (hamburger).
 [] Dark/Light Mod Variables hazırla (1 element giydir). 
-[] Profil detay sayfaları.
+[] Profil detay sayfaları. Her sayfaya [~Breadcrumb] eklenecek.
 
 [] tüm px değerleri rem ile değişecek. 
 [] Responsive >>>> Story container, Celebrities container, Reels container. (?)
