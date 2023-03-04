@@ -195,6 +195,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
+    row-gap: 8px;
 }
 
 .last-searchs ul>li {
@@ -257,7 +258,7 @@ header {
     overflow-y: hidden;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 85px;
+    height: 100px;
     column-gap: 10px;
 }
 
@@ -280,8 +281,8 @@ header {
 
 .popular-celebrities li>img {
     width: 100%;
-    max-width: 28px;
-    max-height: 28px;
+    min-width: 28px;
+    height: auto;
 }
 
 /* Search Results */
@@ -683,8 +684,8 @@ header {
     max-width: 200px;
     line-height: 1.2rem;
     max-height: 2.4rem;
-    bottom: 55px;
-    left: 25px;
+    bottom: 45px;
+    left: 18px;
     color: #FFFFFF;
 }
 
@@ -1048,7 +1049,7 @@ header {
     .postcard-item {
         margin-right: 8px;
         margin-left: auto;
-        width: 24px;
+        width: 22px;
         height: 55px;
         gap: 5px;
         font-size: 12px;

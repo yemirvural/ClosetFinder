@@ -21,6 +21,8 @@
 [X] Postcard boyutlandırmalarını UX uygun hale getir.  
 [X] Cody Fisher alanı text-overflow:ellipsis.  
 [X] Search-bar kayan container[~visibility] eklenecek. 
+[X] Detailed-search alanında >> spacing 
+[X] Post-card title >> margin-left.
 
 [] Mobil için post-card boyutlandırmaları 2'li grid:
 + [x] grid sistemi 
@@ -28,9 +30,6 @@
 + [] img sizing
 
 [] Tüm ekran boyutlarında >> yana kayan menü.
-
-[] Detailed-search alanında >> spacing .
-[] Post-card title >> margin-left.
 [] Bootstrap >> Modals & Navigations
 [] Profil detay sayfaları.
 
