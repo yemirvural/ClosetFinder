@@ -1109,6 +1109,38 @@ header {
     visibility: visible;
 }
 
+/* >> Notification Settings Menu << */
+
+.notification-settings .modal-content{
+    max-height: unset;
+    min-height: unset;
+    width: 400px;
+    min-width:max-content;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.notification-settings .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    height: 200px;
+}
+.notification-settings .notification-inputs{
+    gap: 20px;
+    padding-left: unset;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.notification-settings .notification-inputs div{ 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 
 
 /* Mobile Responsive */

@@ -1605,7 +1605,7 @@
                         </li>
                         <li>
                             <span><img src="/assets/Subtract.svg" alt=""></span>
-                            <span><a href="">Notifications</a></span>
+                            <span><a href="" data-bs-toggle="modal" data-bs-target="#notification-settings">Notifications</a></span>
                         </li>
                         <li>
                             <span><img src="/assets/Subtract.svg" alt=""></span>
@@ -1730,6 +1730,36 @@
 
                         <input type="radio" class="btn-check" name="theme-radio" id="ru" autocomplete="off">
                         <label class="" for="ru"><span><img src="/assets/tick.svg" alt=""></span>Русский</label>
+                    </div>
+                    <div class="">
+                        <button class="wide-button" data-bs-toggle="modal" data-bs-target="#all-settings">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade notification-settings" id="notification-settings" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered settings-menu">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><span class="bold-title"><img src="/assets/Subtract.svg" alt="">Notification Settings</span></h5>
+                    <button class="modal-exit" type="button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+                <div class="modal-body">
+                    <div class="notification-inputs form-check form-switch">
+                        <div>
+                            <span>Phone</span>
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        </div>
+                        <div>
+                            <span>E-mail</span>
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        </div>
+                        <div>
+                            <span>SMS</span>
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        </div>
                     </div>
                     <div class="">
                         <button class="wide-button" data-bs-toggle="modal" data-bs-target="#all-settings">Done</button>
