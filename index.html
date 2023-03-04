@@ -1596,7 +1596,8 @@
                         </li>
                         <li>
                             <span><img src="/assets/Subtract.svg" alt=""></span>
-                            <span><a href="">Profile Settings</a></span>
+                            <span><a href="" data-bs-toggle="modal" data-bs-target="#profile-settings">Profile
+                                    Settings</a></span>
                         </li>
                         <li>
                             <span><img src="/assets/Subtract.svg" alt=""></span>
@@ -1630,8 +1631,7 @@
         <div class="modal-dialog modal-dialog-centered settings-menu">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title"><span class="bold-title"><img src="/assets/Subtract.svg" alt="">Dark
-                            Mode</span></h5>
+                    <h5 class="modal-title"><span class="bold-title"><img src="/assets/Subtract.svg" alt="">Dark Mode</span></h5>
                     <button class="modal-exit" type="button" data-bs-dismiss="modal" aria-label="Close">Close</button>
                 </div>
                 <div class="modal-body">
@@ -1650,14 +1650,67 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="modal fade profile-settings" id="profile-settings" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered settings-menu">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><span class="bold-title"><img src="/assets/Subtract.svg" alt="">Profile Settings</span></h5>
+                    <button class="modal-exit" type="button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+                <div class="modal-body">
+                    <div class="profile-inputs">
+                        <div>
+                            <span>Name Surname</span>
+                            <input type="text" placeholder="Name Surname" name="" id="">
+                        </div>
+                        <div>
+                            <span>E-mail</span>
+                            <input type="text" placeholder="E-mail" name="" id="">
+                        </div>
+                        <div>
+                            <span>Telephone</span>
+                            <input type="text" placeholder="Telephone" name="" id="">
+                        </div>
+                        <div>
+                            <span>Country</span>
+                            <input type="text" placeholder="Country" name="" id="">
+                        </div>
+                        <div>
+                            <span>Gender</span>
+                            <div class="radio-button-group justify-content-end" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="theme-radio" id="male" autocomplete="off">
+                                <label class="radio-button" for="male">Male</label>
+        
+                                <input type="radio" class="btn-check" name="theme-radio" id="female" autocomplete="off">
+                                <label class="radio-button" for="female">Female</label>
+        
+                                <input type="radio" class="btn-check" name="theme-radio" id="other" autocomplete="off">
+                                <label class="radio-button" for="other">Other</label>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Job</span>
+                            <input type="text" placeholder="Job" name="" id="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <button class="wide-button" data-bs-toggle="modal" data-bs-target="#all-settings">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-                integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-                integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-                crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
