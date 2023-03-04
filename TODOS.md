@@ -31,15 +31,20 @@
 + [] img sizing
 [] Options section tüm ekran boyutlarına duyarlı şekilde kurulacak.
 
-[] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü (hamburger).
 [] Dark/Light Mod Variables hazırla (1 element giydir). 
-[] Profil detay sayfaları. Her sayfaya [~Breadcrumb] eklenecek.
+[] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü (hamburger).
+[] Profil detay sayfaları: 
++ Her sayfaya [~Breadcrumb] eklenecek.
++ Filter Modals.
 
 [] tüm px değerleri rem ile değişecek. 
 [] Responsive >>>> Story container, Celebrities container, Reels container. (?)
 
+[] Animations:
++ Hover
++ Slide
 
-
+[] Icon detayları.
 [] Responsive Check
 [] SEO Check
 [] Browser Support Check

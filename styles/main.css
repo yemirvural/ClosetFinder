@@ -892,6 +892,7 @@ header {
 /* >> Special Classes << */
 
 .radio-button{
+    width: unset;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -903,10 +904,10 @@ header {
     border-radius: 4px;
     font-weight: 400;
 
-    min-width: 75px;
-    width: 8vw;
-
+    min-width: 20px;
+    max-width: 120px;
     height: 30px;
+
     transition: all 0.1s linear;
     cursor: pointer;
 }
@@ -941,6 +942,8 @@ header {
 .modal-content{
     width: 28vw;
     min-width: 275px;
+    max-width: 20vw;
+
     max-height: 28vw;
     min-height: 375px;
     border-radius: 20px;
@@ -1001,7 +1004,7 @@ header {
 }
 .darkmode-setting .modal-body div:first-child{
     display: flex;
-    width: 350px;
+    width: 250px;
     justify-content: center;
     gap: 5px;
 }
