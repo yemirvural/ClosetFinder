@@ -166,6 +166,7 @@ header {
 .bold-title {
     font-weight: 700;
     font-size: 20px;
+    white-space: nowrap;
 }
 
 .tiny-title {
@@ -1194,13 +1195,17 @@ header {
     align-items: center;
     justify-content: space-between;
     height: auto;
+    min-height: 300px;
+    padding: 20px;
+    padding-top: 0;
 }
 
 .legalinfo-settings .modal-body div:first-child{
     width: fit-content;
     text-align: start;
-    height: auto;
+    height: 300px;
     overflow-y: auto;
+    margin-bottom: 20px;
 }
 
 /* Mobile Responsive */
