@@ -575,6 +575,7 @@ header {
     background-color: #FFFFFF;
     align-items: flex-start;
     height: auto;
+    min-width:fit-content;
 }
 
 .postcards {
@@ -598,9 +599,9 @@ header {
     display: flex;
     position: relative;
     justify-content: center;
-    min-width: 350px;
     font-family: 'Inter';
     font-style: normal;
+    min-width: 310px;
     font-weight: 700;
     font-size: 16px;
 }
@@ -1015,5 +1016,91 @@ header {
 
     .header-box>span>a {
         width: 25vw;
+    }
+}
+@media(max-width: 619px) {
+    .postcards {
+        row-gap: 20px;
+        padding-bottom: 20px;
+    }
+    .postcard-inclusive {
+        width: calc(150px + 36px);
+        height: calc(225px + 12px);
+    }
+    .postcard {
+        min-width: 186px;
+        height: auto;
+    }
+    
+    .postcard-header {
+        width: 150px;
+        height: 225px;
+    }
+    
+    .postcard-body {
+        row-gap: 9px;
+        width: 150px;
+        height: 225px;
+        margin-left: 32px;
+        margin-top: 16px;
+    }
+    
+    .postcard-item {
+        margin-right: 8px;
+        margin-left: auto;
+        width: 24px;
+        height: 55px;
+        gap: 5px;
+        font-size: 12px;
+    }
+    .postcard-item>img {
+        width: 100%;
+        min-width: 24px;
+    }
+}
+@media(max-width: 372px) {
+    .postcards {
+        row-gap: 20px;
+        padding-bottom: 20px;
+    }
+    .postcard-inclusive {
+        width: calc(125px + 24px);
+        height: calc(175px + 8px);
+    }
+    .postcard {
+        min-width: 150px;
+        height: auto;
+        font-size: 10px;
+    }
+    .postcard-header > span > img{
+        width: 24px;
+        right: 2px;
+        bottom: 5px;
+    }
+
+    .postcard-header {
+        width: 125px;
+        height: 175px;
+    }
+    
+    .postcard-body {
+        row-gap: 9px;
+        width: 125px;
+        height: 175px;
+        margin-left: 24px;
+        margin-top: 8px;
+    }
+    
+    .postcard-item {
+        margin-right: 8px;
+        margin-left: auto;
+        width: 18px;
+        height: 45px;
+        gap: 5px;
+        font-size: 10px;
+    }
+    .postcard-item>img {
+        width: 100%;
+        min-width: 16px;
     }
 }

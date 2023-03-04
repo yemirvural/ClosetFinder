@@ -22,9 +22,14 @@
 [X] Cody Fisher alanı text-overflow:ellipsis.  
 [X] Search-bar kayan container[~visibility] eklenecek. 
 
+[] Mobil için post-card boyutlandırmaları 2'li grid:
++ [x] grid sistemi 
++ [] font sizing
++ [] img sizing
+
 [] Tüm ekran boyutlarında >> yana kayan menü.
+
 [] Detailed-search alanında >> spacing .
-[] Mobil için post-card boyutlandırmaları 2'li grid.
 [] Post-card title >> margin-left.
 [] Bootstrap >> Modals & Navigations
 [] Profil detay sayfaları.
