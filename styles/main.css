@@ -176,7 +176,8 @@ header {
     opacity: .6;
     color: #FFFFFF;
 }
-.tiny-size{
+
+.tiny-size {
     font-size: 12px;
 }
 
@@ -287,7 +288,8 @@ header {
 /* Search Results */
 
 .search-results {
-    display: none;   /* All results >> display:flex;;*/
+    display: none;
+    /* All results >> display:flex;;*/
 }
 
 .search-results {
@@ -333,6 +335,7 @@ header {
     width: 100%;
     margin-bottom: 20px;
 }
+
 .all-results img {
     width: 27px;
 }
@@ -343,7 +346,8 @@ header {
     align-items: center;
     flex-direction: row;
 }
-.all-results li div:first-child{
+
+.all-results li div:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -575,7 +579,7 @@ header {
     background-color: #FFFFFF;
     align-items: flex-start;
     height: auto;
-    min-width:fit-content;
+    min-width: fit-content;
 }
 
 .postcards {
@@ -892,7 +896,7 @@ header {
 
 /* >> Special Classes << */
 
-.radio-button{
+.radio-button {
     width: unset;
     display: flex;
     align-items: center;
@@ -912,13 +916,14 @@ header {
     transition: all 0.1s linear;
     cursor: pointer;
 }
-.radio-button-group input:checked + label{
+
+.radio-button-group input:checked+label {
     background-color: var(--primary);
     color: #FFFFFF;
     font-weight: 700;
 }
 
-.wide-button{
+.wide-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -932,6 +937,24 @@ header {
     font-size: 16px;
 }
 
+.reels-exit {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background: #676767;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+}
+.reels-exit img{
+    width: 12px;
+    height: 12px;
+    
+}
+
 /* >> Reels Sidebar  << */
 
 /*
@@ -943,44 +966,102 @@ header {
 }
 */
 
-.sidebar-reels .modal-content{
+.sidebar-reels .modal-content {
     min-width: unset;
     max-width: unset;
     min-height: unset;
     max-height: unset;
     display: flex;
-    width: 400px;
+    justify-content: space-between;
+    width: max-content;
     height: 800px;
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     border-radius: 15px;
 }
-.sidebar-reels .modal-header{
+
+.sidebar-reels .modal-header {
     display: flex;
     position: relative;
-    background-color: red;
+    justify-content: space-between;
+    padding-top: 25px;
+    align-items: flex-start;
+    z-index: 13;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.8) 40.63%, rgba(0, 0, 0, 0) 100%);
     width: 400px;
     height: 120px;
+    border-radius: 15px 15px 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
 }
-.sidebar-reels .reels-video{
+
+.sidebar-reels .celebritie-subtitle span:last-of-type::before {
+    content: "● ";
+}
+
+.sidebar-reels .reels-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.sidebar-reels .modal-header>div:last-child {
+    display: flex;
+    gap: 7px;
+}
+
+.sidebar-reels .modal-header>div div:last-child {
+    justify-content: space-between;
+    white-space: nowrap;
+    width: 250px;
+    max-width: 300px;
+}
+
+.sidebar-reels .profile-image {
+    width: 100%;
+    min-width: 41px;
+}
+
+.sidebar-reels .modal-body {
+    all: unset;
+    display: flex;
+    position: relative;
+    z-index: 13;
+    top: auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    width: 400px;
+    height: 420px;
+    border-radius: 0 0 15px 15px;
+}
+
+.sidebar-reels .reels-video {
     z-index: 11;
     display: flex;
-    position: fixed ;
+    position: fixed;
+    overflow: hidden;
     width: 400px;
     height: 800px;
 }
-.sidebar-reels .modal-content::before{
-    z-index: 13;
+
+.sidebar-reels video {
+    z-index: 12;
+    width: 400px;
+    height: fit-content;
+}
+
+.sidebar-reels .modal-content::before {
     content: "";
     position: fixed;
     width: 400px;
     height: 800px;
     top: calc(50% - 400px);
     left: calc(50% - 200px);
+    border-radius: 15px;
     background: rgba(0, 0, 0, 0.1);
-}
-.sidebar-reels .modal-header{
-    border-bottom: 0;
-    padding-bottom: 10px;
 }
 
 
@@ -988,14 +1069,14 @@ header {
 
 /* >> Settings Sidebar << */
 
-.settings-menu{
+.settings-menu {
     display: flex;
     justify-content: center;
     color: var(--black);
     font-size: 1rem;
 }
 
-.modal-content{
+.modal-content {
     width: 28vw;
     min-width: 275px;
     max-width: 20vw;
@@ -1004,28 +1085,30 @@ header {
     min-height: 375px;
     border-radius: 20px;
 }
-.modal-header{
+
+.modal-header {
     border-bottom: 0;
     padding-bottom: 10px;
 }
 
-.modal-header span.bold-title{
+.modal-header span.bold-title {
     display: flex;
     gap: 3px;
     color: var(--primary);
 }
 
-.modal-body{
+.modal-body {
     height: 300px;
     padding-top: 8px;
 }
-.modal-body ul{
+
+.modal-body ul {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.modal-body li{
+.modal-body li {
     margin-left: 5px;
     display: flex;
     justify-content: flex-start;
@@ -1034,99 +1117,109 @@ header {
     column-gap: 15px;
     font-weight: 700;
 }
-.modal-body > ul > li:nth-child(-n+6)::after{
+
+.modal-body>ul>li:nth-child(-n+6)::after {
     content: "";
     display: flex;
-    vertical-align:middle;
+    vertical-align: middle;
     position: absolute;
     width: 65%;
-    margin-top: 45px; 
+    margin-top: 45px;
     margin-left: 40px;
     border-bottom: 0.5px solid rgba(129, 31, 93, 0.3);
 }
 
 /* >> Dark Mode Menu << */
 
-.darkmode-setting .modal-content{
+.darkmode-setting .modal-content {
     max-height: unset;
     min-height: unset;
     height: 160px;
     border-radius: 20px;
 }
-.darkmode-setting .modal-body{
+
+.darkmode-setting .modal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
 }
-.darkmode-setting .modal-body div:first-child{
+
+.darkmode-setting .modal-body div:first-child {
     display: flex;
     width: 250px;
     justify-content: center;
     gap: 5px;
 }
-.darkmode-setting .modal-body div:last-child{
+
+.darkmode-setting .modal-body div:last-child {
     display: flex;
 }
 
 /* >> Profile Settings Menu << */
 
-.profile-settings .modal-content{
+.profile-settings .modal-content {
     max-height: unset;
     min-height: unset;
     width: 400px;
-    min-width:max-content;
+    min-width: max-content;
     height: 300px;
     border-radius: 20px;
 }
 
-.profile-settings .modal-body{
+.profile-settings .modal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
 }
-.profile-settings .profile-inputs{
+
+.profile-settings .profile-inputs {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     gap: 5px;
 }
-.profile-settings .profile-inputs div{ 
+
+.profile-settings .profile-inputs div {
     display: flex;
     width: 100%;
     gap: 7px;
     align-items: center;
     justify-content: space-between;
 }
+
 .profile-inputs .radio-button {
     min-width: 25px;
     padding: 10px 30px;
     max-width: 45px;
     margin-left: 5px;
 }
-.profile-inputs span{
+
+.profile-inputs span {
     white-space: nowrap;
     margin-right: 7px;
 }
-.profile-inputs input{
+
+.profile-inputs input {
     border: 0;
     outline: 0;
 }
-.profile-inputs input::placeholder{
+
+.profile-inputs input::placeholder {
     text-align: end;
 }
 
-.profile-settings .modal-body div:last-child{
+.profile-settings .modal-body div:last-child {
     display: flex;
 }
 
 /* >> Language Settings Menu << */
 
-.language-settings .modal-body{
+.language-settings .modal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1135,16 +1228,18 @@ header {
 
     height: 150px;
 }
-.language-settings .wide-button{
+
+.language-settings .wide-button {
     width: 250px;
 }
 
-.language-settings .modal-body div:first-child{
+.language-settings .modal-body div:first-child {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-.language-settings label{
+
+.language-settings label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1153,32 +1248,36 @@ header {
     gap: 7px;
     border-bottom: 0.5px solid rgba(129, 31, 93, 0.3);
 }
-.language-settings label:last-child{
+
+.language-settings label:last-child {
     border: 0;
 }
-.language-settings input:checked + label{
+
+.language-settings input:checked+label {
     font-weight: 700;
     font-size: 1rem;
 }
-.language-settings label > span{
+
+.language-settings label>span {
     visibility: hidden;
 }
-.language-settings input:checked + label > span{
+
+.language-settings input:checked+label>span {
     visibility: visible;
 }
 
 /* >> Notification Settings Menu << */
 
-.notification-settings .modal-content{
+.notification-settings .modal-content {
     max-height: unset;
     min-height: unset;
     width: 400px;
-    min-width:max-content;
+    min-width: max-content;
     border-radius: 20px;
     font-weight: 700;
 }
 
-.notification-settings .modal-body{
+.notification-settings .modal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1187,7 +1286,8 @@ header {
     height: 200px;
     padding: 20px;
 }
-.notification-settings .notification-inputs{
+
+.notification-settings .notification-inputs {
     gap: 20px;
     padding-left: unset;
     display: flex;
@@ -1195,7 +1295,8 @@ header {
     width: 100%;
     justify-content: center;
 }
-.notification-settings .notification-inputs div{ 
+
+.notification-settings .notification-inputs div {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -1203,16 +1304,16 @@ header {
 
 /* >> Password Settings Menu << */
 
-.password-settings .modal-content{
+.password-settings .modal-content {
     max-height: unset;
     min-height: unset;
     width: 400px;
-    min-width:max-content;
+    min-width: max-content;
     border-radius: 20px;
     font-weight: 700;
 }
 
-.password-settings .modal-body{
+.password-settings .modal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1220,7 +1321,8 @@ header {
     gap: 15px;
     height: 200px;
 }
-.password-settings .password-inputs{
+
+.password-settings .password-inputs {
     gap: 20px;
     padding-left: unset;
     display: flex;
@@ -1228,14 +1330,16 @@ header {
     width: 100%;
     justify-content: center;
 }
-.password-settings .password-inputs div{ 
+
+.password-settings .password-inputs div {
     display: flex;
     width: 100%;
     align-items: center;
     gap: 15px;
     justify-content: space-between;
 }
-.password-settings .password-inputs input{ 
+
+.password-settings .password-inputs input {
     border: 0;
     outline: 0;
     border-bottom: 1px solid #D9D9D9;
@@ -1243,7 +1347,7 @@ header {
 
 /* >> Legal Informations Menu << */
 
-.legalinfo-settings .modal-body{
+.legalinfo-settings .modal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1254,16 +1358,17 @@ header {
     padding-top: 0;
 }
 
-.legalinfo-settings .modal-body div:first-child{
+.legalinfo-settings .modal-body div:first-child {
     width: fit-content;
     text-align: start;
     height: 300px;
     overflow-y: auto;
     margin-bottom: 20px;
 }
+
 /* >> About Site Menu << */
 
-.aboutsite-settings .modal-body{
+.aboutsite-settings .modal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1274,7 +1379,7 @@ header {
     padding-top: 0;
 }
 
-.aboutsite-settings .modal-body div:first-child{
+.aboutsite-settings .modal-body div:first-child {
     width: fit-content;
     text-align: start;
     height: 300px;
@@ -1302,9 +1407,12 @@ header {
 }
 
 @media(max-width: 1199px) {
-    html,body{
+
+    html,
+    body {
         font-size: 0.85rem;
     }
+
     .sidebar {
         top: unset;
         box-shadow: unset;
@@ -1412,28 +1520,34 @@ header {
         width: 25vw;
     }
 }
+
 @media(max-width: 619px) {
-    html,body{
+
+    html,
+    body {
         font-size: 0.75rem;
     }
+
     .postcards {
         row-gap: 20px;
         padding-bottom: 20px;
     }
+
     .postcard-inclusive {
         width: calc(150px + 36px);
         height: calc(225px + 12px);
     }
+
     .postcard {
         min-width: 186px;
         height: auto;
     }
-    
+
     .postcard-header {
         width: 150px;
         height: 225px;
     }
-    
+
     .postcard-body {
         row-gap: 9px;
         width: 150px;
@@ -1441,7 +1555,7 @@ header {
         margin-left: 32px;
         margin-top: 16px;
     }
-    
+
     .postcard-item {
         margin-right: 8px;
         margin-left: auto;
@@ -1450,26 +1564,31 @@ header {
         gap: 5px;
         font-size: 12px;
     }
+
     .postcard-item>img {
         width: 100%;
         min-width: 24px;
     }
 }
+
 @media(max-width: 372px) {
     .postcards {
         row-gap: 20px;
         padding-bottom: 20px;
     }
+
     .postcard-inclusive {
         width: calc(125px + 24px);
         height: calc(175px + 8px);
     }
+
     .postcard {
         min-width: 150px;
         height: auto;
         font-size: 10px;
     }
-    .postcard-header > span > img{
+
+    .postcard-header>span>img {
         width: 24px;
         right: 2px;
         bottom: 5px;
@@ -1479,7 +1598,7 @@ header {
         width: 125px;
         height: 175px;
     }
-    
+
     .postcard-body {
         row-gap: 9px;
         width: 125px;
@@ -1487,7 +1606,7 @@ header {
         margin-left: 24px;
         margin-top: 8px;
     }
-    
+
     .postcard-item {
         margin-right: 8px;
         margin-left: auto;
@@ -1496,6 +1615,7 @@ header {
         gap: 5px;
         font-size: 10px;
     }
+
     .postcard-item>img {
         width: 100%;
         min-width: 16px;
