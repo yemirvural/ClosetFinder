@@ -33,13 +33,14 @@
 
 [] Dark/Light Mod Variables hazırlanacak. 
 [] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü (hamburger).
+[] Sidebar reels modali hazırlanacak.
 
 [] Profil detay sayfaları: 
 + Her sayfaya [~Breadcrumb] eklenecek.
 + Filter & Sorting Modals.
 
-[] tüm px değerleri rem ile değişecek. 
-[] Responsive >>>> Story container, Celebrities container, Reels container. (?)
+[] Responsive typography >> (tüm px değerleri rem ile değişecek). 
+[] Responsive containers >>>> Story container, Celebrities container, Reels container. (check it)
 
 [] Animations:
 + Hover

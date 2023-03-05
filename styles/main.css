@@ -945,14 +945,34 @@ header {
     min-width: 24px;
     width: 24px;
     height: 24px;
-    background: #676767;
+    background: rgb(103, 103, 103, 0.45);
     border: 1px solid #FFFFFF;
     border-radius: 6px;
 }
-.reels-exit img{
+
+.reels-exit img {
     width: 12px;
     height: 12px;
-    
+
+}
+
+.reels-button {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    min-width: 39px;
+    width: 39px;
+    height: 39px;
+    background: rgba(129, 31, 93, 0.3);
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+}
+
+.reels-button img {
+    width: 22px;
+    height: 20px;
+
 }
 
 /* >> Reels Sidebar  << */
@@ -975,7 +995,7 @@ header {
     justify-content: space-between;
     width: max-content;
     height: 800px;
-    background-color: var(--white);
+    background-color: var(--dark);
     border-radius: 15px;
 }
 
@@ -989,7 +1009,7 @@ header {
     background: linear-gradient(180deg, rgba(26, 26, 26, 0.8) 40.63%, rgba(0, 0, 0, 0) 100%);
     width: 400px;
     height: 120px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 13px 13px 0 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
@@ -1002,19 +1022,25 @@ header {
     content: "● ";
 }
 
+.modal-header a.celebritie-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 22px;
+}
+
 .sidebar-reels .reels-title {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
 }
+
 .sidebar-reels .modal-header>div:last-child {
     display: flex;
     gap: 7px;
 }
 
-.sidebar-reels .modal-header>div div:last-child {
+.sidebar-reels .reels-title div:last-child {
     justify-content: space-between;
     white-space: nowrap;
     width: 250px;
@@ -1024,18 +1050,6 @@ header {
 .sidebar-reels .profile-image {
     width: 100%;
     min-width: 41px;
-}
-
-.sidebar-reels .modal-body {
-    all: unset;
-    display: flex;
-    position: relative;
-    z-index: 13;
-    top: auto;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-    width: 400px;
-    height: 420px;
-    border-radius: 0 0 15px 15px;
 }
 
 .sidebar-reels .reels-video {
@@ -1064,8 +1078,173 @@ header {
     background: rgba(0, 0, 0, 0.1);
 }
 
+.sidebar-reels .modal-body {
+    all: unset;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 13;
+    top: auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    width: 400px;
+    height: 450px;
+    border-radius: 0 0 14px 14px;
+}
 
+.sidebar-reels .modal-body>div:first-child {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 0 15px;
+}
 
+.sidebar-reels .reels-description {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    flex-direction: column;
+    gap: 5px;
+    width: 320px;
+}
+
+.sidebar-reels .modal-body .description-title {
+    position: relative;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF; 
+}
+
+.sidebar-reels .description-article {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    width: 320px;
+    height: 60px;
+    line-height: 20px;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+    transition: all 1s linear;
+}
+
+.sidebar-reels .description-more-button {
+    z-index: 5555;
+    position: absolute;
+    text-decoration: underline;
+    color: #FFFFFF;
+    bottom: 0;
+    right: 70px;
+    cursor: pointer;
+}
+
+.sidebar-reels .description-more-input {
+    visibility: hidden;
+}
+
+.sidebar-reels .description-more-input:checked  + .description-more-button + .reels-description > .description-article {
+    height: 160px;
+    overflow: auto;
+}
+
+.sidebar-reels .reels-interaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar-reels .reels-items {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar-reels .reels-slider {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    height: 250px;
+    overflow-x: auto;
+    margin-left: 35px;
+}
+
+.sidebar-reels .reels-items>span {
+    display: flex;
+    position: absolute;
+    top: calc(50% - 28px);
+    left: -15px;
+    color: #FFFFFF;
+    rotate: -90deg;
+    font-weight: 500;
+}
+
+.sidebar-reels .reels-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 8px;
+}
+
+.sidebar-reels .reels-item img {
+    border-radius: 15px;
+    min-width: 100px;
+    min-height: 160px;
+}
+
+.sidebar-reels .reels-item .price-tag {
+    margin-top: 140px;
+    margin-bottom: 15px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    width: 80px;
+    height: 30px;
+    background: rgba(129, 31, 93, 0.7);
+    border-radius: 10px;
+}
+
+.sidebar-reels .reels-item .price-tag span {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(129, 31, 93, 0.7);
+    border-radius: 10px;
+}
+
+.sidebar-reels .reels-item .price-tag img {
+    all: unset;
+    width: 15px;
+}
+
+.sidebar-reels .reels-item .item-name {
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
 
 /* >> Settings Sidebar << */
 
