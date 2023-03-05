@@ -25,6 +25,8 @@
 [X] Bootstrap >> Modals & Navigations
 [X] Post-card title >> margin-left.
 [X] Options section tüm ekran boyutlarına duyarlı şekilde kurulacak.
+[X] Sidebar reels modali hazırlanacak.
+
 
 [] Mobil için post-card boyutlandırmaları 2'li grid:
 + [x] grid sistemi 
@@ -33,7 +35,6 @@
 
 [] Dark/Light Mod Variables hazırlanacak. 
 [] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü (hamburger).
-[] Sidebar reels modali hazırlanacak.
 
 [] Profil detay sayfaları: 
 + Her sayfaya [~Breadcrumb] eklenecek.
