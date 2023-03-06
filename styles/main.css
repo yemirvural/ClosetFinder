@@ -2258,3 +2258,51 @@ header {
     width: 16px;
     height: 16px;
 }
+
+
+
+
+@media(max-width: 595px) {
+    .closet-cards {
+        row-gap: 40px;
+    }
+    .closet-card {
+        width: 180px;
+        height: 250px;
+    }
+    .closet-container {
+        max-width: 450px;
+        height: 250vh;
+    }
+    .closet-card img{
+        width: 95px;
+        height: 145px;
+    }
+    .closet-card .item-name{
+        position: absolute;
+        bottom: 60px;
+        height: 18px;
+        font-size: 14px;
+        max-width: 150px;
+    }
+    .closet-card .item-tag{
+        bottom: 35px;
+        border-radius: 5px;
+        padding: 3px 6px;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    .closet-card .price-tag{
+        bottom: -10px;
+        height: 28px;
+        padding: 5px 20px;
+        width: 80px;
+        border-radius: 3px;
+        font-size: 16px;
+        gap: 5px;
+    }
+    .closet-card .price-tag img{
+        width: 11px;
+        height: 11px;
+    }
+}
