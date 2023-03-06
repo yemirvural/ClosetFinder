@@ -1227,11 +1227,8 @@ header {
     min-height: 160px;
 }
 
-.sidebar-reels .reels-item .price-tag {
-    margin-top: 140px;
-    margin-bottom: 15px;
+.price-tag {
     display: flex;
-    position: absolute;
     justify-content: center;
     align-items: center;
     font-size: 18px;
@@ -1242,8 +1239,16 @@ header {
     background: rgba(129, 31, 93, 0.7);
     border-radius: 10px;
 }
+.sidebar-reels .price-tag {
+    margin-top: 140px;
+    margin-bottom: 15px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
 
-.sidebar-reels .reels-item .price-tag span {
+.price-tag span {
     display: flex;
     z-index: 0;
     position: absolute;
@@ -1256,6 +1261,9 @@ header {
     border-radius: 10px;
 }
 
+.price-tag img {
+    width: 15px;
+}
 .sidebar-reels .reels-item .price-tag img {
     all: unset;
     width: 15px;
@@ -2197,16 +2205,15 @@ header {
     position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+
+    gap:25px;
     padding-top: 15px;
-    font-family: 'Inter';
-    font-style: normal;
-    
+
     width: 300px;
     height: 380px;
 
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 20px;
     background: #FFFFFF;
     border: 1px solid #D9D9D9;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -2215,4 +2222,39 @@ header {
 .closet-card img{
     width: 155px;
     height: 235px;
+}
+.closet-card .item-name{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1rem;
+    white-space: nowrap;
+    height: 1rem;
+    max-width: 260px;
+}
+.closet-card .item-tag{
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    align-items: center;
+    background: #FFFFFF;
+    border: 0.25px solid #801E5C;
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.closet-card .price-tag{
+    position: absolute;
+    bottom: -10px;
+    justify-content: space-around;
+    height: 40px;
+    width: 125px;
+    background: #801E5C;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-size: 18px;
+}
+.closet-card .price-tag img{
+    width: 16px;
+    height: 16px;
 }
