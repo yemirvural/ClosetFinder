@@ -27,25 +27,30 @@
 [X] Options section tüm ekran boyutlarına duyarlı şekilde kurulacak.
 [X] Sidebar reels modali hazırlanacak.
 
+[] Profil detay sayfaları: 
++ Her sayfaya [~Breadcrumb] eklenecek.
++ Filter & Sorting Modals.
+
+
+[] Custom buttonlar için responsive ayarları.
+[] Responsive typography >> (tüm px değerleri rem ile değişecek). 
+
+[] Responsive containers >>>> Story container, Celebrities container, Reels container. (check it)
 
 [] Mobil için post-card boyutlandırmaları 2'li grid:
 + [x] grid sistemi 
 + [] font sizing
 + [] img sizing
 
-[] Dark/Light Mod Variables hazırlanacak. 
 [] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü (hamburger).
-
-[] Profil detay sayfaları: 
-+ Her sayfaya [~Breadcrumb] eklenecek.
-+ Filter & Sorting Modals.
-
-[] Responsive typography >> (tüm px değerleri rem ile değişecek). 
-[] Responsive containers >>>> Story container, Celebrities container, Reels container. (check it)
+[] Dark/Light Mod Variables hazırlanacak. 
+[] CSS sayfalarını düzenle/ayır.
 
 [] Animations:
 + Hover
 + Slide
+
+
 
 [] Icon detayları.
 [] Responsive Check
