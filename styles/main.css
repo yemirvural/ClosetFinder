@@ -487,6 +487,7 @@ header {
     display: flex;
     justify-content: flex-start;
     color: var(--dark);
+    background-color: var(--white);
 }
 
 .main-container img {
@@ -1837,36 +1838,57 @@ header {
 
 
 .profile-container{
-    z-index: 4;
     display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 550px;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url(/assets/Rectangle\ 236.svg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: auto 350px ;
+    height: 350px;
+    min-height: 350px;
 }
 
-.profile-container .profile-bg-photo{
+.profile-full{
     display: flex;
+    position: relative;
     justify-content: center;
-    position: absolute;
+    align-items: center;
     width: 100%;
-    height: 350px;
-    top: 0;
-    right: 0;
+    height: 200px;
+    background-color: #801E5C;
 }
-.profile-container .profile-bg-photo img{
-    width: 1650px;
-    height: auto;
-    position: absolute;
+.profile-container .profile-info-inclusive{
+    z-index: 2;
+    display: flex;
+    max-width: 1600px;
+    width: 1400px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    background-color: red;
 }
+
 .profile-container .profile-photo{
     z-index: 2;
     border: 1px solid #FFFFFF;
-    width: 179px;
-    height: auto;
     border-radius: 10px;
-    position: absolute;
-    margin-right: 1200px;
+    left: 0;
+    position: relative;
+    margin-right: 10px;
 }
+.profile-container .profile-photo img{
+    max-width: unset;
+    display: flex;
+    width: 179px;
+    min-width: 80px;
+    height: auto;
+}
+
 .profile-container .profile-title{
     display: flex;
     position: relative;
@@ -1878,23 +1900,12 @@ header {
     color: #FFFFFF;
     font-weight: 100;
 }
-.profile-container .profile-info-inclusive{
-    z-index: 2;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    position: relative;
-    padding: 0 75px;
-    top: 300px;
-}
+
 
 .profile-container .profile-box-inclusive{
     z-index: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
 }
 
 .profile-container .profile-bio-box{
@@ -1904,34 +1915,35 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px 15px;
-    width: 1200px;
+    width: 85%;
     height: 125px;
     font-size: 16px;
 }
+
+/*
 .profile-container .profile-bio-box::before{
     z-index: -1;
     content: "";
     display: flex;
     position: absolute;
-    top: 0;
-    right: 0;
     width: 1450px;
     height: 150px;
     border-radius: 23px;
     background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(5px);
-    
+    backdrop-filter: blur(5px);  
 }
-.profile-container .profile-bio{              
+*/
+.profile-container .profile-bio{
+    all: unset;              
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 900px;
+    width: 100%;
     height: auto;
     overflow: hidden;
-    max-height: 100px;
+    max-height: 125px;
     font-weight: 500px;
     font-size: 24px;
     line-height: 24px;
@@ -2001,7 +2013,7 @@ header {
     position: absolute;
     margin-left: 1.5px;
     width: 133px;
-    height: 1.5px;
+    height: 1px;
     background-color: #FFFFFF;
 
 }
