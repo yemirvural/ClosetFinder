@@ -2164,3 +2164,55 @@ header {
     }
     
 }
+
+
+
+
+
+/* Closet Page */ /* Closet Page */ /* Closet Page */ /* Closet Page */ /* Closet Page */ 
+
+
+.closet-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: #FFFFFF;
+    max-width: 970px;
+    height: 250vh;
+    align-items: flex-start;
+    min-width: min-content;
+}
+
+.closet-cards {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-evenly;
+    row-gap: 30px;
+    padding-bottom: 50px;
+}
+
+.closet-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    
+    width: 300px;
+    height: 380px;
+
+    font-weight: 700;
+    font-size: 16px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+.closet-card img{
+    width: 155px;
+    height: 235px;
+}
