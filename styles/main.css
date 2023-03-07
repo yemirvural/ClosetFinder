@@ -2390,16 +2390,32 @@ header {
     right: 50px;
     width: fit-content;
     border: 1px solid #E6E6E6;
+}
 
-    /* 
-    width: auto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    height: max-content;
-    margin-bottom: 15px;
 
-    left: 50%;
-    gap: 5px;
-*/
+
+/* Magazine Detail Page */ /* Magazine Detail Page */ /* Magazine Detail Page */ /* Magazine Detail Page */ /* Magazine Detail Page */ 
+
+.magazine-detail-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    max-width: 1250px;
+    height: 600vh;
+    align-items: flex-start;
+    width: 85%;
+}
+.magazine-detail-container .magazine-detail-article{
+    display: flex;
+    width: 1250px;
+    white-space:pre-line;
+    
+    margin-top: 90px;
+    
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #3D3D3D;
+
+
 }
