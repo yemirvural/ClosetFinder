@@ -244,7 +244,7 @@ header {
     align-items: flex-start;
     row-gap: 5px;
     column-gap: 10px;
-    height: 100px;
+    height: 135px;
 }
 
 .event-hashtags li {
@@ -2658,9 +2658,14 @@ ol.breadcrumb .active{
     height: 39px;
 }
 .popular-events-header + .event-hashtags{
-    max-width: 1000px;
+    width: 100%;
 }
 .popular-events-header + .event-hashtags ul{
-    gap: 0px;
-    height: 125px;
+    gap: 0;
+    height: 120px;
+}
+.magazine-container{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1250px;
 }
