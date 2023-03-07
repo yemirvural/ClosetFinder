@@ -244,7 +244,7 @@ header {
     align-items: flex-start;
     row-gap: 5px;
     column-gap: 10px;
-    height: 135px;
+    height: 90px;
 }
 
 .event-hashtags li {
@@ -2645,7 +2645,7 @@ ol.breadcrumb .active{
 
 /* Magazine Page */ /* Magazine Page */ /* Magazine Page */ /* Magazine Page */ /* Magazine Page */ 
 
-.event-hashtags span{
+.all-magazine-container .event-hashtags span{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2654,15 +2654,15 @@ ol.breadcrumb .active{
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
-    width: 125px;
-    height: 39px;
+    width: 119px;
+    height: 29px;
 }
 .popular-events-header + .event-hashtags{
     width: 100%;
 }
-.popular-events-header + .event-hashtags ul{
+.all-magazine-container .event-hashtags ul{
     gap: 0;
-    height: 120px;
+    height: 95px;
 }
 .magazine-container{
     margin-top: 50px;
