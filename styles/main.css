@@ -2702,8 +2702,9 @@ ol.breadcrumb .active{
     all: unset;
     display: flex;
     position: relative;
-    width: 101px;
+    width: 85px;
     height: 29px;
+    padding-left: 20px;
     justify-content: center;
     align-items: center;
     background: #FFFFFF;
@@ -2711,6 +2712,59 @@ ol.breadcrumb .active{
     border-radius: 7px;
 }
 .saved-header .share-button span{
+    all: unset;
+    display: flex;
+    left: 8px;
+    bottom: 4px;
+    position: absolute;
+    width: 17px;
+}
+
+/* Outfits Page */ /* Outfits Page */ /* Outfits Page */ /* Outfits Page */ /* Outfits Page */ 
+
+.outfits-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 65px;
+    height: 85px;
+}
+.outfits-header-title{ 
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.outfits-header-title .bold-title{ 
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 16px;
+    color: #202020;
+}
+.outfits-header .follow-button{
+    white-space: nowrap;
+    width:73px;
+    height:27px;
+    font-weight: 700;
+    font-size: 12px;
+    background: #801E5C;
+    border: 1px solid #FFFFFF;
+    border-radius: 13.5px;
+}
+.outfits-header .share-button{
+    all: unset;
+    display: flex;
+    position: relative;
+    width: 85px;
+    height: 29px;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+.outfits-header .share-button span{
     all: unset;
     display: flex;
     left: 8px;
