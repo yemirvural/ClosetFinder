@@ -207,11 +207,30 @@ header {
 .last-searchs ul>li span {
     display: flex;
 }
+.popular-events-header{ 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+    gap: 5px;
+    margin-top: 42px;
+}
+.popular-events-header span{ 
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 16px;
+}
+.popular-events-header img{
+    width: 30px;
+    height: auto;
+}
 
 .popular-events {
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
+    max-width: 1250px;
+    overflow: hidden;
 }
 
 .event-hashtags ul {
@@ -2393,7 +2412,6 @@ header {
 }
 
 
-
 /* Magazine Detail Page */ /* Magazine Detail Page */ /* Magazine Detail Page */ /* Magazine Detail Page */ /* Magazine Detail Page */ 
 
 .magazine-header{
@@ -2625,3 +2643,24 @@ ol.breadcrumb .active{
 
 
 
+/* Magazine Page */ /* Magazine Page */ /* Magazine Page */ /* Magazine Page */ /* Magazine Page */ 
+
+.event-hashtags span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #232323;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    width: 125px;
+    height: 39px;
+}
+.popular-events-header + .event-hashtags{
+    max-width: 1000px;
+}
+.popular-events-header + .event-hashtags ul{
+    gap: 0px;
+    height: 125px;
+}
