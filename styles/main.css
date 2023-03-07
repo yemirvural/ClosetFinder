@@ -2396,6 +2396,56 @@ header {
 
 /* Magazine Detail Page */ /* Magazine Detail Page */ /* Magazine Detail Page */ /* Magazine Detail Page */ /* Magazine Detail Page */ 
 
+.magazine-header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    max-height: 350px;
+
+}
+.magazine-header > div:first-child{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    max-height: 350px;
+    background-image: url(/assets/article-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.magazine-header .container{
+    max-width: 1250px;
+    width: 85%;
+}
+
+.magazine-header img{
+    width: 100%;
+}
+.magazine-header .article-title{
+    display: flex;
+    position: absolute;
+    bottom: 27px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.profile-breadcrumb{
+    position: absolute;
+    left: 12px;
+    top: 37px;    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    color: #202020;
+}
+
+ol.breadcrumb .active{
+    color:#202020;
+    font-weight: 700;
+}
+
 .magazine-detail-container{
     display: flex;
     position: relative;
