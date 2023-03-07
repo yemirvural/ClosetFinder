@@ -45,6 +45,7 @@
 [] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü (hamburger).
 [] Dark/Light Mod Variables hazırlanacak. 
 [] CSS sayfalarını düzenle/ayır.
+[] Sidebar actibe color.
 
 [] Animations:
 + Hover

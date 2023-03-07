@@ -982,6 +982,7 @@ header {
     border: 1px solid #FFFFFF;
     border-radius: 13.5px;
     align-items: center;
+    justify-content: center;
     text-align: center;
     font-weight: 600;
     font-size: 16px;
@@ -2328,7 +2329,6 @@ header {
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: hidden;
     width: 100%;
 }
 
@@ -2449,10 +2449,11 @@ ol.breadcrumb .active{
 .magazine-detail-container{
     display: flex;
     position: relative;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     max-width: 1250px;
     height: 600vh;
-    align-items: flex-start;
+    align-items: center;
     width: 85%;
 }
 .magazine-detail-container .magazine-detail-article{
@@ -2461,11 +2462,157 @@ ol.breadcrumb .active{
     white-space:pre-line;
     
     margin-top: 90px;
+    margin-bottom: 75px;
     
     font-weight: 400;
     font-size: 26px;
     line-height: 30px;
     color: #3D3D3D;
-
-
 }
+
+.magazine-detail-footer{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+}
+
+.magazine-detail-container .writer-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 370px;
+    height: 65px;
+    gap: 7px;
+}
+.magazine-detail-container .writer-img img{
+    width: 59px;
+    height: 59px;
+    border: 1px solid #801E5C;
+    border-radius: 55px;
+}
+
+.magazine-detail-container .writer-follow{
+    display: flex;
+    flex-direction: column;
+}
+.magazine-detail-container .follow-button{
+    display: flex;
+    background: #FFFFFF;
+    color: #801E5C;
+    border: 1px solid #801E5C;
+    font-weight: 300;
+    justify-content: center;
+    border-radius: 7px;
+    width: 130px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.magazine-detail-container .writer-name{ 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #801E5C;    
+    letter-spacing: 0.5px;
+}
+.magazine-detail-container .subject-hasthags{ 
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    gap: 10px;
+    right: 265px;
+    
+    max-width: 350px;
+    height: 45px;
+}
+.magazine-detail-container .subject-hasthags span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #232323;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    width: 125px;
+    height: 39px;
+}
+
+.magazine-detail-container .subject-hasthags span::before {
+    content: "#";
+}    
+.magazine-detail-container .magazine-interaction {
+    display: flex;
+    position: absolute;
+    gap: 12px;
+    right: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}    
+.magazine-detail-container .share-button{
+    all: unset;
+    display: flex;
+    position: relative;
+    width: 130px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+.magazine-detail-container .share-button span{
+    all: unset;
+    display: flex;
+    left: 10px;
+    bottom: 7px;
+    position: absolute;
+    width: 22px;
+    height :auto;
+}
+.magazine-detail-container .like-button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(128, 30, 92, 0.6);
+    border-radius: 6px;
+    width: 48px;
+    height: 48px;
+}    
+.magazine-detail-container .like-button span img{
+    width: 32px;
+    height: 32px;
+}    
+
+.magazine-detail-container .magazine-similiar{
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #4B4B4B;
+}
+
+.magazine-detail-container .magazine-cards{
+    width: 1250px;
+    row-gap: 50px;
+    column-gap: 21px;
+    height: 1350px;
+    margin-bottom: 150px;
+}
+.magazine-detail-container .magazine-card{
+    width: 400px;
+    height: 360px;
+}
+
+
+
