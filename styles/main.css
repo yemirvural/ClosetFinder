@@ -1650,7 +1650,7 @@ header {
         background-color: #FFFFFF;
         border-radius: 11px;
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
-        min-width: 275px;
+        min-width: 25px;
         width: 75vw;
         height: 4rem;
     }
@@ -1713,8 +1713,12 @@ header {
     }
 
     .header-box {
+        min-width: 280px;
         background-color: #FFFFFF;
         gap: 8px;
+    }
+    .header-box *{
+        min-width: unset;
     }
 
     .header-box>span {
@@ -2174,9 +2178,6 @@ header {
 }
 
 
-
-
-
 /* Closet Page */ /* Closet Page */ /* Closet Page */ /* Closet Page */ /* Closet Page */ 
 
 
@@ -2305,4 +2306,100 @@ header {
         width: 11px;
         height: 11px;
     }
+}
+
+
+
+/* Magazine Page */ /* Magazine Page */ /* Magazine Page */ /* Magazine Page */ /* Magazine Page */ 
+
+
+.magazine-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: #FFFFFF;
+    max-width: 1000px;
+    height: 600vh;
+    align-items: flex-start;
+    min-width: min-content;
+}
+
+.magazine-cards {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.magazine-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 0;
+    
+    max-width: 960px;
+    width: 90%;
+    max-height: 380px;
+    height: 30%;
+    margin-bottom: 45px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.magazine-card .magazine-image{
+    display: flex;
+    width: 100%;
+}
+.magazine-card .magazine-image img{
+    width: 100%;
+}
+.magazine-card .magazine-article{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    row-gap: 12px;
+    font-weight: 300;
+    font-size: 20px;
+
+}
+.magazine-card .magazine-article p{
+    line-height: 1.2rem;
+    height: 3.6rem;
+    overflow: hidden;
+}
+.magazine-card .magazine-article span{
+    color: #4B4B4B;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1rem;
+}
+.magazine-card .more-button {
+    all: unset;
+    display: flex;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 3px 28px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 122.02%;
+    bottom: -14px;
+    right: 50px;
+    width: fit-content;
+    border: 1px solid #E6E6E6;
+
+    /* 
+    width: auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    height: max-content;
+    margin-bottom: 15px;
+
+    left: 50%;
+    gap: 5px;
+*/
 }
