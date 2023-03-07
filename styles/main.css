@@ -2398,11 +2398,11 @@ header {
 
 .magazine-header{
     display: flex;
-    position: relative;
+    position: absolute;
+    align-items: flex-end;
+    top: 0;
     width: 100%;
-    height: 350px;
-    max-height: 350px;
-
+    min-height: 300px;
 }
 .magazine-header > div:first-child{
     display: flex;
@@ -2416,6 +2416,7 @@ header {
 .magazine-header .container{
     max-width: 1250px;
     width: 85%;
+    height: 150px;
 }
 
 .magazine-header img{
@@ -2448,6 +2449,7 @@ ol.breadcrumb .active{
 
 .magazine-detail-container{
     display: flex;
+    margin-top: 335px;
     position: relative;
     flex-direction: column;
     justify-content: flex-start;
@@ -2458,7 +2460,7 @@ ol.breadcrumb .active{
 }
 .magazine-detail-container .magazine-detail-article{
     display: flex;
-    width: 1250px;
+    max-width: 1250px;
     white-space:pre-line;
     
     margin-top: 90px;
@@ -2602,16 +2604,23 @@ ol.breadcrumb .active{
     color: #4B4B4B;
 }
 
+.magazine-detail-container .magazine-similiar-container{
+    display: flex;
+    width: 1450px;
+}
 .magazine-detail-container .magazine-cards{
-    width: 1250px;
+    max-width: 1250px;
     row-gap: 50px;
     column-gap: 21px;
     height: 1350px;
     margin-bottom: 150px;
 }
 .magazine-detail-container .magazine-card{
-    width: 400px;
-    height: 360px;
+    width: 390px;
+    height: 280px;
+}
+.magazine-detail-container .magazine-card .magazine-article{
+    padding: 20px;
 }
 
 
