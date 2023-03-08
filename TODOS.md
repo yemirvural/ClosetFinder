@@ -26,34 +26,24 @@
 [X] Post-card title >> margin-left.
 [X] Options section tüm ekran boyutlarına duyarlı şekilde kurulacak.
 [X] Sidebar reels modali hazırlanacak.
-
-[] Profil detay sayfaları: 
+[X] Profil detay sayfaları: 
 + Her sayfaya [~Breadcrumb] eklenecek.
 + Filter & Sorting Modals.
 
 
 [] Custom buttonlar için responsive ayarları.
 [] Responsive typography >> (tüm px değerleri rem ile değişecek). 
+[] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü.[~Off-Canvas].
 
-[] Responsive containers >>>> Story container, Celebrities container, Reels container. (check it)
-
-[] Mobil için post-card boyutlandırmaları 2'li grid:
-+ [x] grid sistemi 
-+ [] font sizing
-+ [] img sizing
-
-[] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü (hamburger).
-[] Dark/Light Mod Variables hazırlanacak. 
+[] Dark/Light Mod Variables hazırlanacak.[~prefers-color-scheme] 
 [] CSS sayfalarını düzenle/ayır.
-[] Sidebar actibe color.
+[] Sidebar active color. [~svg-path]
 
 [] Animations:
 + Hover
 + Slide
 
 
-
-[] Icon detayları.
 [] Responsive Check
 [] SEO Check
 [] Browser Support Check
@@ -62,6 +52,7 @@
 
 EKSTRA:
 scrollbarlar sadece hover olduğunda gözüksün (?)
+[] Card ve article içi placeholder. [~placeholder]
 
 
 
