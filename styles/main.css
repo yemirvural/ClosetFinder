@@ -226,7 +226,7 @@ header {
     height: auto;
 }
 
-.popular-events-header + .breadcrumb-container  + .popular-events {
+.popular-events {
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
@@ -2967,6 +2967,11 @@ ol.breadcrumb .active{
 .popular-events-header + .event-hashtags{
     width: 100%;
 }
+.all-magazine-container .popular-events{
+    width: 95%;
+    padding: 0;
+}
+
 .all-magazine-container .event-hashtags ul{
     gap: 0;
     height: 95px;
