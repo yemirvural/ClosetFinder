@@ -929,20 +929,58 @@
                 <div class="modal-body">
                     <div>
                         <div class="filter-type">
-                            <span class="title"><a href="">Category</a></span>
-                            <span class="sub-title"><a href="">Kıyafet, Etek, Şapka, Akşam Giyimasdasd</a></span>
+                            <span class="title"><button data-bs-toggle="modal" data-bs-target="#filter-by-category">Category</button></span>
+                            <span class="sub-title"><button data-bs-toggle="modal" data-bs-target="#filter-by-category">Kıyafet, Etek, Şapka, Akşam Giyimasdasd</button></span>
                         </div>
                         <div class="filter-type">
-                            <span class="title"><a href="">Brands</a></span>
-                            <span class="sub-title"><a href="">Nike</a></span>
+                            <span class="title"><button data-bs-toggle="modal" data-bs-target="#filter">Brands</button></span>
+                            <span class="sub-title"><button data-bs-toggle="modal" data-bs-target="#filter">Nike</button></span>
                         </div>
                         <div class="filter-type">
-                            <span class="title"><a href="">Price</a></span>
-                            <span class="sub-title"><a href="">None</a></span>
+                            <span class="title"><button data-bs-toggle="modal" data-bs-target="#filter">Price</button></span>
+                            <span class="sub-title"><button data-bs-toggle="modal" data-bs-target="#filter">None</button></span>
                         </div>
                     </div>
                     <div>
                         <button class="wide-button" data-bs-toggle="modal" data-bs-dismiss="modal">Filtre Uygula</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade filter-by-category" id="filter-by-category" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered settings-menu">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><span class="bold-title"><img src="/assets/Group 659.svg" alt="">Category</span></h5>
+                    <button class="modal-exit" type="button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="checkbox-button-group">
+                            <input type="checkbox" name="sort-options" id="option-1" autocomplete="off" checked>
+                            <label class="checkbox-button" for="option-1"><span><img src="/assets/tick-white.svg" alt=""></span></label>
+                            <label class="form-check-label" for="option-1">Kategori Bir</label>
+                        </div>
+                        <div class="checkbox-button-group">
+                            <input type="checkbox" name="sort-options" id="option-2" autocomplete="off">
+                            <label class="checkbox-button" for="option-2"><span><img src="assets/tick-white.svg" alt=""></span></label>
+                            <label class="form-check-label" for="option-2">Kategori İki</label>
+                        </div>
+                        <div class="checkbox-button-group">
+                            <input type="checkbox" name="sort-options" id="option-3" autocomplete="off">
+                            <label class="checkbox-button" for="option-3"><span><img src="assets/tick-white.svg" alt=""></span></label>
+                            <label class="form-check-label" for="option-3">Kategori Üç</label>
+                        </div>
+                        <div class="checkbox-button-group">
+                            <input type="checkbox" name="sort-options" id="option-4" autocomplete="off">
+                            <label class="checkbox-button" for="option-4"><span><img src="assets/tick-white.svg" alt=""></span></label>
+                            <label class="form-check-label" for="option-4">Kategori Dört</label>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button class="wide-button" data-bs-toggle="modal" data-bs-dismiss="modal">Done</button>
                     </div>
                 </div>
             </div>

@@ -926,13 +926,23 @@ header {
     align-items: center;
     width: 100%;
 }
-.checkbox-button {
+.checkbox-button-group input[type="radio"] + .checkbox-button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 26px;
     height: 26px;
     border-radius: 50%;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+}
+.checkbox-button-group input[type="checkbox"] + .checkbox-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px ;
     background: #D9D9D9;
     border: 1px solid #000000;
 }
@@ -943,7 +953,8 @@ header {
 .checkbox-button-group input:checked + label img{
     visibility: visible;
 }
-.checkbox-button-group input:checked + label{
+
+.checkbox-button-group input[type="radio"]:checked + .checkbox-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -953,6 +964,17 @@ header {
     background: #801E5C;
     border: 1px solid #801E5C;
 }
+.checkbox-button-group input[type="checkbox"]:checked + .checkbox-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    background: #801E5C;
+    border: 1px solid #801E5C;
+}
+
 .checkbox-button-group input:checked + label + label{
     font-weight: 700;
 }
@@ -965,9 +987,6 @@ header {
     padding: 0;
     padding-left: 14px;
     height: 30px;
-}
-.checkbox-button-group input:checked+label {
-
 }
 
 
@@ -1371,7 +1390,6 @@ header {
     min-width: 275px;
     max-width: 20vw;
 
-    max-height: 28vw;
     min-height: 375px;
     border-radius: 20px;
 }
@@ -1771,16 +1789,16 @@ header {
     height: 1px;
     background-color: rgba(0, 0, 0, 0.2);
 }
-.filter-settings .filter-type .title{
+.filter-settings .filter-type .title button{
     font-weight: 700;
     font-size: 20px;
     line-height: 18px;
     color: #3D3D3D;
     margin-bottom: 8px;
 }
-.filter-settings .filter-type .sub-title{
+.filter-settings .filter-type .sub-title button{
     text-overflow: ellipsis;
-    max-width: 280px;
+    max-width: 285px;
     overflow: hidden;
     white-space:nowrap;
     font-weight: 400;
@@ -1790,7 +1808,55 @@ header {
     height: 18px;
 }
 
+/* Filter [Category] */ 
 
+.filter-by-category .modal-content {
+    min-height: 345px;
+}
+.filter-by-category .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    min-height: 150px;
+    height: auto;
+}
+
+.filter-by-category .wide-button {
+    width: 100px;
+    margin-top: 15px;
+}
+
+.filter-by-category .modal-body > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 95%;
+    min-width: 80%;
+}
+.filter-by-category .checkbox-button-group:not(:last-child):after{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 60%;
+    margin-top: 48px;
+    margin-left: 60px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.filter-by-category .bold-title{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 20px;
+}
+.filter-by-category .bold-title img{
+    width: 12px;
+    height: auto;
+}
 
 
 
