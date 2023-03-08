@@ -1680,6 +1680,8 @@ header {
 
 /* Sort/Filter Modal */ /* Sort/Filter Modal */ /* Sort/Filter Modal */ /* Sort/Filter Modal */ /* Sort/Filter Modal */ 
 
+/* Sort by */
+
 .sort-by-settings .modal-content {
     min-height: 345px;
 }
@@ -1727,6 +1729,66 @@ header {
     height: auto;
 }
 
+/* Filter by */
+ 
+.filter-settings .modal-content {
+    max-height: unset;
+    min-height: unset;
+    width: 360px;
+    min-width: max-content;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.filter-settings .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    height: auto;
+    min-height: 200px;
+}
+.filter-settings .modal-body > div:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+}
+.filter-settings .filter-type {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.filter-settings .filter-type:nth-child(-n+2):after{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 60%;
+    margin-top: 57px;
+    margin-left: 40px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.filter-settings .filter-type .title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    color: #3D3D3D;
+    margin-bottom: 8px;
+}
+.filter-settings .filter-type .sub-title{
+    text-overflow: ellipsis;
+    max-width: 280px;
+    overflow: hidden;
+    white-space:nowrap;
+    font-weight: 400;
+    font-size: 16px;
+    color: #801E5C;
+    line-height: 18px;
+    height: 18px;
+}
 
 
 
