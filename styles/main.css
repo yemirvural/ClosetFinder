@@ -918,6 +918,59 @@ header {
 
 /* >> Special Classes << */
 
+
+.checkbox-button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.checkbox-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+}
+.checkbox-button img{
+    visibility: hidden;
+}
+
+.checkbox-button-group input:checked + label img{
+    visibility: visible;
+}
+.checkbox-button-group input:checked + label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #801E5C;
+    border: 1px solid #801E5C;
+}
+.checkbox-button-group input:checked + label + label{
+    font-weight: 700;
+}
+.checkbox-button-group input{
+    visibility: hidden;
+}
+.checkbox-button-group .form-check-label {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-left: 14px;
+    height: 30px;
+}
+.checkbox-button-group input:checked+label {
+
+}
+
+
 .radio-button {
     width: unset;
     display: flex;
@@ -1623,6 +1676,70 @@ header {
     overflow-y: auto;
     margin-bottom: 20px;
 }
+
+
+/* Sort/Filter Modal */ /* Sort/Filter Modal */ /* Sort/Filter Modal */ /* Sort/Filter Modal */ /* Sort/Filter Modal */ 
+
+.sort-by-settings .modal-content {
+    min-height: 345px;
+}
+.sort-by-settings .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    height: 150px;
+}
+
+.sort-by-settings .wide-button {
+    width: 100px;
+}
+
+.sort-by-settings .modal-body > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 95%;
+    min-width: 80%;
+}
+.sort-by-settings .checkbox-button-group:nth-child(-n+4):after{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 60%;
+    margin-top: 48px;
+    margin-left: 60px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sort-by-settings .bold-title{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 20px;
+}
+.sort-by-settings .bold-title img{
+    width: 12px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Mobile Responsive */
 
@@ -2831,3 +2948,4 @@ ol.breadcrumb .active{
     position: absolute;
     width: 17px;
 }
+

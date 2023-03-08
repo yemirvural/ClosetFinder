@@ -432,7 +432,7 @@
                     </div>
                     <div class="post-filter-menu">
                         <div>
-                            <button data-bs-toggle="modal" data-bs-target="#short-by"><span><img src="/assets/sort-by.svg" alt=""></span> Short By</button>
+                            <button data-bs-toggle="modal" data-bs-target="#sort-by"><span><img src="/assets/sort-by.svg" alt=""></span> Sort By</button>
                             <button data-bs-toggle="modal" data-bs-target="#filter"><span><img src="/assets/filter.svg" alt=""></span> Filter</button>
                         </div>
                     </div>
@@ -866,6 +866,88 @@
                     <div class="">
                         <button class="wide-button" data-bs-toggle="modal"
                             data-bs-target="#sidebar-settings">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--       Sorting & Filter Options         -->
+
+    <div class="modal fade sort-by-settings" id="sort-by" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered settings-menu">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><span class="bold-title"><img src="/assets/Group 659.svg" alt="">Sort by</span></h5>
+                    <button class="modal-exit" type="button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="checkbox-button-group">
+                            <input type="radio" name="sort-options" id="default" autocomplete="off" checked>
+                            <label class="checkbox-button" for="default"><span><img src="/assets/tick-white.svg" alt=""></span></label>
+                            <label class="form-check-label" for="default">Varsayılan</label>
+                        </div>
+                        <div class="checkbox-button-group">
+                            <input type="radio" name="sort-options" id="increase" autocomplete="off">
+                            <label class="checkbox-button" for="increase"><span><img src="assets/tick-white.svg" alt=""></span></label>
+                            <label class="form-check-label" for="increase">Artan Fiyat</label>
+                        </div>
+                        <div class="checkbox-button-group">
+                            <input type="radio" name="sort-options" id="decreas" autocomplete="off">
+                            <label class="checkbox-button" for="decreas"><span><img src="assets/tick-white.svg" alt=""></span></label>
+                            <label class="form-check-label" for="decreas">Azalan Fiyat</label>
+                        </div>
+                        <div class="checkbox-button-group">
+                            <input type="radio" name="sort-options" id="popular" autocomplete="off">
+                            <label class="checkbox-button" for="popular"><span><img src="assets/tick-white.svg" alt=""></span></label>
+                            <label class="form-check-label" for="popular">İlgi Görenler</label>
+                        </div>
+                        <div class="checkbox-button-group">
+                            <input type="radio" name="sort-options" id="new" autocomplete="off">
+                            <label class="checkbox-button" for="new"><span><img src="assets/tick-white.svg" alt=""></span></label>
+                            <label class="form-check-label" for="new">Yeni Eklenenler</label>
+                        </div>
+                        <div class="">
+                            <button class="wide-button" data-bs-toggle="modal" data-bs-dismiss="modal">Done</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade language-settings" id="filter" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered settings-menu">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><span class="bold-title"><img src="/assets/Subtract.svg"
+                                alt="">Language</span></h5>
+                    <button class="modal-exit" type="button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+                <div class="modal-body">
+                    <div class="" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="theme-radio" id="en" autocomplete="off" checked>
+                        <label class="" for="en"><span><img src="/assets/tick.svg" alt=""></span>English</label>
+
+                        <input type="radio" class="btn-check" name="theme-radio" id="tr" autocomplete="off">
+                        <label class="" for="tr"><span><img src="/assets/tick.svg" alt=""></span>Türkçe</label>
+
+                        <input type="radio" class="btn-check" name="theme-radio" id="de" autocomplete="off">
+                        <label class="" for="de"><span><img src="/assets/tick.svg" alt=""></span>Deutch</label>
+
+                        <input type="radio" class="btn-check" name="theme-radio" id="es" autocomplete="off">
+                        <label class="" for="es"><span><img src="/assets/tick.svg" alt=""></span>Español</label>
+
+                        <input type="radio" class="btn-check" name="theme-radio" id="fr" autocomplete="off">
+                        <label class="" for="fr"><span><img src="/assets/tick.svg" alt=""></span>Français</label>
+
+                        <input type="radio" class="btn-check" name="theme-radio" id="ru" autocomplete="off">
+                        <label class="" for="ru"><span><img src="/assets/tick.svg" alt=""></span>Русский</label>
+                    </div>
+                    <div class="">
+                        <button class="wide-button" data-bs-toggle="modal" data-bs-dismiss="modal">Done</button>
                     </div>
                 </div>
             </div>
