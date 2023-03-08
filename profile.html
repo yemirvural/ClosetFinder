@@ -379,7 +379,7 @@
     <section>
         <div class="main-container">
                 <div class="profile-container">
-                    <div class="profile-full">
+                    <div class="profile-full container">
                         <div class="profile-info-inclusive"> 
                             <div class="profile-photo">
                                 <img src="/assets/profile-photo.svg" alt="">
@@ -408,7 +408,16 @@
 
                 </div>
                 
-                <div class="posts-section">
+                <div class="posts-section container">
+                    <div class="profile-breadcrumb">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                              <li class="breadcrumb-item" aria-current="page"><a href="profile.html">Profile</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Posts</li>
+                            </ol>
+                          </nav>
+                    </div>
                     <div class="post-tab-menu">
                         <div>
                             <input id="posts" name="tab-menu" type="radio" class="post-tab-input" checked></input>
