@@ -1810,10 +1810,10 @@ header {
 
 /* Filter [Category] */ 
 
-.filter-by-category .modal-content {
+.filter-by-options .modal-content {
     min-height: 345px;
 }
-.filter-by-category .modal-body {
+.filter-by-options .modal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1823,12 +1823,12 @@ header {
     height: auto;
 }
 
-.filter-by-category .wide-button {
+.filter-by-options .wide-button {
     width: 100px;
     margin-top: 15px;
 }
 
-.filter-by-category .modal-body > div:first-child {
+.filter-by-options .modal-body > div:first-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1837,7 +1837,7 @@ header {
     width: 95%;
     min-width: 80%;
 }
-.filter-by-category .checkbox-button-group:not(:last-child):after{
+.filter-by-options .checkbox-button-group:not(:last-child):after{
     content: "";
     display: flex;
     position: absolute;
@@ -1848,12 +1848,12 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.filter-by-category .bold-title{
+.filter-by-options .bold-title{
     font-weight: 700;
     font-size: 22px;
     line-height: 20px;
 }
-.filter-by-category .bold-title img{
+.filter-by-options .bold-title img{
     width: 12px;
     height: auto;
 }
