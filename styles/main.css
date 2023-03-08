@@ -211,9 +211,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 50px;
-    gap: 5px;
-    margin-top: 42px;
+    width: 100%;
+    height: 85px;
+    padding: 0 65px;
+    gap: 11px;
 }
 .popular-events-header span{ 
     font-weight: 700;
@@ -225,14 +226,14 @@ header {
     height: auto;
 }
 
-.popular-events {
+.popular-events-header + .breadcrumb-container  + .popular-events {
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
-    max-width: 1250px;
+    width: 100%;
     overflow: hidden;
+    padding: 0 65px;
 }
-
 .event-hashtags ul {
     width: 100%;
     display: grid;
@@ -915,6 +916,22 @@ header {
     font-size: 12px;
     line-height: 15px;
 }
+
+/* Breadcrumb Container*/
+
+.breadcrumb-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+.breadcrumb-container .profile-breadcrumb{
+    top: 5px;
+    left: 65px;
+}
+
+
 
 /* >> Special Classes << */
 
@@ -2954,10 +2971,15 @@ ol.breadcrumb .active{
     gap: 0;
     height: 95px;
 }
-.magazine-container{
-    margin-top: 50px;
+.all-magazine-container .magazine-container{
+    margin-top: 30px;
     width: 100%;
     max-width: 1250px;
+}
+
+.all-magazine-container .magazine-card{
+    width: 100%;
+    max-width: unset;
 }
 
 /* Saved Page */ /* Saved Page */ /* Saved Page */ /* Saved Page */ /* Saved Page */ 
@@ -3139,10 +3161,6 @@ ol.breadcrumb .active{
     opacity: 0.6;
 }
 
-
-
-
-
 .results-tab-menu{
     display: flex; 
     width: 500px;
@@ -3188,3 +3206,4 @@ ol.breadcrumb .active{
     height: 1px;
     background-color:#FFFFFF;
 }
+
