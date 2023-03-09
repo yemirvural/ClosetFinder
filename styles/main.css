@@ -3238,17 +3238,21 @@ ol.breadcrumb .active{
     max-height: 745px;
 }
 .post-detail-container .post-carousel{
+    all: unset;
     display: flex;
-    z-index: 2;
-    align-items: flex-start;
+    position: relative;
+    align-items: center;
     justify-content: center;
-    width: 45%;
-    height: 745px;
+    width: 100%;
+    max-width: 625px;
+    height: max-content;
     border-radius: 10px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 .carousel-indicators{
     justify-content: center;
     align-items: center;
+    margin-bottom: -35px;
 }
 .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
@@ -3294,11 +3298,13 @@ ol.breadcrumb .active{
 .post-detail-container .post-carousel img{
     width: 100%;
 }
-.post-detail-container .post-info{
+.post-detail-container .post-body{
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: absolute;
     z-index: 1;
-    right: 5px;
+    right: 0;
     margin-top: calc((690px - 635px)/2);
     width: 60%;
     max-width: 625px;
@@ -3306,4 +3312,65 @@ ol.breadcrumb .active{
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 635px;
+}
+.post-detail-container .post-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 45%;
+    max-width: 625px;
+    height: 100%;
+    max-height: 690px;
+    border-radius: 10px;
+}
+.post-info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-top: 25px;
+    width: 100%;
+    max-width: 625px;
+    height: 100%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: red;
+}
+.post-detail-container .post-info-header{
+    display: flex;
+    width: 100%;
+    max-width: 505px;
+    height: 10%;
+    max-height: 45px;
+    background-color: #000000;
+}
+.post-detail-container .post-info-body{
+    display: flex;
+    width: 100%;
+    max-width: 505px;
+    height: 90%;
+    max-height: 475px;
+    background-color: yellow;
+}
+.post-detail-container .post-title{
+
+}
+.post-detail-container .post-article{
+
+}
+.post-detail-container .post-slider{
+
+}
+.post-detail-container .post-item{
+
+}
+.post-detail-container .post-hasthag{
+
+}
+.post-detail-container .post-info-footer{
+
 }
