@@ -476,6 +476,9 @@ header {
     height: 30px;
     width: 30px;
 }
+.sidebar-menu svg path{
+    fill: #8C8C8D;
+}
 .sidebar-menu .active svg path{
     fill: #801E5C;
 }
@@ -1897,30 +1900,15 @@ header {
 
 /* Mobile Responsive */
 
-@media(max-width: 1349px) {
-
-    /* Yandan açılır menü */
-    .sidebar {
-        visibility: hidden;
-    }
-
-    .search-box {
-        margin-left: 10px;
-    }
-
-    .main-container {
-        left: 0px;
-        width: 100%;
-    }
-}
-
 @media(max-width: 1199px) {
-
     html,
     body {
         font-size: 0.85rem;
     }
-
+    .main-container {
+        left: 0px;
+        width: 100%;
+    }
     .sidebar {
         top: unset;
         box-shadow: unset;
@@ -1938,6 +1926,8 @@ header {
 
     .sidebar-menu {
         display: flex;
+        margin-top: 0;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         background-color: #FFFFFF;
@@ -1947,40 +1937,32 @@ header {
         width: 75vw;
         height: 4rem;
     }
-
-    .sidebar ul {
-        margin-top: unset;
-        visibility: hidden;
+    .sidebar-menu > div{
+        display: none;
+        width: fit-content;
+        white-space: nowrap;
+    }
+    .sidebar-menu > div span{
+        display: none;
+    }
+    .sidebar-menu > div.active span{
         display: flex;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        row-gap: 125px;
-        width: 500px;
     }
-
-    .sidebar ul li {
-        margin: unset;
+    .sidebar-menu > div.active{
+        width: 80px;
     }
-
-    .sidebar ul li:nth-child(-n+3) {
+    .sidebar-menu > div:nth-of-type(-n+3){
+        display: flex;
         visibility: visible;
-        width: 50px;
     }
-
-    .sidebar ul li:not(li:nth-child(-n+3)) {
-        display: none;
-    }
-
-    .sidebar span {
-        display: none;
-    }
-
+    
     .logo {
         display: none;
     }
 
     .notification {
-        min-width: 25px;
+        width: 100%;
+        margin-right: 10px;
     }
 
     .profile {
@@ -1989,14 +1971,14 @@ header {
 
     .search-box {
         width: 90%;
+        margin-left: 10px; /* ?? */
     }
 
     .search-box input {
         height: 32px;
-        min-width: 125px;
     }
 
-    .sidebar ul>span {
+    .sidebar .profile-hidden {
         display: flex;
         visibility: visible;
     }
@@ -2006,9 +1988,8 @@ header {
     }
 
     .header-box {
-        min-width: 280px;
+        gap: 0;
         background-color: #FFFFFF;
-        gap: 8px;
     }
     .header-box *{
         min-width: unset;
@@ -2081,6 +2062,9 @@ header {
         width: 100%;
         min-width: 24px;
     }
+    .sidebar-menu {
+        gap: 12px;
+    }
 }
 
 @media(max-width: 372px) {
@@ -2131,6 +2115,12 @@ header {
     .postcard-item>img {
         width: 100%;
         min-width: 16px;
+    }
+    .sidebar-menu {
+        gap: 0;
+    }
+    .sidebar-menu div.active{
+        margin-right: 15px;
     }
 }
 
