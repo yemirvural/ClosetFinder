@@ -107,7 +107,6 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-
 }
 
 /* Detailed Search */
@@ -503,6 +502,7 @@ header {
 
 .sidebar-menu div:last-child {
     position: absolute;
+    margin-top: auto;
     bottom: 25px;
 }
 
@@ -1889,16 +1889,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* Mobile Responsive */
 
 @media(max-width: 1199px) {
@@ -1971,8 +1961,7 @@ header {
     }
 
     .search-box {
-        width: 90%;
-        margin-left: 10px; /* ?? */
+        margin-left: 0;
     }
 
     .search-box input {
@@ -2013,6 +2002,12 @@ header {
     .header-box>span>a {
         width: 25vw;
     }
+
+    .search-detailed {
+        margin-left: 0;
+    }
+
+
 }
 
 @media(max-width: 619px) {
