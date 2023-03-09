@@ -30,9 +30,10 @@
 + Her sayfaya [~Breadcrumb] eklenecek.
 + Filter & Sorting Modals.
 [X] Sidebar active color. [~svg-path]
+[X] Dark/Light Mod Variables hazırlanacak.[~prefers-color-scheme] 
 
+[] Sidebar > Magazine hasthagler düzeltilecek.
 [] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü.[~Off-Canvas].
-[] Dark/Light Mod Variables hazırlanacak.[~prefers-color-scheme] 
 [] Responsive typography >> (tüm px değerleri rem ile değişecek). 
 
 [] Animations:

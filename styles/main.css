@@ -185,6 +185,7 @@ header {
     font-weight: 700;
     font-size: 20px;
     white-space: nowrap;
+    color: var(--font-primary);
 }
 
 .tiny-title {
@@ -192,7 +193,7 @@ header {
     font-weight: 400;
     font-size: 16px;
     opacity: .6;
-    color: #FFFFFF;
+    color: var(--font-primary);
 }
 
 .tiny-size {
@@ -552,6 +553,7 @@ header {
     width: 100%;
     flex-direction: column;
     position: relative;
+    margin-bottom: 45px;
     background-image: url(/assets/background.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -597,29 +599,20 @@ header {
     min-width: 130px;
     height: 200px;
 }
-
-.wave {
-    z-index: 1;
-    position: relative;
-    width: 100%;
-    height: 200px;
+.pull-button{
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    background: url(/assets/svg\ \(1\).png);
-    background-position: 0px;
-    background-repeat: no-repeat;
-    background-size: 100% 150%;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+}
+.pull-button a{
+    z-index: 5;
+    cursor: pointer;
 }
 
-.wave img {
-    display: flex;
-    position: absolute;
-    right: 50%;
-    cursor: pointer;
-    width: 25px;
-    margin-top: 75px;
+.pull-button svg circle{
+    fill: var(--background-color);
 }
 
 /* Postcard Container */
@@ -2559,7 +2552,7 @@ header {
     display: flex;
     position: relative;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: var(--background-color);
     max-width: 970px;
     height: 250vh;
     align-items: flex-start;
@@ -2691,7 +2684,7 @@ header {
     display: flex;
     position: relative;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: var(--background-color);
     max-width: 1000px;
     height: 600vh;
     align-items: flex-start;
@@ -2811,12 +2804,15 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 16px;
-    color: #202020;
+    color: var(--font-primary);
 }
 
 ol.breadcrumb .active{
-    color:#202020;
+    color:var(--font-primary);
     font-weight: 700;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--font-primary);
 }
 
 .magazine-detail-container{
@@ -2842,7 +2838,7 @@ ol.breadcrumb .active{
     font-weight: 400;
     font-size: 26px;
     line-height: 30px;
-    color: #3D3D3D;
+    color: var(--font-primary);
 }
 
 .magazine-detail-footer{
@@ -3017,7 +3013,7 @@ ol.breadcrumb .active{
     font-weight: 700;
     font-size: 30px;
     line-height: 16px;
-    color:#202020;
+    color:var(--font-primary);
 }
 
 .popular-events-header + .event-hashtags{
@@ -3026,6 +3022,7 @@ ol.breadcrumb .active{
 .all-magazine-container .popular-events{
     width: 95%;
     padding: 0;
+    color: var(--font-primary);
 }
 
 .all-magazine-container .event-hashtags ul{
@@ -3057,12 +3054,13 @@ ol.breadcrumb .active{
     display: flex;
     align-items: center;
     gap: 11px;
+    color: var(--font-primary);
 }
 .saved-header-title .bold-title{ 
     font-weight: 700;
     font-size: 30px;
     line-height: 16px;
-    color: #202020;
+    color: var(--font-primary);
 }
 .saved-header-title img{ 
     width: 19px;
@@ -3110,7 +3108,7 @@ ol.breadcrumb .active{
     font-weight: 700;
     font-size: 30px;
     line-height: 16px;
-    color: #202020;
+    color: var(--font-primary);
 }
 .outfits-header .follow-button{
     white-space: nowrap;
@@ -3464,7 +3462,7 @@ ol.breadcrumb .active{
     height: 48px;
     text-overflow: ellipsis;
     overflow: hidden;
-    color: #1A1A1A;
+    color: var(--font-primary);
     max-width: 500px;
 }
 .post-detail-container .post-article{
@@ -3473,7 +3471,7 @@ ol.breadcrumb .active{
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
-    color: #1A1A1A;
+    color: var(--font-primary);
     height: auto;
     max-width: 500px;
 }
