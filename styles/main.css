@@ -1,6 +1,8 @@
 :root {
     /* Colors */
     --primary: #811f5d;
+    --background-color: #FFFFFF;
+    --sidebar:#FFFFFF;
     --grey: #8C8C8D;
     --black: #1A1A1A;
     --black-light: rgb(26, 26, 26, 0.6);
@@ -9,12 +11,28 @@
     --gray-light: #3D3D3D;
     --gray-extra-light: #4B4B4B;
     --white: #FFFFFF;
-
+    --font-primary: #202020;
     /* Shadow */
     --primary-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 
     /* Font Sizes: 38px,24px,22px,20px,18px,16px,14px,12px */
 
+}
+@media (prefers-color-scheme: light) {
+    :root{
+        --primary: #222222;
+        --background-color: #1A1A1A;
+        --sidebar: #222222;
+        --grey: #8C8C8D;
+        --black: #1A1A1A;
+        --black-light: rgb(26, 26, 26, 0.6);
+        --dark: #202020;
+        --dark-gray: #1B1B1B;
+        --gray-light: #3D3D3D;
+        --gray-extra-light: #4B4B4B;
+        --white: #FFFFFF;
+        --font-primary: #EDEDED;
+    }
 }
 
 /* Default Scrollbar */
@@ -37,11 +55,11 @@
 body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    color: var(--white);
     width: 100%;
     height: 100%;
     overflow: overlay;
-    background-color: #FFFFFF;
+    color: var(--font-primary);
+    background-color: var(--background-color);
 }
 
 /* Header */
@@ -85,6 +103,7 @@ header {
     white-space: nowrap;
     width: 200px;
     max-width: 275px;
+    color: #FFFFFF;
 }
 
 .profile img {
@@ -96,7 +115,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-    width: 75%;
+    width: 100%;
     margin-left: 325px;
     border-radius: 8px;
     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
@@ -431,8 +450,8 @@ header {
     z-index: 5;
     display: flex;
     flex-direction: column;
-    background-color: var(--white);
-    color: var(--dark);
+    background-color: var(--sidebar);
+    color: var(--font-primary);
     font-weight: 600;
     line-height: 16px;
     position: fixed;
@@ -493,7 +512,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: row;
-    color: var(--primary);
+    color: #811F5D;
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
@@ -519,7 +538,7 @@ header {
     display: flex;
     justify-content: flex-start;
     color: var(--dark);
-    background-color: var(--white);
+    background-color: var(--background-color);
 }
 
 .main-container img {
@@ -537,8 +556,8 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 200%;
-    height: 475px;
-    min-height: 450px;
+    height: 400px;
+    min-height: 400px;
 }
 
 .story-cards {
@@ -610,7 +629,7 @@ header {
     position: relative;
     width: 100%;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: var(--background-color);
     align-items: flex-start;
     height: auto;
     padding-left: 0;
@@ -747,39 +766,39 @@ header {
 /* Celebrities Section */
 
 .container-wave:first-child {
-    display: flex;
     position: absolute;
     top: 0;
-    right: 0;
-    transform: rotate(180deg);
-    background-image: url(/assets/svg\ \(1\).png);
-    background-repeat: no-repeat;
-    background-position: calc(0px);
-    background-size: 100% 100%;
-
-    z-index: 0;
+    left: 0;
     width: 100%;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-
+    overflow: hidden;
+    line-height: 0;
 }
-
+.container-wave:first-child svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 103px;
+}
+.container-wave:first-child .shape-fill{
+    fill: var(--background-color);
+}
 .container-wave:last-child {
-    display: flex;
     position: absolute;
     bottom: 0;
-    background-image: url(/assets/svg\ \(1\).png);
-    background-repeat: no-repeat;
-    background-position: calc(0px);
-    background-size: 100% 100%;
-
-    z-index: 0;
+    left: 0;
     width: 100%;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.container-wave:last-child svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 103px;
+}
+.container-wave:last-child .shape-fill{
+    fill: var(--background-color);
 }
 
 .celebrities-container {
@@ -787,8 +806,8 @@ header {
     position: relative;
     align-items: center;
     width: 100%;
-    height: 800px;
-    min-height: 800px;
+    height: 650px;
+    min-height: 650px;
     overflow-x: hidden;
     justify-content: center;
 
@@ -870,8 +889,8 @@ header {
     position: relative;
     align-items: center;
     width: 100%;
-    height: 800px;
-    min-height: 800px;
+    height: 650px;
+    min-height: 650px;
     justify-content: center;
 
     background-image: url(/assets/background.png);
@@ -1962,6 +1981,7 @@ header {
 
     .search-box {
         margin-left: 0;
+        width: 100%;
     }
 
     .search-box input {
@@ -2060,6 +2080,38 @@ header {
     }
     .sidebar-menu {
         gap: 12px;
+    }
+    .search-detailed {
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+        top: 50px;
+        width: 60vw;
+        max-width: 1200px;
+        min-height: 450px;
+        max-height: 60vw;
+        margin-left: 0;
+    
+        background: #202020;
+        border: 1px solid rgba(32, 32, 32, 0.6);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    .search-box{
+        min-width: 160px;
+    }
+    .notification img{
+        min-width: 20px;
+        min-height: 20px;
+    }
+    .menu-line img{
+        width: 25px;
+        height: 25px;
     }
 }
 
