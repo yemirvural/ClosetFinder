@@ -608,11 +608,11 @@ header {
 .postcard-container {
     display: flex;
     position: relative;
+    width: 100%;
     justify-content: center;
     background-color: #FFFFFF;
     align-items: flex-start;
     height: auto;
-    min-width: min-content;
     padding-left: 0;
     padding-right: 0;
 }
@@ -620,6 +620,7 @@ header {
 .postcards {
     display: flex;
     position: relative;
+    width: 100%;
     overflow: hidden;
     justify-content: space-evenly;
     row-gap: 50px;
