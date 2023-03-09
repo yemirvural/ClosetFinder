@@ -2850,8 +2850,9 @@ ol.breadcrumb .active{
     color: #801E5C;    
     letter-spacing: 0.5px;
 }
-.magazine-detail-container .subject-hasthags{ 
+.subject-hasthags{ 
     display: flex;
+    align-items: center;
     flex-direction: row;
     position: absolute;
     gap: 10px;
@@ -2860,7 +2861,7 @@ ol.breadcrumb .active{
     max-width: 350px;
     height: 45px;
 }
-.magazine-detail-container .subject-hasthags span {
+.subject-hasthags span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2873,10 +2874,10 @@ ol.breadcrumb .active{
     height: 39px;
 }
 
-.magazine-detail-container .subject-hasthags span::before {
+.subject-hasthags span::before {
     content: "#";
 }    
-.magazine-detail-container .magazine-interaction {
+.magazine-interaction {
     display: flex;
     position: absolute;
     gap: 12px;
@@ -2885,7 +2886,7 @@ ol.breadcrumb .active{
     align-items: center;
     justify-content: flex-end;
 }    
-.magazine-detail-container .share-button{
+.wide-share-button{
     all: unset;
     display: flex;
     position: relative;
@@ -2897,7 +2898,7 @@ ol.breadcrumb .active{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
 }
-.magazine-detail-container .share-button span{
+.wide-share-button span{
     all: unset;
     display: flex;
     left: 10px;
@@ -2906,7 +2907,7 @@ ol.breadcrumb .active{
     width: 22px;
     height :auto;
 }
-.magazine-detail-container .like-button span{
+.like-button span{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2915,7 +2916,7 @@ ol.breadcrumb .active{
     width: 48px;
     height: 48px;
 }    
-.magazine-detail-container .like-button span img{
+.like-button span img{
     width: 32px;
     height: 32px;
 }    
@@ -3226,7 +3227,7 @@ ol.breadcrumb .active{
     position: relative;
     justify-content: center;
     width: 100%;
-    min-height: 120vh;
+    height: 90vh;
 }
 .post-detail-container .post-detail-box{
     display: flex;
@@ -3394,12 +3395,16 @@ ol.breadcrumb .active{
 
 .post-detail-container .post-info-body{
     display: flex;
+    justify-items: center;
     flex-direction: column;
     margin-top: 34px;
     width: 100%;
     max-width: 545px;
     height: 90%;
     max-height: 475px;
+}
+.post-detail-container .post-info-body{
+    align-items: center;
 }
 .post-detail-container .post-title{
     display: -webkit-box;
@@ -3426,6 +3431,7 @@ ol.breadcrumb .active{
 }
 .post-detail-container .post-slider-container{
     display: flex;
+    width: 500px;
     position: relative;
     flex-direction: column;
     margin-top: 20px;
@@ -3440,7 +3446,7 @@ ol.breadcrumb .active{
 .slider-nav-menu > div{
     display: flex; 
     flex-direction: row;
-    gap: 15px;
+    gap: 35px;
 }
 .slider-nav-button{
     display: flex;
@@ -3537,10 +3543,51 @@ ol.breadcrumb .active{
     margin-top: 5px;
 }
 
-
-.post-detail-container .post-hasthag{
-
+.post-detail-container .subject-hasthags{ 
+    position: relative;
+    margin-top: 25px;
+    gap: 7px;
+    max-width: 450px;
+    height: 35px;
+    right: 0;
+    overflow: auto;
+}   
+.post-detail-container .subject-hasthags span {
+    border: 1px solid #801E5C;
+    border-radius: 7px;
+    padding: 5px 12px;
+    width: auto;
+    height: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #801E5C;
 }
+
 .post-detail-container .post-info-footer{
-
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -15px;
+    width: 500px;
+    height: 40px;
 }
+.post-detail-container .post-info-footer .wide-share-button{
+    display: flex;
+    position: absolute;
+    left: 2%;
+    width: 101px;
+    height: 29px;
+    border-radius: 7px;
+}
+.post-detail-container .post-info-footer .wide-share-button img{
+    width: 17px;
+    height: auto;
+}
+.post-detail-container .post-info-interaction{
+    display: flex;
+    position: absolute;
+    gap: 6px;
+    right: 10%;
+}
+
