@@ -3334,13 +3334,14 @@ ol.breadcrumb .active{
     width: 100%;
     max-width: 645px;
     height: 100%;
+    padding-left: 29px;
+    padding-right: 22px;
 }
 .post-detail-container .post-info-header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 29px;
     width: 100%;
     max-width: 545px;
     height: 10%;
@@ -3391,28 +3392,152 @@ ol.breadcrumb .active{
     background-color: #801E5C;
 }
 
-
-
 .post-detail-container .post-info-body{
     display: flex;
+    flex-direction: column;
+    margin-top: 34px;
     width: 100%;
     max-width: 545px;
     height: 90%;
     max-height: 475px;
-
 }
 .post-detail-container .post-title{
-
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    height: 48px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #1A1A1A;
+    max-width: 500px;
 }
 .post-detail-container .post-article{
-
+    display: flex;
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #1A1A1A;
+    height: auto;
+    max-width: 500px;
+}
+.post-detail-container .post-slider-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.slider-nav-menu{
+    display: flex; 
+    width: 500px;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid #D9D9D9;
+}
+.slider-nav-menu > div{
+    display: flex; 
+    flex-direction: row;
+    gap: 15px;
+}
+.slider-nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    border-bottom: 0;
+    border-radius: 10px 10px 0px 0px;
+    background: rgba(128, 30, 92, 0.04);
+    color: #801E5C;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+}
+.slider-nav-input{
+    display: none;
+    visibility: hidden;
+}
+.slider-nav-input:checked + label .slider-nav-button{
+    background-color: #FFFFFF;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #D9D9D9;
+    border-radius: 10px 10px 0px 0px;
+}
+.slider-nav-input:checked + label::after{
+    content: "";
+    z-index: 999;
+    display: flex;
+    position: absolute;
+    margin-left: 1.5px;
+    top: 29.5px;
+    width: 148px;
+    height: 1px;
+    background-color:#FFFFFF;
 }
 .post-detail-container .post-slider{
-
+    display: flex;
+    position: relative;
+    overflow: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    height: 180px;
+    gap: 10px;
+    margin-top: 16px;
 }
 .post-detail-container .post-item{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-width: 95px;
+    height: 140px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
 }
+.post-detail-container .post-item .post-image{
+    display: flex;
+    position: relative;
+}
+.post-detail-container .post-item .post-image{
+    width: 100%;
+    height: 100%;
+}
+.post-detail-container .post-item .price-tag{
+    display: flex;
+    position: absolute;
+    width: 55px;
+    height: 25px;
+    bottom: 0;
+    right: 0;
+    background: rgba(128, 30, 92, 0.8);
+    border-radius: 4px 0px 10px;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 12px;
+    gap: 5px;
+}
+.post-detail-container .post-item .price-tag img{
+    width: 11px;
+    height: 11px;
+}
+.post-detail-container .post-item .item-name{
+    display: flex;
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1A1A1A;
+    text-align: center;
+    line-height: 14px;
+    height: 28px;
+    max-width: 95px;
+    margin-top: 5px;
+}
+
+
 .post-detail-container .post-hasthag{
 
 }
