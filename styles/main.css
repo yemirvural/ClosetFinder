@@ -3517,7 +3517,7 @@ ol.breadcrumb .active{
     justify-content: center;
     width: 100%;
     max-width: 625px;
-    height: max-content;
+    height: 100%;
     border-radius: 10px;
 }
 .carousel-indicators{
@@ -3702,7 +3702,7 @@ ol.breadcrumb .active{
 }
 .post-detail-container .post-slider-container{
     display: flex;
-    width: 500px;
+    width: 100%;
     position: relative;
     flex-direction: column;
     margin-top: 20px;
@@ -3764,6 +3764,10 @@ ol.breadcrumb .active{
     height: 180px;
     gap: 10px;
     margin-top: 16px;
+}
+.post-detail-container .post-slider-header{
+    display: flex;
+    width: 100%;
 }
 .post-detail-container .post-item{
     display: flex;
@@ -3840,7 +3844,7 @@ ol.breadcrumb .active{
     align-items: center;
     position: absolute;
     bottom: -15px;
-    width: 500px;
+    width: 100%;
     height: 40px;
 }
 .post-detail-container .post-info-footer .wide-share-button{

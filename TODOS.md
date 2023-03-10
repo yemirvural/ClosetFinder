@@ -35,7 +35,26 @@
 [X] Sidebar > Magazine hasthagler düzeltilecek.
 
 [] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü.[~Off-Canvas].
-[] Tüm sayfalar mobil responsive.
+[] Tüm sayfalar mobil responsive:
++ [] Home
+
++ [] Magazine 
++ [] Outfits
++ [] Saved
+
++ [] Post Details
+
++ [] Post Results
++ [] Search Results
+
++ [X] Magazine Detail
+
++ [] Profile Posts
++ [] Profile Closet
++ [] Profile Magazine
+
++ [] Reels
+
 
 [] Animations:
 + Hover
