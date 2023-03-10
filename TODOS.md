@@ -47,8 +47,8 @@
 
 + [] Post Details
 
-+ [] Post Results
-+ [] Search Results
++ [X] Post Results
++ [X] Search Results
 
 + [X] Magazine Detail
 

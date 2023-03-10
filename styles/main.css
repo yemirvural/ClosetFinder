@@ -2515,7 +2515,12 @@ header {
         height: 20px;
         font-size: 0.9rem;
     }
-
+    .results-container .results-body .result-name{
+        font-size: 1.2rem;
+    }
+    .results-container .results-body .result-title{
+        font-size: 1rem;
+    }
 }
 
 @media(max-width: 372px) {
