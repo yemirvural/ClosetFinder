@@ -454,7 +454,7 @@ header {
 /* Mobile Sidebar */
 
 #sidebarToggle{
-    min-width: 250px;
+    width: 375px;
     border-radius: 0px 0px 0px 20px;
 }
 #sidebarToggle .offcanvas-header{
@@ -484,15 +484,25 @@ header {
     min-height: 39px;
 }
 #sidebarToggle .offcanvas-body{
+    display: flex;
+    max-width: 375px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     background: #D9D9D9;
     backdrop-filter: blur(10px);
     border-radius: 0px 0px 0px 20px;
+}
+#sidebarToggle .offcanvas-body > div:not(:last-child){
+    margin-bottom: 5vh;
 }
 #sidebarToggle .offcanvas-body .navbuttons{
     position: relative;
     justify-content: center;
     align-items: center;
     width: 100%; 
+    height: auto;
     max-width: 375px;
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 1fr)); 
@@ -500,11 +510,11 @@ header {
     grid-gap: 1em;
 }
 #sidebarToggle .offcanvas-body .hashtag-buttons{
-    margin-top: 150px;
     position: relative;
     justify-content: center;
     align-items: center;
     width: 100%; 
+    height: auto;
     display: grid;
     grid-auto-rows: 30px; 
     grid-template-columns: repeat(2, minmax(auto, 1fr)); 
@@ -524,7 +534,7 @@ header {
     width: 200px;
     height: 30px;
 }
-#sidebarToggle .offcanvas-body > div span{
+#sidebarToggle .offcanvas-body > div.navbuttons span{
     display: flex;
     align-items: center;
     height: 30px;
@@ -532,7 +542,23 @@ header {
     left: 45px;
     top: 0;
 }
-#sidebarToggle .offcanvas-body > div div{
+#sidebarToggle .offcanvas-body > div.hashtag-buttons span{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    position: absolute;
+    left: 45px;
+    top: 0;
+}
+#sidebarToggle .offcanvas-body div.navbuttons > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+#sidebarToggle .offcanvas-body div.hashtag-buttons > div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -543,11 +569,89 @@ header {
 #sidebarToggle .offcanvas-body svg path{
     fill: #801E5C;
 }
+#sidebarToggle .offcanvas-body .popular-celebrities{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    width: 375px;
+    height: 70px;
+    margin-bottom: 0;
+}
 
+#sidebarToggle .offcanvas-body .popular-celebrities>div{
+    display: flex;
+    width: 399px;
+}
+#sidebarToggle .offcanvas-body .popular-celebrities ul{
+    height: 70px;
+    column-gap: 0px;
+}
+#sidebarToggle .offcanvas-body .popular-celebrities li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: max-content;
+    height: 35px;
+    font-size: 1rem;
+}
+#sidebarToggle .offcanvas-body .popular-celebrities img{
+    width: 24px;
+    height: 24px;
+}
+#sidebarToggle .offcanvas-body .popular-celebrities span{
+    position: relative;
+}
 
-
-
-
+#sidebarToggle .offcanvas-body .event-hashtags{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    width: 375px;
+    height: 60px;
+}
+#sidebarToggle .offcanvas-body .event-hashtags ul {
+    row-gap: 2px;
+    column-gap: 2px;
+    height: 60px;
+}
+#sidebarToggle .offcanvas-body .event-hashtags li{
+    border: 1px solid #202020;
+    border-radius: 7px;
+    color: #202020;
+    padding: 5px 5px;
+    font-size: 1rem;
+}
+#sidebarToggle .offcanvas-body  .togglebar-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    bottom: 0;
+    left: 0;
+    background: #FFFFFF;
+    backdrop-filter: blur(10px);
+}
+#sidebarToggle .offcanvas-body  .togglebar-footer button{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+#sidebarToggle .offcanvas-body  .togglebar-footer button:first-child::after{
+    content: "";
+    display: flex;
+    top: 19px;
+    position: absolute;
+    right: 0;
+    background-color: #801E5C;
+    width: 1px;
+    height: 26px;    
+}
 /* Sidebar */
 
 .sidebar {

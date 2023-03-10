@@ -33,8 +33,11 @@
 [X] Dark/Light Mod Variables hazırlanacak.[~prefers-color-scheme] 
 [X] Responsive typography >> (tüm px değerleri rem ile değişecek). 
 [X] Sidebar > Magazine hasthagler düzeltilecek.
+[X] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü.[~Off-Canvas].
 
-[] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü.[~Off-Canvas].
+
+[] Legal info & About kismi sizing düzelt.
+
 [] Tüm sayfalar mobil responsive:
 + [] Home
 
@@ -59,6 +62,7 @@
 [] Animations:
 + Hover
 + Slide
+
 
 [] Son donukunuşlar:
 + Responsive Check
