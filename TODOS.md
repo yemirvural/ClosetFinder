@@ -31,10 +31,11 @@
 + Filter & Sorting Modals.
 [X] Sidebar active color. [~svg-path]
 [X] Dark/Light Mod Variables hazırlanacak.[~prefers-color-scheme] 
+[X] Responsive typography >> (tüm px değerleri rem ile değişecek). 
+[X] Sidebar > Magazine hasthagler düzeltilecek.
 
-[] Sidebar > Magazine hasthagler düzeltilecek.
 [] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü.[~Off-Canvas].
-[] Responsive typography >> (tüm px değerleri rem ile değişecek). 
+[] Tüm sayfalar mobil responsive.
 
 [] Animations:
 + Hover
@@ -44,10 +45,6 @@
 + Responsive Check
 + SEO Check
 + Browser Support Check
-
-
-EKSTRA:
-scrollbarlar sadece hover olduğunda gözüksün (?)
 
 
 Start : 22.02.23
