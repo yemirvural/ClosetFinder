@@ -2778,30 +2778,39 @@ header {
 
 .magazine-header{
     display: flex;
-    position: absolute;
-    align-items: flex-end;
+    position: relative;
     top: 0;
+    right: 0;
     width: 100%;
-    min-height: 300px;
 }
 .magazine-header > div:first-child{
     display: flex;
-    position: absolute;
+    flex-direction: column;
+    position: relative;
     width: 100%;
-    max-height: 350px;
-    background-image: url(/assets/article-bg.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
 }
 .magazine-header .container{
-    max-width: 1250px;
+    display: flex;
+    position: absolute;
     width: 85%;
-    height: 150px;
+    height: 100%;
 }
 
-.magazine-header img{
+.magazine-header > div:first-child img{
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
     width: 100%;
+    height: auto;
 }
+.magazine-header > div:first-child span{
+    display: flex;
+    position: absolutes;
+}   
 .magazine-header .article-title{
     display: flex;
     position: absolute;
@@ -2832,7 +2841,7 @@ ol.breadcrumb .active{
 
 .magazine-detail-container{
     display: flex;
-    margin-top: 335px;
+    margin-top: 37px;
     position: relative;
     flex-direction: column;
     justify-content: flex-start;
