@@ -34,7 +34,7 @@
 [X] Responsive typography >> (tüm px değerleri rem ile değişecek). 
 [X] Sidebar > Magazine hasthagler düzeltilecek.
 [X] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü.[~Off-Canvas].
-
+[X] Sidebar settings sticky.
 
 [] Legal info & About kismi sizing düzelt.
 
