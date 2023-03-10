@@ -435,6 +435,12 @@ header {
     max-width: 20px;
 }
 
+.notification svg path{
+    fill: #fff;
+}
+.menu-line svg path{
+    fill: #fff;
+}
 .search-box img {
     cursor: pointer;
     margin-right: 15px;
@@ -1950,9 +1956,11 @@ header {
     }
     .sidebar-menu > div.active span{
         display: flex;
+        left: 32px;
     }
     .sidebar-menu > div.active{
         width: 80px;
+        position: relative;
     }
     .sidebar-menu > div:nth-of-type(-n+3){
         display: flex;
@@ -1963,9 +1971,16 @@ header {
         display: none;
     }
 
-    .notification {
-        width: 100%;
-        margin-right: 10px;
+    .notification svg{
+        width: 20px;
+        height: auto;
+        margin-right: 5px;
+    }
+    .notification svg path{
+        fill: #801E5C;
+    }
+    .menu-line svg path{
+        fill: #801E5C;
     }
 
     .profile {
