@@ -38,16 +38,15 @@
 [X] Legal info & About kismi sizing düzelt.
 
 [] Tüm sayfalar mobil responsive:
-
-
 + [] Post Details
 
 + [] Profile Posts
 + [] Profile Closet
 + [] Profile Magazine
 
-+ [] Reels
 
+
++ [X] Reels
 + [X] Home
 + [X] Post Results
 + [X] Search Results
@@ -56,9 +55,7 @@
 + [X] Outfits
 + [X] Saved
 
-[] Animations:
-+ Hover
-+ Slide
+[] Ads Card
 
 
 [] Son donukunuşlar:
