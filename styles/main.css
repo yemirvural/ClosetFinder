@@ -880,7 +880,7 @@ header {
     z-index: 5;
     width: 250px;
     height: 375px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .postcard-header::after {
@@ -895,7 +895,7 @@ header {
     border-radius: 10px;
 }
 .postcard-header img{
-    border-radius: 10px;
+    border-radius: 15px;
     object-fit:cover;
     width: 100%;
     height: 100%;
@@ -912,11 +912,13 @@ header {
     height: 375px;
     margin-left: 60px;
     margin-top: 20px;
+    border-radius: 15px;
 }
 
 .postcard-item {
     z-index: 4;
     margin-right: 12px;
+    position: relative;
     display: flex;
     margin-left: auto;
     align-items: center;
@@ -930,6 +932,18 @@ header {
     font-weight: 700;
     color: var(--primary);
 }
+.postcard-item img{
+    width: 100%;
+    height: 100%;
+    max-height: 65px;
+    max-width: 38px;
+    border-radius: 4px 4px 0 0;
+    object-fit:cover;
+}
+.postcard-item span{
+    position: absolute;
+    bottom: 3px;
+}
 
 .postcard-body>img {
     position: absolute;
@@ -937,6 +951,7 @@ header {
     z-index: 1;
     height: 100%;
     width: 100%;
+    border-radius: 15px;
 }
 
 .postcard-body>span {
