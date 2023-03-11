@@ -36,11 +36,7 @@
 [X] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü.[~Off-Canvas].
 [X] Sidebar settings sticky.
 [X] Legal info & About kismi sizing düzelt.
-
-[] Tüm sayfalar mobil responsive:
-+ [] Post Details
-
-
+[X] Post Cards >> Linear gradient [bottom]
 + [X] Profile Closet
 + [X] Profile Magazine
 + [X] Profile Posts
@@ -53,8 +49,24 @@
 + [X] Outfits
 + [X] Saved
 
-[] Ads Card
 
+[] Reels modal daha büyük olmalı. Resim boyutu itemslara kadar. Items alanı siyah. Reels img >> cover / center.
+[] Mobilde detail search full width & font size. 
+[] Blog detail. 
+[] Magazine detail footer.
+[] Mobile navbar spacing.
+[] Settings & Tab menü icon ve sizing.
+[] Celebrity Detail line height daha düşük. 
+[] Celebrity Detail buğulu cam 90%.
+[] Dark theme tüm sayfalar.
+[] Mobil Togglebar >> full width >> 465px max.
+
+[] Tüm sayfalar mobil responsive:
++ [] Post Details
+
+
+Ekstra:
+[] Ads Card
 
 [] Son donukunuşlar:
 + Responsive Check
