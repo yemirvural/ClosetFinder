@@ -48,9 +48,8 @@
 + [X] Magazine 
 + [X] Outfits
 + [X] Saved
+[X] Reels modal daha büyük olmalı. Resim boyutu itemslara kadar. Items alanı siyah. Reels img >> cover / center.
 
-
-[] Reels modal daha büyük olmalı. Resim boyutu itemslara kadar. Items alanı siyah. Reels img >> cover / center.
 [] Mobilde detail search full width & font size. 
 [] Blog detail. 
 [] Magazine detail footer.
@@ -60,6 +59,7 @@
 [] Celebrity Detail buğulu cam 90%.
 [] Dark theme tüm sayfalar.
 [] Mobil Togglebar >> full width >> 465px max.
+[] Postcard kücük erkanlar icin spacing/sizing ayaları.
 
 [] Tüm sayfalar mobil responsive:
 + [] Post Details
