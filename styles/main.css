@@ -2121,7 +2121,7 @@ header {
     flex-direction: column;
     position: relative;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
     background-image: url(/assets/Rectangle\ 236.svg);
     background-repeat: no-repeat;
     background-position:top;
@@ -2144,10 +2144,10 @@ header {
 .profile-full{
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    min-width: 800pxs;
+    width: 80%;
+    max-width: 1200px;
     height: 150px;
 }
 .profile-container .profile-info-inclusive{
@@ -2261,6 +2261,7 @@ header {
     align-items: center;
     position: relative;
     flex-direction: column;
+    z-index: 5;
 }
 
 .post-tab-menu{
@@ -4319,37 +4320,99 @@ ol.breadcrumb .active{
     }
 }
 
-@media(max-width: 945px) {
+@media(max-width: 1009px) {
+    .profile-full {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 80%;
+    }
     .profile-container .profile-bio-box{
-        width: 110%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         padding: 0;
         top: 10px;
-        right: 100px;
-        height: 200px;
-        padding: 20px 15px;
+        left: 0;
+        height: 150px;
+        padding: 0;
         font-size: 16px;
-        align-items: center;
+    }
+    .share-button {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+    .share-button img{
+        width: 12px;
+        height: auto;
+    }
+    .follow-button {
+        padding: 5px 16px;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 0.85em;
+        line-height: 1rem;
     }
     .profile-container .profile-bio{
-        -webkit-line-clamp: 4;
+        all: unset;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+        max-height: 125px;
+        font-weight: 500px;
+        font-size: 1.1rem;
+        line-height: 24px;
+        color: #3D3D3D;
+    }
+    .posts-section .profile-breadcrumb {
+        top: 0;
+        height: 35px;
+        margin-bottom: 0;
+    }
+    .profile-container .profile-info-inclusive{
+        width: 100%;
+        height: 100%;
+        min-width: 90%;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        margin-bottom: 0;
     }
     .profile-container .profile-info-inclusive::after{
-        top: 40px;
-        height: 175px;
+        position: absolute;
+        top: 0;
+        height: 150px;
     }
-    .profile-container .profile-title{
-        left: 10px;
+
+    .profile-container .profile-title .bold-title{
+        font-size: 1.5rem;
     }
     .profile-container .profile-interaction{
-        top: 48px;
-        right: 5;
+        top: 10px;
+        right: 10px;
     }
     .profile-container .post-tab-menu{
         z-index: 1;
     }
     .profile-container .profile-photo{
-        bottom: 90px;
+        position: absolute;
+        top: -85px;
         left: 15px;
+    }
+    .profile-container .profile-title{
+        position: absolute;
+        top: -40px;
+        left: 145px;
     }
     .profile-container .profile-photo img{
         width: 125px;
@@ -4365,46 +4428,112 @@ ol.breadcrumb .active{
     }
 }
 @media(max-width: 595px) {
+    .profile-full {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 80%;
+    }
     .profile-container .profile-bio-box{
-        width: 150%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         padding: 0;
         top: 10px;
-        right: 100px;
-        height: 200px;
-        padding: 20px 15px;
+        left: 0;
+        height: 150px;
+        padding: 0;
         font-size: 16px;
-        align-items: center;
     }
-    .profile-container .profile-box-inclusive{
-        margin-right: 100px;
+    .share-button {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+    .share-button img{
+        width: 12px;
+        height: auto;
+    }
+    .follow-button {
+        padding: 5px 16px;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 0.85em;
+        line-height: 1rem;
     }
     .profile-container .profile-bio{
-        -webkit-line-clamp: 4;
+        all: unset;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+        max-height: 125px;
+        font-weight: 500px;
+        font-size: 1.1rem;
+        line-height: 24px;
+        color: #3D3D3D;
+    }
+    .profile-container .profile-info-inclusive{
+        width: 100%;
+        height: 100%;
+        min-width: 90%;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        margin-bottom: 0;
     }
     .profile-container .profile-info-inclusive::after{
-        top: 40px;
-        height: 175px;
+        position: absolute;
+        top: 0;
+        height: 225px;
     }
-    .profile-container .profile-title{
-        left: 10px;
+
+    .profile-container .profile-title .bold-title{
+        font-size: 1.5rem;
     }
     .profile-container .profile-interaction{
-        top: 48px;
-        right: 5;
+        top: 10px;
+        right: 10px;
+    }
+    .profile-container .post-tab-menu{
+        z-index: 1;
+    }
+    .profile-container .profile-photo{
+        position: absolute;
+        top: -65px;
+        left: 15px;
+    }
+    .profile-container .profile-photo img{
+        width: 95px;
+        height: 95px;
+    }
+    .profile-container .profile-title{
+        position: absolute;
+        top: -40px;
+        left: 120px;
+    }
+    .post-tab-menu{
+        width: 475px;
+    }
+    .post-tab-button{
+        width: 125px;
+        height: 40px;
+        font-size: 1rem;
     }
     .profile-container .post-tab-button{
         all: unset;
         width: 1px;
         height: 15px;
     }
-    .profile-container .profile-photo{
-        bottom: 90px;
-        left: 15px;
-    }
-    .profile-container .profile-photo img{
-        width: 125px;
-        height: 125px;
-    }
+
     .post-tab-menu{
         width: 350px;
     }
@@ -4417,24 +4546,58 @@ ol.breadcrumb .active{
 }
 @media(max-width: 425px) {
     body{
-        font-size: 0.8rem;
-    }
-    .profile-container .profile-photo{
-        bottom: 90px;
-        left: 35px;
-    }
-    .profile-container .profile-title{
-        left: 35px;
-    }
-    .profile-container .profile-box-inclusive{
-        padding-left: 25px;
+        font-size: 12px;
     }
     .profile-container .profile-interaction{
-        top: 48px;
-        right: 0;
+        top: 8px;
+        right: 8px;
+    }
+    .profile-container .profile-title .bold-title{
+        font-size: 1.1rem;
+    }
+    .profile-container .profile-title {
+        left: 114px;
+    }
+    .follow-button {
+        padding: 0px 10px;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 0.75rem;
+        line-height: 0.8rem;
+    }
+    .profile-container .profile-info-inclusive::after{
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        height: 200px;
+    }
+    .profile-container .profile-bio{
+        overflow: hidden;
+        max-height: 120px;
+        font-weight: 500px;
+        font-size: 1.1rem;
+        line-height: 24px;
+    }
+    .profile-container .profile-bio p{
+        height: 72px;
+    }
+    .posts-section .profile-breadcrumb {
+        top: 0;
+        height: 35px;
+        margin-bottom: 0;
+    }
+    .profile-container .profile-photo img {
+        width: 90px;
+        height: 90px;
+    }
+    .profile-container .profile-title .followers-info {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 0.9rem;
     }
     .post-tab-menu{
         width: 275px;
+        margin-bottom: 10px;
     }
     .post-tab-button{
         width: 65px;
