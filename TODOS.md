@@ -35,22 +35,14 @@
 [X] Sidebar > Magazine hasthagler düzeltilecek.
 [X] Large ekrana kadar tüm ekran boyutlarında >> yana kayan menü.[~Off-Canvas].
 [X] Sidebar settings sticky.
-
-[] Legal info & About kismi sizing düzelt.
+[X] Legal info & About kismi sizing düzelt.
 
 [] Tüm sayfalar mobil responsive:
-+ [] Home
-
 + [] Magazine 
 + [] Outfits
 + [] Saved
 
 + [] Post Details
-
-+ [X] Post Results
-+ [X] Search Results
-
-+ [X] Magazine Detail
 
 + [] Profile Posts
 + [] Profile Closet
@@ -58,6 +50,10 @@
 
 + [] Reels
 
++ [X] Home
++ [X] Post Results
++ [X] Search Results
++ [X] Magazine Detail
 
 [] Animations:
 + Hover

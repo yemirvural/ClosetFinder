@@ -494,9 +494,11 @@ header {
     backdrop-filter: blur(10px);
     border-radius: 0px 0px 0px 20px;
 }
+
 #sidebarToggle .offcanvas-body > div:not(:last-child){
     margin-bottom: 5vh;
 }
+
 #sidebarToggle .offcanvas-body .navbuttons{
     position: relative;
     justify-content: center;
@@ -783,7 +785,7 @@ header {
 .story-cards>ul {
     z-index: 1;
     position: relative;
-    max-width: 1800px;
+    max-width: 1600px;
     width: 1600px;
     margin-top: 45px;
     overflow: auto;
@@ -2340,6 +2342,159 @@ header {
     
 }
 
+@media(max-width: 767px) {
+    .postcards {
+        row-gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .postcard-inclusive {
+        width: calc(200px + 32px);
+        height: calc(275px + 16px);
+    }
+
+    .postcard {
+        min-width: 186px;
+        height: auto;
+    }
+
+    .postcard-header {
+        width: 200px;
+        height: 275px;
+    }
+    .postcard-header>span {
+        white-space:pre-wrap;
+        max-width: 135px;
+        line-height: 1.2rem;
+        max-height: 2.4rem;
+        bottom: 40px;
+        left: 22px;
+    }
+    .postcard-header>span:last-child {
+        width: 32px;
+        height: 32px;
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .postcard-body {
+        row-gap: 9px;
+        width: 200px;
+        height: 275px;
+        margin-left: 32px;
+        margin-top: 16px;
+    }
+
+    .postcard-item {
+        margin-right: 10px;
+        margin-left: auto;
+        width: 26px;
+        height: 55px;
+        gap: 5px;
+        font-size: 12px;
+        font-size: 0.9rem;
+    }
+
+    .postcard-item>img {
+        width: 100%;
+        min-width: 26px;
+    }
+    .story-container {
+        margin-bottom: 35px;
+        height: 335px;
+        min-height: 335px;
+    }
+    .story-cards>ul>li {
+        width: 114px;
+        min-width: 114px;
+        height: 172px;
+    }
+    .story-cards>ul {
+        width: auto;
+        margin-top: 35px;
+        overflow: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        white-space: nowrap;
+        padding: 10px 5px;
+        display: flex;
+        gap: 5px;
+        margin-right: 5px;
+        border-radius: 10px;
+    }
+    .story-cards {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-left: 5px;
+        width: 100%;
+        z-index: 2;
+        right: 0px;
+        height: 230px;
+    }
+    .celebrities-container {
+        height: 550px;
+        min-height: 550px;
+    }
+    .celebrities {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        height: 320px;
+        row-gap: 0px;
+        column-gap: 10px;
+        margin-left: 10px;
+    }
+    .celebritie {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #FFFFFF;
+        width: 300px;
+        min-width: 300px;
+        column-gap: 5px;
+    }
+    .celebritie-info {
+        margin-right:   15px;
+    }
+    .celebritie-info span {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+    .celebritie button {
+        border-radius: 27px;
+        width: 80px;
+        height: 22px;
+        font-weight: 200;
+        font-size: 0.8rem;
+        line-height: 15px;
+    }
+    .reels-container {
+        height: 550px;
+        min-height: 550px;
+    }
+    .reels-cards {
+        margin-left: 5px;
+        max-width: 1800px;
+        width: 1600px;
+        height: 275px;
+    }
+    .reels-card {
+        height: 250px;
+        padding-left: 5px;
+
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+    .reels-card-header {
+        width: 150px;
+        height: 220px;
+    }
+    
+}
+
 @media(max-width: 619px) {
 
     html,
@@ -2366,6 +2521,20 @@ header {
         width: 150px;
         height: 225px;
     }
+    .postcard-header>span {
+        white-space: pre-wrap;
+        max-width: 120px;
+        line-height: 1.2rem;
+        max-height: 2.4rem;
+        bottom: 45px;
+        left: 14px;
+    }
+    .postcard-header>span:last-child {
+        width: 28px;
+        height: 28px;
+        right: 10px;
+        bottom: 10px;
+    }
 
     .postcard-body {
         row-gap: 9px;
@@ -2388,6 +2557,36 @@ header {
         width: 100%;
         min-width: 24px;
     }
+    
+    .story-cards>ul>li {
+        width: 114px;
+        min-width: 114px;
+        height: 172px;
+    }
+    .story-cards>ul {
+        width: auto;
+        margin-top: 35px;
+        overflow: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        white-space: nowrap;
+        padding: 10px 5px;
+        display: flex;
+        gap: 5px;
+        margin-right: 5px;
+        border-radius: 10px;
+    }
+    .story-cards {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-left: 5px;
+        width: 100%;
+        z-index: 2;
+        right: 0px;
+        height: 230px;
+    }
+
     .sidebar-menu {
         gap: 12px;
     }
@@ -2533,7 +2732,14 @@ header {
         width: calc(125px + 24px);
         height: calc(175px + 8px);
     }
-
+    .postcard-header>span {
+        white-space: pre-wrap;
+        max-width: 100px;
+        line-height: 1.2rem;
+        max-height: 2.4rem;
+        bottom: 36px;
+        left: 12px;
+    }
     .postcard {
         min-width: 150px;
         height: auto;
