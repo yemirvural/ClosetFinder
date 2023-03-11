@@ -38,9 +38,7 @@
 [X] Legal info & About kismi sizing düzelt.
 
 [] Tüm sayfalar mobil responsive:
-+ [] Magazine 
-+ [] Outfits
-+ [] Saved
+
 
 + [] Post Details
 
@@ -54,6 +52,9 @@
 + [X] Post Results
 + [X] Search Results
 + [X] Magazine Detail
++ [X] Magazine 
++ [X] Outfits
++ [X] Saved
 
 [] Animations:
 + Hover
