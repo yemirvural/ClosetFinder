@@ -17,13 +17,14 @@
     --dark-prime: #811f5d;
     --font-primary: #202020;
     --font-secondary: #801E5C;
+    --box-shadow: rgba(0, 0, 0, 0.25);
     /* Shadow */
     --primary-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 
     /* Font Sizes: 38px,24px,22px,20px,18px,16px,14px,12px */
 
 }
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     :root{
         --primary: #222222;
         --background-color: #1A1A1A;
@@ -42,6 +43,7 @@
         --dark-prime: #E28AC2;
         --font-primary: #EDEDED;
         --font-secondary: #FFFFFF;
+        --box-shadow: rgba(255, 255, 255, 0.25);
     }
 }
 
@@ -2147,6 +2149,71 @@ header {
     overflow-y: auto;
     margin-bottom: 20px;
 }
+/* >> Cookie Modal << */
+
+.cookie-modal .modal-content{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    width: 344px ;
+    height: 344px ;
+    box-shadow: 0px 0px 10px var(--box-shadow);
+    backdrop-filter: blur(2px);
+    border-radius: 42px;
+    background-color: var(--background-color);
+    opacity: 0.8;
+    pointer-events: auto;
+}
+.cookie-modal .modal-header {
+    all: unset;
+}
+.cookie-modal .modal-header button{
+    padding: 0;
+    position: absolute;
+    top: 25px;
+    right: 36px;
+}
+.cookie-modal .modal-header svg path{
+    fill: var(--font-primary);
+}
+.cookie-modal .modal-body{
+    all: unset;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.cookie-modal .modal-body svg{
+    margin-top: 74px;
+    fill: var(--font-primary);
+}
+.cookie-modal .modal-body svg path{
+    fill: var(--font-primary);
+}
+.cookie-modal .cookie-article{
+    margin-top: 34px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    max-width: 255px;
+    text-align: center;
+    color: var(--font-primary);
+}
+.cookie-modal .cookie-button {
+    margin-top: 13px;
+}
+.cookie-modal .cookie-button a{
+    margin-top: 13px;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: center;
+    color: var(--font-primary);
+}
+
 
 
 /* Sort/Filter Modal */ /* Sort/Filter Modal */ /* Sort/Filter Modal */ /* Sort/Filter Modal */ /* Sort/Filter Modal */ 
