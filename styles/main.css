@@ -3878,7 +3878,7 @@ ol.breadcrumb .active{
     }
 
     .postcard-inclusive {
-        width: calc(200px + 32px);
+        width: calc(200px + 40px);
         height: calc(275px + 16px);
     }
 
@@ -3910,12 +3910,12 @@ ol.breadcrumb .active{
         row-gap: 9px;
         width: 200px;
         height: 275px;
-        margin-left: 32px;
+        margin-left: 40px;
         margin-top: 16px;
     }
 
     .postcard-item {
-        margin-right: 10px;
+        margin-right: 8px;
         margin-left: auto;
         width: 26px;
         height: 55px;
@@ -3924,9 +3924,14 @@ ol.breadcrumb .active{
         font-size: 0.9rem;
     }
 
-    .postcard-item>img {
+    .postcard-item img{
         width: 100%;
-        min-width: 26px;
+        height: 100%;
+        min-width: unset;
+        max-height: 38px;
+        max-width: 26px;
+        border-radius: 4px 4px 0 0;
+        object-fit:cover;
     }
     .story-container {
         margin-bottom: 35px;
@@ -4146,7 +4151,7 @@ ol.breadcrumb .active{
     }
 
     .postcard-inclusive {
-        width: calc(150px + 36px);
+        width: calc(150px + 38px);
         height: calc(225px + 12px);
     }
 
@@ -4178,14 +4183,14 @@ ol.breadcrumb .active{
         row-gap: 9px;
         width: 150px;
         height: 225px;
-        margin-left: 32px;
+        margin-left: 38px;
         margin-top: 16px;
     }
 
     .postcard-item {
-        margin-right: 8px;
+        margin-right: 5px;
         margin-left: auto;
-        width: 22px;
+        width: 28px;
         height: 55px;
         gap: 5px;
         font-size: 12px;
@@ -4755,7 +4760,7 @@ ol.breadcrumb .active{
     }
 
     .postcard-inclusive {
-        width: calc(125px + 24px);
+        width: calc(125px + 34px);
         height: calc(175px + 8px);
     }
     .postcard-header>span {
@@ -4787,14 +4792,14 @@ ol.breadcrumb .active{
         row-gap: 9px;
         width: 125px;
         height: 175px;
-        margin-left: 24px;
+        margin-left: 34px;
         margin-top: 8px;
     }
 
     .postcard-item {
-        margin-right: 8px;
+        margin-right: 5px;
         margin-left: auto;
-        width: 18px;
+        width: 26px;
         height: 45px;
         gap: 5px;
         font-size: 10px;
@@ -4804,9 +4809,14 @@ ol.breadcrumb .active{
         gap: 0px;
     }
 
-    .postcard-item>img {
+    .postcard-item img {
         width: 100%;
-        min-width: 16px;
+        height: 100%;
+        min-width: unset;
+        max-height: 32px;
+        max-width: 26px;
+        border-radius: 4px 4px 0 0;
+        object-fit:cover;
     }
     .sidebar-menu {
         gap: 5px;
@@ -5148,5 +5158,8 @@ ol.breadcrumb .active{
         margin-left: 1px;
         width: 78px;
         height: 1px;
+    }
+    .sidebar-menu{
+        min-width: 250px;
     }
 }

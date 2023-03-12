@@ -58,14 +58,12 @@
 [X] Blog detail. 
 [X] Mobile navbar spacing.
 [X] Mobilde detail search full width & font size. 
+[X] Postcard kücük erkanlar icin spacing/sizing ayaları.
 
-
-[] Postcard kücük erkanlar icin spacing/sizing ayaları.
-[] Dark theme tüm sayfalar.
-
-[] Footer & Cookie modal.
+[] Dark theme tam uyumluluk.
 [] Tüm sayfalar mobil responsive:
 + [] Post Details
+[] Footer & Cookie modal.
 
 
 [] Son donukunuşlar:
