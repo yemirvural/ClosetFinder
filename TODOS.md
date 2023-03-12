@@ -50,14 +50,15 @@
 + [X] Saved
 [X] Reels modal daha büyük olmalı. Resim boyutu itemslara kadar. Items alanı siyah. Reels img >> cover / center.
 [X] Settings icon ve sizing.
+[X] Celebrity Detail buğulu cam 90%.
+[X] Celebrity Detail line height daha düşük.
+
 
 [] Tab menü icon ve sizing.
 [] Mobilde detail search full width & font size. 
 [] Blog detail. 
 [] Magazine detail footer.
 [] Mobile navbar spacing.
-[] Celebrity Detail line height daha düşük. 
-[] Celebrity Detail buğulu cam 90%.
 [] Dark theme tüm sayfalar.
 [] Mobil Togglebar >> full width >> 465px max.
 [] Postcard kücük erkanlar icin spacing/sizing ayaları.

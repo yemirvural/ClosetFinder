@@ -185,7 +185,6 @@ header {
     font-weight: 700;
     font-size: 20px;
     white-space: nowrap;
-    color: var(--font-primary);
 }
 
 .tiny-title {
@@ -193,7 +192,6 @@ header {
     font-weight: 400;
     font-size: 16px;
     opacity: .6;
-    color: var(--font-primary);
 }
 
 .tiny-size {
@@ -2168,6 +2166,13 @@ header {
 
 /* Profile Page */ /* Profile Page */ /* Profile Page */ /* Profile Page */ /* Profile Page */ 
 
+.profile-inclusive{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+}
 
 .profile-container{
     display: flex;
@@ -2183,7 +2188,8 @@ header {
     height: 350px;
     min-height: 350px;
 }
-.profile-container::after{
+
+.profile-container::before{
     content: "";
     display: flex;
     position: absolute;
@@ -2194,41 +2200,44 @@ header {
     bottom: 0;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
 }
+.profile-inclusive .profile-container::after{
+    z-index: 0;
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 95%;
+    max-width: 1650px;
+ 
+    min-width: 20px;
+    height: 150px;
+    bottom: -15px;
+
+    border-radius: 23px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    border: 0.1px solid rgba(20, 151, 202, 0.1);
+    opacity: 0.9;
+}
 
 .profile-full{
     display: flex;
     position: relative;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     width: 80%;
     max-width: 1200px;
-    height: 150px;
+    height: 200px;
 }
 .profile-container .profile-info-inclusive{
     z-index: 2;
     display: flex;
     width: 100%;
-    min-width: 90%;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     position: relative;
-    margin-bottom: 45px;
 }
-.profile-container .profile-info-inclusive::after{
-    z-index: -1;
-    content: "";
-    display: flex;
-    position: absolute;
-    width: 100%;
-    min-width: 20px;
-    height: 125px;
-    left: 0;
-    bottom: 0;
-    border-radius: 23px;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(5px);  
-}
+
 
 .profile-container .profile-photo{
     z-index: 2;
@@ -2246,41 +2255,54 @@ header {
     height: auto;
 }
 
-.profile-container .profile-title{
+
+.profile-container .follow-button {
     display: flex;
-    position: relative;
-    top: 0;
-    right: 0;
-    flex-direction: column;
-    width: 125px;
-    height: 45px;
+    background: #801E5C;
+    padding: 0px 10px;
     color: #FFFFFF;
-    font-weight: 100;
+    border: 1px solid #FFFFFF;
+    border-radius: 13.5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1rem;
+    height: 34px;
+}
+.profile-container .share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
 }
 
 
 .profile-container .profile-box-inclusive{
-    z-index: 1;
     display: flex;
+    width: 100%;
+    height: 181px;
+    position: relative;
     flex-direction: column;
 }
 
 .profile-container .profile-bio-box{
     z-index: 1;
     display: flex;
-    position: relative;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 20px 15px;
+    position: absolute;
+    bottom: 0;
+    padding: 15px 10px;
     font-size: 16px;
-    width: 75%;
-    height: 125px;
 }
 
 .profile-container .profile-bio{
     all: unset;              
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2289,17 +2311,26 @@ header {
     overflow: hidden;
     max-height: 125px;
     font-weight: 500px;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
     color: #3D3D3D;
     /* more-button gelebilir. [reels]*/
 }
 .profile-container .profile-interaction{
     display: flex;
     position: absolute;
-    top: 75px;
-    right: 30px;
-    gap: 10px;
+    top: 50px;
+    right: 0px;
+    gap: 7px;
+}
+.profile-container .profile-title{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    height: fit-content;
+    width: max-content;
 }
 .profile-container .profile-title .followers-info{
     color: #FFFFFF;
@@ -2308,6 +2339,9 @@ header {
 }
 .profile-container .profile-title .followers-info::after{
     content: " ";
+}
+.profile-title > div{
+    color: #FFFFFF;
 }
 
 .posts-section{
@@ -4392,7 +4426,7 @@ ol.breadcrumb .active{
         align-items: center;
         width: 100%;
         padding: 0;
-        top: 10px;
+        bottom: 0;
         left: 0;
         height: 150px;
         padding: 0;
@@ -4417,17 +4451,17 @@ ol.breadcrumb .active{
     .profile-container .profile-bio{
         all: unset;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: 90%;
+        width: 100%;
         height: auto;
         overflow: hidden;
         max-height: 125px;
         font-weight: 500px;
         font-size: 1.1rem;
-        line-height: 24px;
+        line-height: 1.2rem;
         color: #3D3D3D;
     }
     .posts-section .profile-breadcrumb {
@@ -4455,21 +4489,22 @@ ol.breadcrumb .active{
         font-size: 1.5rem;
     }
     .profile-container .profile-interaction{
-        top: 10px;
-        right: 10px;
+        top: 34px;
+        right: -42px;
+        gap: 5px;
     }
     .profile-container .post-tab-menu{
         z-index: 1;
     }
     .profile-container .profile-photo{
         position: absolute;
-        top: -85px;
-        left: 15px;
+        top: -80px;
+        left: 0px;
     }
     .profile-container .profile-title{
         position: absolute;
-        top: -40px;
-        left: 145px;
+        top: -5px;
+        left: 130px;
     }
     .profile-container .profile-photo img{
         width: 125px;
@@ -4570,7 +4605,7 @@ ol.breadcrumb .active{
         align-items: center;
         width: 100%;
         padding: 0;
-        top: 10px;
+        bottom: 0;
         left: 0;
         height: 150px;
         padding: 0;
@@ -4595,18 +4630,19 @@ ol.breadcrumb .active{
     .profile-container .profile-bio{
         all: unset;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: 90%;
+        width: 100%;
         height: auto;
         overflow: hidden;
         max-height: 125px;
         font-weight: 500px;
         font-size: 1.1rem;
-        line-height: 24px;
+        line-height: 1.2rem;
         color: #3D3D3D;
+        bottom: 0;
     }
     .profile-container .profile-info-inclusive{
         width: 100%;
@@ -4628,16 +4664,16 @@ ol.breadcrumb .active{
         font-size: 1.5rem;
     }
     .profile-container .profile-interaction{
-        top: 10px;
-        right: 10px;
+        top: 35px;
+        right: -30px;
     }
     .profile-container .post-tab-menu{
         z-index: 1;
     }
     .profile-container .profile-photo{
         position: absolute;
-        top: -65px;
-        left: 15px;
+        top: -45px;
+        left: 0;
     }
     .profile-container .profile-photo img{
         width: 95px;
@@ -4645,8 +4681,8 @@ ol.breadcrumb .active{
     }
     .profile-container .profile-title{
         position: absolute;
-        top: -40px;
-        left: 120px;
+        top: -5px;
+        left: 100px;
     }
     .post-tab-menu{
         width: 475px;
@@ -4697,14 +4733,16 @@ ol.breadcrumb .active{
         font-size: 12px;
     }
     .profile-container .profile-interaction{
-        top: 8px;
-        right: 8px;
+        right: -10px;
+        gap: 3px;
     }
     .profile-container .profile-title .bold-title{
         font-size: 1.1rem;
     }
     .profile-container .profile-title {
-        left: 114px;
+        left: 95px;
+        top: 5px;
+
     }
     .follow-button {
         padding: 0px 10px;
@@ -4719,12 +4757,28 @@ ol.breadcrumb .active{
         top: 0;
         height: 200px;
     }
-    .profile-container .profile-bio{
+    .profile-container .profile-bio {
+        all: unset;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
         overflow: hidden;
-        max-height: 120px;
+        text-overflow: ellipsis;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        max-height: 125px;
         font-weight: 500px;
         font-size: 1.1rem;
-        line-height: 24px;
+        line-height: 1.2rem;
+        height: 4.8rem;
+        color: #3D3D3D;
+        bottom: 0;
+    }
+    .profile-container .profile-photo{
+        position: absolute;
+        top: -40px;
+        left: 0px;
     }
     .profile-container .profile-bio p{
         height: 72px;
