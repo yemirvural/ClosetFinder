@@ -37,6 +37,7 @@
 [X] Sidebar settings sticky.
 [X] Legal info & About kismi sizing düzelt.
 [X] Post Cards >> Linear gradient [bottom]
+[X] Tüm sayfalar mobil responsive:
 + [X] Profile Closet
 + [X] Profile Magazine
 + [X] Profile Posts
@@ -63,7 +64,6 @@
 [X] Dark theme mobil.
 
 
-[] Tüm sayfalar mobil responsive:
 + [] Post Details
 [] Footer & Cookie modal.
 

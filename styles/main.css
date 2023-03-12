@@ -23,7 +23,7 @@
     /* Font Sizes: 38px,24px,22px,20px,18px,16px,14px,12px */
 
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     :root{
         --primary: #222222;
         --background-color: #1A1A1A;
@@ -454,6 +454,112 @@ header {
 .header-box>span {
     display: none;
 }
+
+.footer-inclusive{
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    width: calc(100% - 300px);
+    left: 300px;
+    display: flex;
+    color: var(--dark);
+}
+
+.footer-container{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    max-width: unset;
+    height: auto;
+    padding: 0;
+    background-color: #FAFAFA;;
+}
+.corner-box{
+    display: flex;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #801E5C;
+    object-fit: cover;
+    border-radius: 0px 50px 0px 0px;
+}
+.footer-main{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    flex-direction: row;
+    background-color: #FAFAFA;;
+    padding: 40px;
+    margin: 0
+}
+.footer-main > div{
+
+    height: 150px;
+}
+.footer-main h5{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1rem;
+    color: #1E1E1E;
+}
+.footer-main li a{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #000000;
+}
+.subscribe-mail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(192, 192, 192, 0.4);
+    max-width: 380px;
+    height: 30px;
+}
+.subscribe-mail input{
+    width: 90%;
+    background-color: unset;
+    outline: unset;
+    border: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #000000;
+    padding: 7px 18px;
+}
+.subscribe-mail input::placeholder{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #000000;
+}
+.subscribe-mail button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    margin: 1px;
+}
+.subscribe-mail button img{
+    width: 13px;
+    height: 13px;
+}
+.social-nav img{
+    width: 100%;
+    height: auto;
+}
+
+
 
 /* Mobile Sidebar */
 
