@@ -52,9 +52,9 @@
 [X] Settings icon ve sizing.
 [X] Celebrity Detail buğulu cam 90%.
 [X] Celebrity Detail line height daha düşük.
+[X] Tab menü icon ve sizing.
 
 
-[] Tab menü icon ve sizing.
 [] Mobilde detail search full width & font size. 
 [] Blog detail. 
 [] Magazine detail footer.
