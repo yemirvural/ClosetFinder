@@ -53,6 +53,7 @@
 [X] Celebrity Detail buğulu cam 90%.
 [X] Celebrity Detail line height daha düşük.
 [X] Tab menü icon ve sizing.
+[X] Mobil Togglebar >> full width >> 465px max.
 
 
 [] Mobilde detail search full width & font size. 
@@ -60,8 +61,8 @@
 [] Magazine detail footer.
 [] Mobile navbar spacing.
 [] Dark theme tüm sayfalar.
-[] Mobil Togglebar >> full width >> 465px max.
 [] Postcard kücük erkanlar icin spacing/sizing ayaları.
+[] Footer & Cookie modal.
 
 [] Tüm sayfalar mobil responsive:
 + [] Post Details

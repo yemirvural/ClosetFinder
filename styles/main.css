@@ -458,6 +458,7 @@ header {
 #sidebarToggle .offcanvas-header{
     background-color: var(--primary);
     color: #FFFFFF;
+    width: 100%;
 }
 #sidebarToggle .offcanvas-header svg path{
     fill: #FFFFFF;
@@ -483,7 +484,7 @@ header {
 }
 #sidebarToggle .offcanvas-body{
     display: flex;
-    max-width: 375px;
+    width: 100%;
     overflow: hidden;
     flex-direction: column;
     align-items: flex-start;
@@ -503,7 +504,6 @@ header {
     align-items: center;
     width: 100%; 
     height: auto;
-    max-width: 375px;
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 1fr)); 
     grid-auto-rows: 30px; 
@@ -573,14 +573,14 @@ header {
     display: flex;
     position: relative;
     align-items: flex-start;
-    width: 375px;
+    width: 100%;
     height: 70px;
     margin-bottom: 0;
 }
 
 #sidebarToggle .offcanvas-body .popular-celebrities>div{
     display: flex;
-    width: 399px;
+    width: 100%;
 }
 #sidebarToggle .offcanvas-body .popular-celebrities ul{
     height: 70px;
@@ -606,7 +606,7 @@ header {
     display: flex;
     position: relative;
     align-items: flex-start;
-    width: 375px;
+    width: 100%;
     height: 60px;
 }
 #sidebarToggle .offcanvas-body .event-hashtags ul {
@@ -4949,6 +4949,9 @@ ol.breadcrumb .active{
     .sidebar-reels .reels-items {
         width: 100%;
         height: 225px;
+    }
+    #sidebarToggle{
+        width: 100%;
     }
 }
 @media(max-width: 320px){
