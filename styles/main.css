@@ -1957,6 +1957,10 @@ header {
     width: 100%;
     justify-content: center;
 }
+.password-settings .password-inputs input{
+    background-color: var(--background-color);
+    color: var(--font-primary);
+}
 
 .password-settings .password-inputs div {
     display: flex;
@@ -2387,16 +2391,16 @@ header {
     align-items: center;
     width: 165px;
     height: 45px;
-    border: 1.5px solid var(--post-tab-passive);
     border-bottom: 0;
     border-radius: 10px 10px 0 0;
     background: rgba(128, 30, 92, 0.04);
+    border: 1.5px solid var(--post-tab-passive);
     color: var(--post-tab-font);
+    background-color: var(--post-tab-passive);
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 12px;
     gap: 5px;
-    background-color: var(--post-tab-passive);
 }
 .post-tab-button svg path{
     fill: var(--post-tab-font);
@@ -3011,7 +3015,7 @@ ol.breadcrumb .active{
 
 .all-magazine-container .event-hashtags ul{
     gap: 0;
-    height: 95px;
+    height: 100px;
 }
 .all-magazine-container .magazine-container{
     margin-top: 30px;
@@ -3163,7 +3167,7 @@ ol.breadcrumb .active{
     justify-content: center;
     width: 100%;
     height: auto;
-    background: #FFFFFF;
+    background: var(--background-color);
     border: 1px solid #D9D9D9;
     border-radius: 10px;
 }
@@ -3190,7 +3194,7 @@ ol.breadcrumb .active{
     font-size: 22px;
     line-height: 27px;
     display: flex;
-    color: #1A1A1A;
+    color: var(--font-primary);
 }
 .results-container .results-body .result-item img{
     width: 36px;
@@ -3200,7 +3204,7 @@ ol.breadcrumb .active{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #1A1A1A;
+    color: var(--font-primary);
     opacity: 0.6;
 }
 
@@ -3222,32 +3226,37 @@ ol.breadcrumb .active{
     align-items: center;
     width: 150px;
     height: 30px;
-    border: 1.5px solid #D9D9D9;
     border-bottom: 0;
     border-radius: 10px 10px 0px 0px;
-    background: rgba(128, 30, 92, 0.04);
-    color: #801E5C;
+    border: 1.5px solid var(--post-tab-passive);
+    color: var(--post-tab-font);
+    background-color: var(--post-tab-passive);
     font-weight: 400;
     font-size: 16px;
     line-height: 12px;
+}
+.results-tab-button svg path{
+    fill: var(--post-tab-font);
 }
 .results-tab-input{
     display: none;
     visibility: hidden;
 }
 .results-tab-input:checked + label .results-tab-button{
-    background-color: #FFFFFF;
+    background-color: var(--post-tab-active);
+    border-color: #D9D9D9;
+    border-bottom: 0;
 }
 .results-tab-input:checked + label::after{
     content: "";
     z-index: 999;
     display: flex;
     position: absolute;
-    margin-left: 1.5px;
+    margin-left: 1px;
     top: 29.5px;
     width: 148px;
     height: 1px;
-    background-color:#FFFFFF;
+    background-color: var(--background-color);
 }
 
 /* Post Detail Page */ /* Post Detail Page */ /* Post Detail Page */ /* Post Detail Page */ /* Post Detail Page */ 

@@ -61,6 +61,8 @@
 [X] Postcard kücük erkanlar icin spacing/sizing ayaları.
 [X] Dark theme tam uyumluluk.
 
+Dark theme mobil.
+
 [] Tüm sayfalar mobil responsive:
 + [] Post Details
 [] Footer & Cookie modal.
