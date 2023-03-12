@@ -57,12 +57,12 @@
 [X] Magazine detail footer.
 [X] Blog detail. 
 [X] Mobile navbar spacing.
+[X] Mobilde detail search full width & font size. 
 
 
-[] Mobilde detail search full width & font size. 
 [] Postcard kücük erkanlar icin spacing/sizing ayaları.
-
 [] Dark theme tüm sayfalar.
+
 [] Footer & Cookie modal.
 [] Tüm sayfalar mobil responsive:
 + [] Post Details

@@ -130,10 +130,6 @@ header {
 
 /* Detailed Search */
 
-.search-detailed {
-    display: none;
-}
-
 .search-detailed:hover {
     display: flex;
     visibility: visible;
@@ -145,6 +141,7 @@ header {
 }
 
 .search-detailed {
+    display: none;
     position: absolute;
     flex-direction: column;
     align-items: flex-start;
@@ -153,7 +150,6 @@ header {
     width: 60vw;
     max-width: 1200px;
     height: auto;
-    max-height: 60vw;
     margin-left: 325px;
 
     background: #202020;
@@ -3875,7 +3871,7 @@ ol.breadcrumb .active{
     }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 768px) {
     .postcards {
         row-gap: 20px;
         padding-bottom: 20px;
@@ -4092,7 +4088,49 @@ ol.breadcrumb .active{
         width: 90%;
         gap: 8px;
     }
+    .search-detailed {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        right: 0;
+        top: 50px;
+        
+        width: 100%;
+        margin-left: 0;
     
+        background: #202020;
+        border: 1px solid rgba(32, 32, 32, 0.6);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    
+        font-weight: 400;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+    .search-detailed  .last-searchs {
+        margin-bottom: 25px;
+        padding: 0 12px;
+        max-height: 100px;
+    }
+    .search-detailed .event-hashtags ul {
+        row-gap: 3px;
+        column-gap: 7px;
+        height: 75px;
+    }
+    .search-detailed .popular-celebrities ul {
+        height: 80px;
+        column-gap: 5px;
+    }
+    .search-detailed .popular-celebrities li {
+        padding: 0;
+        gap: 5px;
+    }
+    .search-box:focus-within+.search-detailed {
+        display: flex;
+        visibility: visible;
+    }
 }
 
 @media(max-width: 619px) {
@@ -4189,27 +4227,6 @@ ol.breadcrumb .active{
 
     .sidebar-menu {
         gap: 25px;
-    }
-    .search-detailed {
-        position: absolute;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 12px;
-        top: 50px;
-        width: 60vw;
-        max-width: 1200px;
-        min-height: 450px;
-        max-height: 60vw;
-        margin-left: 0;
-    
-        background: #202020;
-        border: 1px solid rgba(32, 32, 32, 0.6);
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-        border-radius: 8px;
-    
-        font-weight: 400;
-        font-size: 16px;
-        color: #FFFFFF;
     }
     .search-box{
         min-width: 160px;
