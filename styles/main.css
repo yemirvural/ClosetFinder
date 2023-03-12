@@ -2780,19 +2780,25 @@ ol.breadcrumb .active{
     width: 100%;
     flex-wrap: wrap;
 }
+.magazine-detail-footer > div > div:last-child{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    background-color: red;
+}
 .magazine-detail-footer > div{
     display: flex;
     position: relative;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
-    height: 150px;
+    align-items: center;
     width: 100%;
+    height: 150px;
     flex-wrap: wrap;
-}
-.magazine-detail-footer > div{
-    width: 100%;
-    height: 150px;
 }
 
 .writer-info{
@@ -2861,12 +2867,14 @@ ol.breadcrumb .active{
     justify-content: center;
     align-items: center;
     border: 1px solid #232323;
+    padding: 5px 15px;
     border-radius: 7px;
     font-weight: 400;
     font-size: 1.2em;
     line-height: 20px;
-    width: 125px;
+    width: auto;
     height: 39px;
+    top: 0;
 }
 
 .subject-hasthags span::before {
@@ -2875,9 +2883,9 @@ ol.breadcrumb .active{
 .magazine-interaction {
     display: flex;
     position: relative;
-    gap: 12px;
+    gap: 8px;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
 }    
 .wide-share-button{
@@ -3635,7 +3643,6 @@ ol.breadcrumb .active{
         justify-content: center;
         align-items: center;
     }
-
     .sidebar-menu {
         display: flex;
         margin-top: 0;
@@ -3649,6 +3656,7 @@ ol.breadcrumb .active{
         width: 75vw;
         height: 4rem;
     }
+    
     .sidebar-menu > div{
         display: none;
         width: fit-content;
@@ -3657,23 +3665,30 @@ ol.breadcrumb .active{
     .sidebar-menu > div span{
         display: none;
     }
+    .sidebar-menu > div.active{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sidebar-menu > div.active a{
+        display: flex;
+        gap: 5px;
+    }
     .sidebar-menu > div.active span{
         display: flex;
-        left: 32px;
-    }
-    .sidebar-menu > div.active{
-        width: 80px;
         position: relative;
+        height: unset;
+        left: 0;
     }
+
     .sidebar-menu > div:nth-of-type(-n+3){
         display: flex;
         visibility: visible;
     }
-    
     .logo {
         display: none;
     }
-
     .notification svg{
         width: 20px;
         height: auto;
@@ -3788,16 +3803,15 @@ ol.breadcrumb .active{
         margin-bottom: 0;
     }
     .magazine-detail-footer .subject-hasthags span{
-        width: 75px;
-        height: 28px;
-        padding: 10px 35px;
+        width: auto;
+        height: unset;
+        padding: 5px 18px;
         font-size: 1rem;
     }
     .magazine-detail-footer .wide-share-button{
         font-size: 1rem;
         width: 90px;
         height: 28px;
-        margin-top: 18px;
     }
     .magazine-detail-footer .wide-share-button img{
         width: 1.2rem;
@@ -4174,7 +4188,7 @@ ol.breadcrumb .active{
     }
 
     .sidebar-menu {
-        gap: 12px;
+        gap: 25px;
     }
     .search-detailed {
         position: absolute;
@@ -4562,6 +4576,16 @@ ol.breadcrumb .active{
         font-weight: 400;
         font-size: 1.2rem;
     }
+    .magazine-detail-footer .subject-hasthags {
+        gap: 6px;
+    }
+    .magazine-detail-footer .subject-hasthags span {
+        width: auto;
+        height: 24px;
+        border-radius: 7px;
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
 }
 
 @media(max-width: 770px) {
@@ -4695,6 +4719,15 @@ ol.breadcrumb .active{
         font-weight: 400;
         font-size: 1.1rem;
     }
+    .magazine-detail-footer .subject-hasthags {
+        gap: 4px;
+    }
+    .magazine-detail-footer .subject-hasthags span {
+        width: auto;
+        border-radius: 7px;
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
 }
 /* Mobile Responsive Addition */
  
@@ -4749,20 +4782,48 @@ ol.breadcrumb .active{
         gap: 5px;
         font-size: 10px;
     }
+    .sidebar-menu > div.active a {
+        display: flex;
+        gap: 0px;
+    }
 
     .postcard-item>img {
         width: 100%;
         min-width: 16px;
     }
     .sidebar-menu {
-        gap: 0;
+        gap: 5px;
     }
+    .sidebar-menu svg{
+        width: 50%;
+        height: auto;
+    }
+    .sidebar-menu img{
+        width: 55%;
+        height: auto;
+    }
+    .sidebar-menu span{
+        font-size: 0.9rem;
+    }
+
     .sidebar-menu div.active{
-        margin-right: 15px;
+        width: min-content;
+        margin-right: 0;
+    }
+    .magazine-detail-footer .subject-hasthags {
+        gap: 4px;
+    }
+    .magazine-detail-footer .subject-hasthags span {
+        width: auto;
+        border-radius: 5px;
+        padding: 4px 8px;
+        font-size: 0.8rem;
     }
     .magazine-detail-container .magazine-detail-article p{
         margin-top: 0;
         margin-bottom: 0;
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
     .magazine-detail-container {
         width: 95%;
@@ -5024,7 +5085,6 @@ ol.breadcrumb .active{
         font-size: 0.8rem;
         width: 70px;
         height: 24px;
-        margin-top: 18px;
     }
     .magazine-detail-footer .wide-share-button img {
         width: 12px;
