@@ -60,8 +60,8 @@
 [X] Mobilde detail search full width & font size. 
 [X] Postcard kücük erkanlar icin spacing/sizing ayaları.
 [X] Dark theme tam uyumluluk.
+[X] Dark theme mobil.
 
-Dark theme mobil.
 
 [] Tüm sayfalar mobil responsive:
 + [] Post Details

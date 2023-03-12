@@ -1249,8 +1249,8 @@ header {
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background: #801E5C;
-    border: 1px solid #801E5C;
+    background: var(--dark-prime);
+    border: 1px solid var(--dark-prime);
 }
 .checkbox-button-group input[type="checkbox"]:checked + .checkbox-button {
     display: flex;
@@ -1259,8 +1259,8 @@ header {
     width: 26px;
     height: 26px;
     border-radius: 4px;
-    background: #801E5C;
-    border: 1px solid #801E5C;
+    background: var(--dark-prime);
+    border: 1px solid var(--dark-prime);
 }
 
 .checkbox-button-group input:checked + label + label{
@@ -1313,8 +1313,8 @@ header {
     min-width: 250px;
     max-width: 350px;
     background: rgba(128, 30, 92, 0.2);
-    border: 1px solid #801E5C;
-    color: #801E5C;
+    border: 1px solid var(--dark-prime);
+    color:var(--dark-prime);
     font-weight: 700;
     font-size: 16px;
 }
@@ -2116,7 +2116,7 @@ header {
     font-weight: 700;
     font-size: 20px;
     line-height: 18px;
-    color: #3D3D3D;
+    color: var(--font-primary);
     margin-bottom: 8px;
 }
 .filter-settings .filter-type .sub-title button{
@@ -2126,7 +2126,7 @@ header {
     white-space:nowrap;
     font-weight: 400;
     font-size: 16px;
-    color: #801E5C;
+    color: var(--dark-prime);
     line-height: 18px;
     height: 18px;
 }
