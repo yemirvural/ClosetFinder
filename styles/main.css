@@ -467,26 +467,53 @@ header {
 
 .footer-container{
     display: flex;
+    justify-content: center;
     position: relative;
     flex-direction: row;
+    bottom: 0;
     width: 100%;
     max-width: unset;
-    height: auto;
+    min-height: 214px;
     padding: 0;
-    background-color: #FAFAFA;;
+    background-color: #FAFAFA;
+}
+.footer-container footer{
+    max-width: unset;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.footer-container footer > div:not(:first-child){
+    padding: 20px;   
 }
 .corner-box{
     display: flex;
-    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     padding: 0;
     left: 0;
     top: 0;
-    width: 30%;
+    min-width: 30%;
     height: 100%;
+    min-height: 150px;
     background-color: #801E5C;
-    object-fit: cover;
     border-radius: 0px 50px 0px 0px;
 }
+.corner-box span{
+    position: absolute;
+    bottom: 1%;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+}
+.corner-box img{
+    width: 50%;
+    height: auto;
+}
+/*
 .footer-main{
     display: flex;
     position: absolute;
@@ -495,21 +522,18 @@ header {
     width: 70%;
     height: 100%;
     flex-direction: row;
-    background-color: #FAFAFA;;
+    background-color:5#FAFAFA;;
     padding: 40px;
     margin: 0
 }
-.footer-main > div{
-
-    height: 150px;
-}
-.footer-main h5{
+*/
+.footer-container h5{
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1rem;
     color: #1E1E1E;
 }
-.footer-main li a{
+.footer-container li a{
     font-weight: 400;
     font-size: 1rem;
     line-height: 1rem;
@@ -4013,9 +4037,13 @@ ol.breadcrumb .active{
         height: 6rem;
         overflow: hidden;
     }
+    .footer-inclusive{
+        left: 0px;
+        width: 100%;
+    }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
     .postcards {
         row-gap: 20px;
         padding-bottom: 20px;
@@ -4279,6 +4307,27 @@ ol.breadcrumb .active{
     .search-box:focus-within+.search-detailed {
         display: flex;
         visibility: visible;
+    }
+    .corner-box {
+        height: 175px;
+        border-radius: 50px 50px 15px 15px;
+        z-index: 1;
+    }
+    .corner-box img{
+        width: 40%;
+        height: auto;
+    }
+
+    .corner-box:after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(250, 250, 250) 75%);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;   
+        border-radius: 10px;
     }
 }
 

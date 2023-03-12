@@ -64,8 +64,9 @@
 [X] Dark theme mobil.
 
 
-+ [] Post Details
-[] Footer & Cookie modal.
+[] Responsive footer. 
+[] Cookie modal.
+[] Responsive Post Details
 
 
 [] Son donukunuşlar:
