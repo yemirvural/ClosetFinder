@@ -2407,10 +2407,11 @@ header {
 .posts-section .profile-breadcrumb{
     display: flex;
     position: relative;
+    align-items: flex-start;
     width: 100%;
     left: 0;
     height: 50px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 .posts-section .post-filter-menu{
     display: flex;
@@ -2742,7 +2743,7 @@ ol.breadcrumb .active{
 
 .magazine-detail-container{
     display: flex;
-    margin-top: 28px;
+    margin-top: 0;
     position: relative;
     flex-direction: column;
     justify-content: flex-start;
@@ -2751,6 +2752,7 @@ ol.breadcrumb .active{
     align-items: center;
     width: 85%;
     font-size: 16px;
+    gap: 15px;
 }
 .magazine-detail-container .magazine-detail-article{
     display: flex;
@@ -2759,23 +2761,38 @@ ol.breadcrumb .active{
     max-width: 1250px;
     white-space:pre-line;
     
-    margin-top: 15px;
-    margin-bottom: 35px;
+    margin-top: 0;
+    margin-bottom: 25px;
     
     font-weight: 400;
-    font-size: 1.6em;
-    line-height: 30px;
+    font-size: 1.3em;
+    line-height: 1.5rem;
     color: var(--font-primary);
 }
 
 .magazine-detail-footer{
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 65px;
+    align-items: flex-end;
+    height: 150px;
     width: 100%;
     flex-wrap: wrap;
+}
+.magazine-detail-footer > div{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 150px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.magazine-detail-footer > div{
+    width: 100%;
+    height: 150px;
 }
 
 .writer-info{
@@ -2786,11 +2803,17 @@ ol.breadcrumb .active{
     height: 65px;
     gap: 7px;
 }
+.writer-info .writer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #801E5C;
+    border-radius: 55px;
+}
 .writer-info .writer-img img{
     width: 59px;
     height: 59px;
-    border: 1px solid #801E5C;
-    border-radius: 55px;
 }
 
 .writer-info .writer-follow{
@@ -2827,10 +2850,11 @@ ol.breadcrumb .active{
     flex-direction: row;
     position: absolute;
     gap: 10px;
-    right: 265px;
     
     max-width: 350px;
     height: 45px;
+    top: 0;
+    left: 0;
 }
 .subject-hasthags span {
     display: flex;
@@ -2850,11 +2874,10 @@ ol.breadcrumb .active{
 }    
 .magazine-interaction {
     display: flex;
-    position: absolute;
+    position: relative;
     gap: 12px;
-    right: 0;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
 }    
 .wide-share-button{
@@ -2894,8 +2917,8 @@ ol.breadcrumb .active{
 
 .magazine-detail-container .magazine-similiar{
     width: 100%;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 1.4em;
     color: #4B4B4B;
@@ -3574,12 +3597,19 @@ ol.breadcrumb .active{
 @media(max-width: 1349px) {
     .magazine-detail-footer .subject-hasthags{
         position: absolute;
-        right: 0px;
-        margin-bottom: 175px;
+        top: 0;
+        left: 0;
     }
     .magazine-detail-container .magazine-detail-article p{
-        margin-top: 45px;
-        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-bottom: 45px;
+    }
+    .writer-info {
+        position: relative;
+        max-width: 370px;
+        height: 65px;
+        gap: 7px;
+        bottom:0;
     }
 } 
 @media(max-width: 1199px) {
@@ -3749,13 +3779,13 @@ ol.breadcrumb .active{
         overflow: hidden;
     }
     .magazine-detail-container .magazine-detail-article p{
-        margin-top: 45px;
+        margin-top: 0;
         margin-bottom: 0;
     }
     .magazine-detail-footer .subject-hasthags{
         position: absolute;
         right: 0px;
-        margin-bottom: 175px;
+        margin-bottom: 0;
     }
     .magazine-detail-footer .subject-hasthags span{
         width: 75px;
@@ -3774,9 +3804,15 @@ ol.breadcrumb .active{
         height: auto;
     }
     .magazine-detail-footer .like-button{
+        display: flex;
+        position: relative;
         font-size: 1rem;
-        width: 36px;
-        height: 36px;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+    }
+    .magazine-detail-footer .like-button button{
+        padding: 0;
     }
     .magazine-detail-footer .like-button img{
         width: 16px;
@@ -3784,14 +3820,11 @@ ol.breadcrumb .active{
     }
     .magazine-detail-footer .magazine-interaction{
         position: absolute;
-        right: 0px;
-        margin-top: 175px;
-    }
-    .magazine-detail-container .magazine-detail-footer{
-        margin-top: 80px;
+        right: 0;
+        margin-top: 0;
     }
     .magazine-detail-container div.magazine-similiar{
-        margin-top: 120px;
+        margin-top: 0;
     }
     .all-magazine-container .magazine-card {
         padding: 0;
@@ -4041,6 +4074,10 @@ ol.breadcrumb .active{
         font-size: 1.2rem;
         line-height: 1.2rem;
     }
+    .magazine-detail-container{
+        width: 90%;
+        gap: 8px;
+    }
     
 }
 
@@ -4172,22 +4209,28 @@ ol.breadcrumb .active{
         height: 25px;
     }
     .breadcrumb{
+        align-items: center;
         height: 30px;
         font-size: 0.8em;
         line-height: 1em;
         margin-bottom: 0;
     }
+    .magazine-detail-container{
+        width: 95%;
+        gap: 10px;
+    }
     .magazine-detail-container .magazine-detail-article{
-        margin-top: 15px;
+        margin-top: 0;
         margin-bottom: 35px;
         
         font-weight: 400;
         font-size: 1rem;
-        line-height: 30px;
+        line-height: 1.5rem;
     }
     .magazine-detail-container .magazine-detail-article p{
         font-size: 1.4rem;
         font-weight: 400;
+        margin-top: 0;
     }
     .magazine-header .article-title{
         bottom: 27px;
@@ -4203,14 +4246,15 @@ ol.breadcrumb .active{
     }
     .posts-section .magazine-detail-container .profile-breadcrumb{
         margin-bottom: 5px;
+        margin-top: 10px;
     }
     .posts-section .magazine-similar-container .magazine-cards{
         justify-content: space-evenly;
         max-width: 550px;
         width: 100%;
+        height: auto;
         row-gap: 10px;
         column-gap: 0px;
-        margin-bottom: 150px;
     }
     .magazine-similar-container .magazine-cards .magazine-card {
         flex-direction: column;
@@ -4247,10 +4291,6 @@ ol.breadcrumb .active{
         line-height: 1.2rem;
         height: 7.2rem;
         overflow: hidden;
-    }
-    .magazine-detail-container .magazine-detail-article p{
-        margin-top: 45px;
-        margin-bottom: 0;
     }
     .magazine-detail-container .writer-info .writer-name{ 
         font-weight: 700;
@@ -4330,93 +4370,6 @@ ol.breadcrumb .active{
     }
 }
 
-/* Mobile Responsive Addition */
- 
-@media(max-width: 372px) {
-    .postcards {
-        row-gap: 20px;
-        padding-bottom: 20px;
-    }
-
-    .postcard-inclusive {
-        width: calc(125px + 24px);
-        height: calc(175px + 8px);
-    }
-    .postcard-header>span {
-        white-space: pre-wrap;
-        max-width: 100px;
-        line-height: 1.2rem;
-        max-height: 2.4rem;
-        bottom: 36px;
-        left: 12px;
-    }
-    .postcard {
-        min-width: 150px;
-        height: auto;
-        font-size: 10px;
-    }
-
-    .postcard-header>span>img {
-        width: 24px;
-        right: 2px;
-        bottom: 5px;
-    }
-
-    .postcard-header {
-        width: 125px;
-        height: 175px;
-    }
-
-    .postcard-body {
-        row-gap: 9px;
-        width: 125px;
-        height: 175px;
-        margin-left: 24px;
-        margin-top: 8px;
-    }
-
-    .postcard-item {
-        margin-right: 8px;
-        margin-left: auto;
-        width: 18px;
-        height: 45px;
-        gap: 5px;
-        font-size: 10px;
-    }
-
-    .postcard-item>img {
-        width: 100%;
-        min-width: 16px;
-    }
-    .sidebar-menu {
-        gap: 0;
-    }
-    .sidebar-menu div.active{
-        margin-right: 15px;
-    }
-    .magazine-detail-container .magazine-detail-article p{
-        margin-top: 45px;
-        margin-bottom: 0;
-    }
-    .breadcrumb {
-        height: 30px;
-        font-size: 1rem;
-        line-height: 1em;
-    }
-    .breadcrumb-container .profile-breadcrumb {
-        top: 5px;
-        left: 30px;
-    }
-    .outfits-header .follow-button {
-        width: 60px;
-        height: 22px;
-        font-size: 0.8rem;
-        border-radius: 15px;
-    }
-    .outfits-header-title {
-        gap: 6px;
-    }
-}
 
 @media(max-width: 1009px) {
     .profile-full {
@@ -4455,6 +4408,13 @@ ol.breadcrumb .active{
         font-size: 0.85em;
         line-height: 1rem;
     }
+    .magazine-detail-container .magazine-detail-article {
+        margin-bottom: 25px;
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.4rem;
+
+    }
     .profile-container .profile-bio{
         all: unset;
         display: -webkit-box;
@@ -4475,6 +4435,7 @@ ol.breadcrumb .active{
         top: 0;
         height: 35px;
         margin-bottom: 0;
+        margin-top: 25px;
     }
     .profile-container .profile-info-inclusive{
         width: 100%;
@@ -4735,6 +4696,97 @@ ol.breadcrumb .active{
         font-size: 1.1rem;
     }
 }
+/* Mobile Responsive Addition */
+ 
+@media(max-width: 372px) {
+    .postcards {
+        row-gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .postcard-inclusive {
+        width: calc(125px + 24px);
+        height: calc(175px + 8px);
+    }
+    .postcard-header>span {
+        white-space: pre-wrap;
+        max-width: 100px;
+        line-height: 1.2rem;
+        max-height: 2.4rem;
+        bottom: 36px;
+        left: 12px;
+    }
+    .postcard {
+        min-width: 150px;
+        height: auto;
+        font-size: 10px;
+    }
+
+    .postcard-header>span>img {
+        width: 24px;
+        right: 2px;
+        bottom: 5px;
+    }
+
+    .postcard-header {
+        width: 125px;
+        height: 175px;
+    }
+
+    .postcard-body {
+        row-gap: 9px;
+        width: 125px;
+        height: 175px;
+        margin-left: 24px;
+        margin-top: 8px;
+    }
+
+    .postcard-item {
+        margin-right: 8px;
+        margin-left: auto;
+        width: 18px;
+        height: 45px;
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .postcard-item>img {
+        width: 100%;
+        min-width: 16px;
+    }
+    .sidebar-menu {
+        gap: 0;
+    }
+    .sidebar-menu div.active{
+        margin-right: 15px;
+    }
+    .magazine-detail-container .magazine-detail-article p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .magazine-detail-container {
+        width: 95%;
+        gap: 0;
+    }
+    .breadcrumb {
+        height: 30px;
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+    .breadcrumb-container .profile-breadcrumb {
+        top: 5px;
+        left: 30px;
+    }
+    .outfits-header .follow-button {
+        width: 60px;
+        height: 22px;
+        font-size: 0.8rem;
+        border-radius: 15px;
+    }
+    .outfits-header-title {
+        gap: 6px;
+    }
+}
 @media(max-width: 490px) {  /* >> 425 */
     body{
         font-size: 12px;
@@ -4952,6 +5004,53 @@ ol.breadcrumb .active{
     }
     #sidebarToggle{
         width: 100%;
+    }
+    .writer-info .writer-img{
+        width: 41px;
+        height: 41px;
+    }
+    .magazine-detail-container .writer-info .writer-name {
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+    }
+    .magazine-detail-container .writer-info .follow-button {
+        width: 70px;
+        white-space: nowrap;
+        height: 17px;
+        font-size: 0.8rem;
+    }
+    .magazine-detail-footer .wide-share-button {
+        font-size: 0.8rem;
+        width: 70px;
+        height: 24px;
+        margin-top: 18px;
+    }
+    .magazine-detail-footer .wide-share-button img {
+        width: 12px;
+        left: 0;
+        bottom: 3px;
+        height: auto;
+    }
+    .magazine-detail-footer .like-button {
+        font-size: 1rem;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        bottom: 0;
+    }
+    .like-button button{
+        width: 32px;
+        height: 32px;
+    }
+    .like-button span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(128, 30, 92, 0.6);
+        border-radius: 6px;
+        width: 32px;
+        height: 32px;
     }
 }
 @media(max-width: 320px){
