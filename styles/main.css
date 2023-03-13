@@ -4387,11 +4387,11 @@ ol.breadcrumb .active{
     }
     .corner-box {
         height: 175px;
-        border-radius: 50px 50px 15px 15px;
+        border-radius: 0 0 0 0;
         z-index: 1;
     }
     .corner-box img{
-        width: 40%;
+        width: 25%;
         height: auto;
     }
 
@@ -4404,7 +4404,7 @@ ol.breadcrumb .active{
         top: 0;
         width: 100%;
         height: 100%;   
-        border-radius: 10px;
+        border-radius: 0;
     }
 }
 
@@ -5143,6 +5143,12 @@ ol.breadcrumb .active{
     }
     .outfits-header-title {
         gap: 6px;
+    }
+    .corner-box {
+        height: max-content;
+    }
+    .corner-box img{
+       width: 40%;
     }
 }
 @media(max-width: 490px) {  /* >> 425 */
