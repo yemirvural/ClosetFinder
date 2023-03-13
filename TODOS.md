@@ -66,7 +66,8 @@
 [X] Cookie modal.
 [X] Footer dark mode.
 
-[] Responsive Post Details
+[] Post Detail Responsive. 
+[] Post Detail Dark Mode.
 
 
 [] Son donukunuşlar:

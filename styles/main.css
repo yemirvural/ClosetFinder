@@ -892,6 +892,7 @@ header {
     width: calc(100% - 300px);
     left: 300px;
     display: flex;
+    align-items: center;
     justify-content: flex-start;
     color: var(--dark);
     background-color: var(--background-color);
@@ -3469,31 +3470,47 @@ ol.breadcrumb .active{
 /* Post Detail Page */ /* Post Detail Page */ /* Post Detail Page */ /* Post Detail Page */ /* Post Detail Page */ 
 
 .post-detail-container{
+    all: unset;
     display: flex;
     position: relative;
     justify-content: center;
     width: 100%;
-    height: 90vh;
+    max-width: unset;
+    height: auto;
+    margin-bottom: 75px;
+
 }
 .post-detail-container .post-detail-box{
     display: flex;
     position: relative;
-    margin-top: 30px;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 1025px;
-    max-height: 745px;
-}
-.post-detail-container .post-carousel{
-    all: unset;
-    display: flex;
-    position: relative;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 625px;
+    width: max-content;
+    min-height: 700px;
     height: 100%;
+}
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.post-detail-container .post-carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
 }
 .carousel-indicators{
     justify-content: center;
@@ -3545,30 +3562,28 @@ ol.breadcrumb .active{
 }
 .post-detail-container .post-body{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     z-index: 1;
     right: 0;
-    margin-top: calc((690px - 635px)/2);
+    /*margin-top: calc((690px - 635px)/2);*/
     width: 60%;
-    max-width: 625px;
-    padding-left: 5%;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    height: 635px;
+    height: 100%;
+    max-height: 575px;
+    max-width: 525px;
 }
-.post-detail-container .post-head{
+.post-detail-container .post-head {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
+    width: 43%;
     z-index: 2;
     left: 0;
-    width: 45%;
-    max-width: 625px;
-    height: 100%;
-    max-height: 690px;
+    height: max-content;
     border-radius: 10px;
 }
 .post-info{
@@ -3577,12 +3592,11 @@ ol.breadcrumb .active{
     position: relative;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-top: 25px;
+    padding: 20px;
     width: 100%;
     max-width: 645px;
     height: 100%;
-    padding-left: 29px;
-    padding-right: 22px;
+    gap: 25px;
 }
 .post-detail-container .post-info-header{
     display: flex;
@@ -3615,7 +3629,8 @@ ol.breadcrumb .active{
 }
 .post-detail-container .post-info-header .writer-info .writer-name{ 
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
 }
 .post-detail-container .post-info-header .show-hide-menu{ 
     display: flex;
@@ -3643,7 +3658,6 @@ ol.breadcrumb .active{
     display: flex;
     justify-items: center;
     flex-direction: column;
-    margin-top: 34px;
     width: 100%;
     max-width: 545px;
     height: 90%;
@@ -4878,6 +4892,80 @@ ol.breadcrumb .active{
         padding: 12px 16px;
         font-size: 0.9rem;
     }
+    .post-detail-container .post-head {
+        width: 38%;
+        height: max-content;
+    }
+    .post-detail-container .post-body {
+        width: 55%;
+        max-width: 525px;
+        height: 70%;
+    }
+    .post-detail-container .post-title {
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 1rem;
+        height: 2rem;
+        color: var(--font-primary);
+        max-width: 500px;
+    }
+    .post-detail-container .post-article {
+        margin-top: 1.5rem;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .post-detail-container .post-body .subject-hasthags {
+        gap: 3px;
+    }
+    .post-detail-container .post-item .item-name {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1rem;
+        height: 2.4rem;
+        max-width: 80px;
+        white-space: nowrap;
+    }
+    .post-detail-container .post-body .subject-hasthags span {
+        padding: 2px 4px;
+        border-radius: 7px;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        width: auto;
+        height: auto;
+        top: 0;
+    }
+    .post-detail-container .post-slider {
+        width: 100%;
+        height: 135px;
+        gap: 4px;
+        margin-top: 5px;
+    }
+    .post-detail-container .post-item .post-image{
+        width: 75px;
+        height: auto;
+    }
+    .post-detail-container .post-item .price-tag {
+        width: 50px;
+        height: 25px;
+        top: 80px;
+        right: 10px;
+        background: rgba(128, 30, 92, 0.8);
+        border-radius: 4px 0px 10px;
+        font-weight: 900;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        gap: 5px;
+    }
+    .post-detail-container .post-item {
+        min-width: 95px;
+        height: max-content;
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+    }
 }
 
 @media(max-width: 770px) {
@@ -4895,7 +4983,39 @@ ol.breadcrumb .active{
         width: 113px;
         height: 1px;
     }
-
+    .post-detail-container .post-head {
+        width: 40%;
+        min-width: 320px;
+        height: max-content;
+    }
+    .post-detail-container .post-body {
+        width: 50%;
+        max-width: 525px;
+        height: 100%;
+    }
+    .post-detail-container .post-detail-box {
+        width: 100%;
+    }
+}
+@media(max-width: 649px) {
+    .post-detail-container .post-head {
+        width: 95%;
+        max-width: 375px;
+        min-width: unset;
+        height: max-content;
+    }
+    .post-detail-container .post-body {
+        width: 90%;
+        min-width: 80%;
+        height: max-content;
+    }
+    .post-detail-container .post-detail-box {
+        width: 100%;
+        gap: 35px;
+    }
+    .post-detail-container .post-info-footer {
+        width: 85%;
+    }
 }
 @media(max-width: 595px) {
     .profile-full {
