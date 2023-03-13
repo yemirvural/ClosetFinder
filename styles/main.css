@@ -17,14 +17,14 @@
     --dark-prime: #811f5d;
     --font-primary: #202020;
     --font-secondary: #801E5C;
-    --box-shadow: rgba(0, 0, 0, 0.25);
+    --footer-title: #1E1E1E;
+    --footer-corner: #801E5C;
+    --footer-background: #FAFAFA;
     /* Shadow */
+    --box-shadow: rgba(0, 0, 0, 0.25);
     --primary-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
-
-    /* Font Sizes: 38px,24px,22px,20px,18px,16px,14px,12px */
-
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     :root{
         --primary: #222222;
         --background-color: #1A1A1A;
@@ -43,6 +43,10 @@
         --dark-prime: #E28AC2;
         --font-primary: #EDEDED;
         --font-secondary: #FFFFFF;
+        --footer-title: rgba(255, 255, 255, 0.5);
+        --footer-corner: #1A1A1A;
+        --footer-background: #242424;
+            /* Shadow */
         --box-shadow: rgba(255, 255, 255, 0.25);
     }
 }
@@ -465,6 +469,7 @@ header {
     left: 300px;
     display: flex;
     color: var(--dark);
+
 }
 
 .footer-container{
@@ -477,13 +482,15 @@ header {
     max-width: unset;
     min-height: 214px;
     padding: 0;
-    background-color: #FAFAFA;
+    background-color: var(--footer-background);
+
 }
 .footer-container footer{
     max-width: unset;
     width: 100%;
     height: 100%;
     padding: 0;
+
 }
 .footer-container footer > div:not(:first-child){
     padding: 20px;   
@@ -500,7 +507,7 @@ header {
     min-width: 30%;
     height: 100%;
     min-height: 150px;
-    background-color: #801E5C;
+    background-color: var(--footer-corner);
     border-radius: 0px 50px 0px 0px;
 }
 .corner-box span{
@@ -533,13 +540,13 @@ header {
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1rem;
-    color: #1E1E1E;
+    color: var(--footer-title);
 }
 .footer-container li a{
     font-weight: 400;
     font-size: 1rem;
     line-height: 1rem;
-    color: #000000;
+    color: var(--font-primary);
 }
 .subscribe-mail{
     display: flex;
@@ -564,7 +571,7 @@ header {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1rem;
-    color: #000000;
+    color: var(--font-primary);
 }
 .subscribe-mail button{
     display: flex;
@@ -583,6 +590,9 @@ header {
 .social-nav img{
     width: 100%;
     height: auto;
+}
+.social-nav svg path{
+    fill: var(--font-primary);
 }
 
 

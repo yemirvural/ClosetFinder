@@ -64,8 +64,8 @@
 [X] Dark theme mobil.
 [X] Responsive footer. 
 [X] Cookie modal.
+[X] Footer dark mode.
 
-[] Footer dark mode.
 [] Responsive Post Details
 
 
