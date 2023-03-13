@@ -888,7 +888,7 @@ header {
     top: 0;
     z-index: 0;
     flex-direction: column;
-    height: 1050vh;
+    height: auto;
     width: calc(100% - 300px);
     left: 300px;
     display: flex;
@@ -2599,7 +2599,7 @@ header {
     align-items: center;
     width: 165px;
     height: 45px;
-    border-bottom: 0;
+   
     border-radius: 10px 10px 0 0;
     background: rgba(128, 30, 92, 0.04);
     border: 1.5px solid var(--post-tab-passive);
@@ -2609,6 +2609,7 @@ header {
     font-size: 1.3rem;
     line-height: 12px;
     gap: 5px;
+    border-bottom: 0;
 }
 .post-tab-button svg path{
     fill: var(--post-tab-font);
@@ -3698,7 +3699,7 @@ ol.breadcrumb .active{
 }
 .slider-nav-menu{
     display: flex; 
-    width: 500px;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     border-bottom: 1px solid #D9D9D9;

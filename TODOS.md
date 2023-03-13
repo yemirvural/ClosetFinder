@@ -65,8 +65,8 @@
 [X] Responsive footer. 
 [X] Cookie modal.
 [X] Footer dark mode.
+[X] Post Detail Responsive. 
 
-[] Post Detail Responsive. 
 [] Post Detail Dark Mode.
 
 
