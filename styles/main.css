@@ -465,8 +465,8 @@ header {
     position: relative;
     bottom: 0;
     z-index: 1;
-    width: calc(100% - 300px);
-    left: 300px;
+    width: calc(100% - 250px);
+    left: 250px;
     display: flex;
     color: var(--dark);
 
@@ -812,7 +812,7 @@ header {
     line-height: 16px;
     position: fixed;
     height: 100%;
-    width: 300px;
+    width: 250px;
     top: 0;
     left: 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
@@ -889,8 +889,8 @@ header {
     z-index: 0;
     flex-direction: column;
     height: auto;
-    width: calc(100% - 300px);
-    left: 300px;
+    width: calc(100% - 250px);
+    left: 250px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1621,7 +1621,7 @@ header {
     align-items: center;
     overflow: hidden;
     width: 100%;
-    height: calc(100% - 300px);
+    height: calc(100% - 250px);
 }
 .sidebar-reels .reels-image img{
     width: 100%;
